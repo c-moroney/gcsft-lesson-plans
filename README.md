@@ -82,7 +82,7 @@ Preparation for the flight test, including documentation checks, the the flight 
 
 ## Using This Site
 
-- Use the **sidebar** to navigate between lesson plans
+- Use the **sidebar** to navigate between lesson plans (top right for mobile)
 - Click a lesson to expand its **section submenu** — jump directly to any section
 - Use **Expand all / Collapse all** to control section visibility
 - Click **↻ Refresh** to reload plans if files have been updated in the repository
