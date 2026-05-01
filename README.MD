@@ -1,0 +1,85 @@
+# GCSFT — Ab-Initio Lesson Plans
+
+These lesson plans are the proposed plans going forward from June 01.
+Please review the plans carefully and provide any feedback via email to the CFI by May 15th.
+The FSP structure will be implemented and available from May 18th.
+Instructor workshop will be held between May 25th and 30th.
+
+These new lessons are designed to comply with the V8 RAAus RPC syllabus. Although not formally required yet, at a time in the not-too-distant future RAAus will require flight schools to implement some new syllabus elements.
+This will also clean up FSP and make the records far more readable for us and external parties.
+---
+
+## Training Structure
+
+### Phase 1 — Upper Airwork (Lessons 1–7)
+In previous training structures, the goal has always been to push students to the circuit as quickly as possible. This syllabus keeps the student in the training area for a little longer, in order to refine their basic aircraft handling skills.
+The lessons in phase 1 only include the basics - ie, no steep turns, no advanced stalling - enough to keep the students safe. However, the standard for passing these lessons is higher. The student needs to perform the basics **well**.
+
+EXX is the element from the RAAus V8 syllabus exposure draft that will be assessed in the lesson.
+
+| Lesson | Element | Topic |
+|--------|---------|-------|
+| 1 | E1/E2 | Flight Preparation & Effects of Controls |
+| 2 | E3 | Straight and Level Flight |
+| 3 | E4 | Climbing |
+| 4 | E5 | Descending |
+| 5 | E6 | Basic Turning |
+| 6 | E7 | Slow Flight & Stall Recognition |
+| 7 | E1–E7, E13 | Phase 1 Consolidation & Radio Essentials |
+
+### Phase 2 — Circuits
+Circuit training from introduction to solo. Structured as progressive stages.
+
+| Stage | Elements | Topic |
+|-------|----------|-------|
+| C1 | E8, E11 | Basic Circuits (go-arounds only) |
+| C2A | E8, E11, E12 | Normal Touch and Go Circuits |
+| C2B | E8, E11, E12 | Crosswind Circuits |
+| C3 | E8, E11 | Circuit Emergencies |
+| C4 | — | Solo Authorisation Gate |
+| C5 | E8, E11, E12 | Solo Circuit Consolidation |
+| C6 | E8, E11, E12 | Short & Soft Field Operations |
+
+### Phase 3 — Advanced/Area Training
+Advanced training, and area training solo preparation. Weight and Balance conducted as a theory lesson at any stage during phase 3.
+
+| Lesson | Elements | Topic |
+|-------|----------|-------|
+| 8 | E15 | Training Area Operations — Inbound/Outbound/Rejoin |
+| 9 | E9 | Advanced Turning |
+| 10 | E10 | Scenario Based Stalling |
+| 11 | E14 | Forced Landing and Precautionary Search |
+| 12 | E16 | Unusual Attitudes and Emergencies |
+| 13 | E13 | Area Solo Authorisation Gate and E13 Formal Assessment |
+| 14 | E9, E10, E14, E15, E16 | Area Solo Consolidation |
+| 15 | CODE: 1.2 WB | Weight and Balance |
+
+### Phase 4 — Flight Test
+Preparation for the flight test, including documentation checks, the the flight test itself.
+
+| Lesson | Elements | Topic |
+|-------|----------|-------|
+| 16 | ALL | Practice Flight Test |
+| 17 | AS RQD | Remediation |
+| 18 | ALL | RPC Flight Test |
+
+---
+
+## Using This Site
+
+- Use the **sidebar** to navigate between lesson plans
+- Click a lesson to expand its **section submenu** — jump directly to any section
+- Use **Expand all / Collapse all** to control section visibility
+- Click **↻ Refresh** to reload plans if files have been updated in the repository
+---
+
+## Textbook
+
+The **Bob Tait Basic Aeronautical Knowledge for RAAus** is used throughout. Page references in each lesson plan correspond to the current edition.
+
+---
+
+## Feedback
+
+Send feedback via email to CFI
+Or, for those inclined - feel free to use github...
