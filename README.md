@@ -8,9 +8,23 @@ Instructor workshop will be held between May 25th and 30th.
 These new lessons are designed to comply with the V8 RAAus RPC syllabus. Although not formally required yet, at a time in the not-too-distant future RAAus will require flight schools to implement some new syllabus elements.
 This will also clean up FSP and make the records far more readable for us and external parties.
 
----
+The lesson plans are very verbose (wordy). And they done this way intentionally, not because instructors need reminding of the primary effects of the controls, but to make sure that we are all covering *all* the required material **in a similar and consistent way** for our students. The idea of a lesson plan, is to provide a single document that we all teach to. If there's any doubt about how to teach something, the answer should be in the lesson plan.
 
-## Training Structure
+## To-Do
+- Reword the crosswind training requirement in the circuit solo authorisation. It's a bit confusing. Basically, crosswind competency must be at solo standard (twice) to conduct solo circuits in crosswind greater than 5 knots. At greater than 8 knots - no solo in any case.
+- Add configuration stall to the basic stalling lesson.
+- Upload reference cards for instructors to use in flight and on the ground as memory joggers.
+- Rework the briefings to align with the new syllabus
+
+## Training Structure/Competency Standards
+
+The competency standards in the plans follow the V8 syllabus of NC - Not competent, S - Solo, C - Competent. I've added one extra, P - Progressing, which indicates that they are not quite at solo standard, but at a high enough standard for progression to the next lesson. A "P" standard, means that at some later stage, that lesson will need to be marked an "S" when they achieve it. P does not equal S
+
+To compare with the current standard:
+NC = Not competent = 5
+P = Progressing = 4
+S = Solo = 3
+C = Competent = 2
 
 ### Phase 1 — Upper Airwork (Lessons 1–7)
 In previous training structures, the goal has always been to push students to the circuit as quickly as possible. This syllabus keeps the student in the training area for a little longer, in order to refine their basic aircraft handling skills.
@@ -42,7 +56,7 @@ Circuit training from introduction to solo. Structured as progressive stages.
 | C6 | E8, E11, E12 | Short & Soft Field Operations |
 
 ### Phase 3 — Advanced/Area Training
-Advanced training, and area training solo preparation. Weight and Balance conducted as a theory lesson at any stage during phase 3.
+Advanced training, and area training solo preparation. Weight and Balance conducted as a theory lesson at any stage during phase 3. In this phase, a lot of emphasis is placed on developing independence and ADM. Students are now preparing for their flight test, and eventual private hiring - they need to be able to think and *problem solve* for themselves.
 
 | Lesson | Elements | Topic |
 |-------|----------|-------|
@@ -72,13 +86,10 @@ Preparation for the flight test, including documentation checks, the the flight 
 - Click a lesson to expand its **section submenu** — jump directly to any section
 - Use **Expand all / Collapse all** to control section visibility
 - Click **↻ Refresh** to reload plans if files have been updated in the repository
----
 
 ## Textbook
 
 The **Bob Tait Basic Aeronautical Knowledge for RAAus** is used throughout. Page references in each lesson plan correspond to the current edition.
-
----
 
 ## Feedback
 
