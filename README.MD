@@ -7,6 +7,7 @@ Instructor workshop will be held between May 25th and 30th.
 
 These new lessons are designed to comply with the V8 RAAus RPC syllabus. Although not formally required yet, at a time in the not-too-distant future RAAus will require flight schools to implement some new syllabus elements.
 This will also clean up FSP and make the records far more readable for us and external parties.
+
 ---
 
 ## Training Structure
