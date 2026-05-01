@@ -1,9 +1,9 @@
 # GCSFT — Ab-Initio Lesson Plans
 
 These lesson plans are the proposed plans going forward from June 01.
-Please review the plans carefully and provide any feedback via email to the CFI by May 15th.
-The FSP structure will be implemented and available from May 18th.
-Instructor workshop will be held between May 25th and 30th.
+- Please review the plans carefully and provide any feedback via email to the CFI by May 15th.
+- The FSP structure will be implemented and available from May 18th.
+- Instructor workshop will be held between May 25th and 30th.
 
 These new lessons are designed to comply with the V8 RAAus RPC syllabus. Although not formally required yet, at a time in the not-too-distant future RAAus will require flight schools to implement some new syllabus elements.
 This will also clean up FSP and make the records far more readable for us and external parties.
@@ -21,10 +21,10 @@ The lesson plans are very verbose (wordy). And they done this way intentionally,
 The competency standards in the plans follow the V8 syllabus of NC - Not competent, S - Solo, C - Competent. I've added one extra, P - Progressing, which indicates that they are not quite at solo standard, but at a high enough standard for progression to the next lesson. A "P" standard, means that at some later stage, that lesson will need to be marked an "S" when they achieve it. P does not equal S
 
 To compare with the current standard:
-NC = Not competent = 5
-P = Progressing = 4
-S = Solo = 3
-C = Competent = 2
+- NC = Not competent = 5
+- P = Progressing = 4
+- S = Solo = 3
+- C = Competent = 2
 
 ### Phase 1 — Upper Airwork (Lessons 1–7)
 In previous training structures, the goal has always been to push students to the circuit as quickly as possible. This syllabus keeps the student in the training area for a little longer, in order to refine their basic aircraft handling skills.
