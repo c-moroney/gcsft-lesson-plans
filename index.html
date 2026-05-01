@@ -3,9 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GCSFT — RPC Lesson Plans</title>
+<title>GCSFT — Ab-Initio Lesson Plans</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- Marked.js for README markdown rendering -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
 <style>
 :root {
   --navy:       #1b3f6b;
@@ -56,10 +58,9 @@ header {
 .btn-hdr { background: rgba(255,255,255,.08); color: rgba(255,255,255,.7); border: 1px solid rgba(255,255,255,.15); padding: 6px 12px; border-radius: var(--radius-sm); font-size: 12px; cursor: pointer; transition: all .15s; font-family: inherit; display: flex; align-items: center; gap: 5px; }
 .btn-hdr:hover { background: rgba(255,255,255,.15); color: #fff; }
 .btn-hdr:disabled { opacity: .5; cursor: not-allowed; }
-.refresh-icon { display: inline-block; transition: transform .5s; }
 .btn-hdr.spinning .refresh-icon { animation: spin .7s linear infinite; }
+.refresh-icon { display: inline-block; }
 .menu-btn { display: none; background: none; border: 1px solid rgba(255,255,255,.2); color: #fff; padding: 5px 9px; border-radius: 4px; cursor: pointer; font-size: 16px; }
-
 @keyframes spin { to { transform: rotate(360deg); } }
 
 /* ── LAYOUT ── */
@@ -75,6 +76,19 @@ aside {
 }
 aside::-webkit-scrollbar { width: 4px; }
 aside::-webkit-scrollbar-thumb { background: rgba(255,255,255,.15); border-radius: 2px; }
+
+/* Overview nav link — sits above the phase groups */
+.nav-overview {
+  display: flex; align-items: center; gap: 10px;
+  padding: 11px 1rem 11px 1.1rem;
+  color: rgba(255,255,255,.7); font-size: 13px; font-weight: 500;
+  cursor: pointer; border-left: 3px solid transparent;
+  transition: all .15s; border-bottom: 1px solid rgba(255,255,255,.07);
+  user-select: none;
+}
+.nav-overview:hover { background: rgba(255,255,255,.06); border-left-color: rgba(255,255,255,.25); color: #fff; }
+.nav-overview.active { background: rgba(255,255,255,.1); border-left-color: var(--sky-light); color: #fff; }
+.nav-overview-icon { font-size: 14px; opacity: .8; }
 
 .sidebar-empty { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; text-align: center; gap: .75rem; }
 .sidebar-empty .icon { font-size: 2.5rem; opacity: .3; }
@@ -104,15 +118,11 @@ aside::-webkit-scrollbar-thumb { background: rgba(255,255,255,.15); border-radiu
 .nav-subitem:hover { color: rgba(255,255,255,.9); background: rgba(255,255,255,.06); }
 .sub-dot { width: 5px; height: 5px; border-radius: 50%; background: rgba(255,255,255,.2); flex-shrink: 0; transition: background .12s; }
 .nav-subitem:hover .sub-dot { background: var(--sky-light); }
-.nav-subitem.notes-link { color: rgba(180,240,220,.55); }
-.nav-subitem.notes-link:hover { color: rgba(180,240,220,.9); }
-.nav-subitem.notes-link .sub-dot { background: rgba(40,131,79,.5); }
-.sub-count { font-size: 9px; background: rgba(40,131,79,.35); color: #7fe0a8; padding: 1px 5px; border-radius: 8px; margin-left: auto; }
 
 /* ── MAIN ── */
 main { margin-left: var(--sidebar-w); flex: 1; padding: 2.5rem 2.5rem 5rem; max-width: calc(var(--sidebar-w) + 820px); }
 
-/* ── MAIN STATES ── */
+/* ── STATES ── */
 .main-state { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 60vh; gap: 1.25rem; text-align: center; }
 .main-state h2 { font-size: 1.4rem; font-weight: 600; color: var(--navy); }
 .main-state p, .main-state li { font-size: 14px; color: var(--text-muted); line-height: 1.65; max-width: 480px; }
@@ -120,13 +130,46 @@ main { margin-left: var(--sidebar-w); flex: 1; padding: 2.5rem 2.5rem 5rem; max-
 .main-state ol { text-align: left; padding-left: 1.25rem; display: flex; flex-direction: column; gap: .4rem; }
 .state-icon { font-size: 3rem; opacity: .25; }
 .spinner { width: 32px; height: 32px; border: 3px solid var(--border); border-top-color: var(--sky); border-radius: 50%; animation: spin .7s linear infinite; }
-.main-state .btn-primary { margin-top: .25rem; }
 
 /* ── EXPAND BAR ── */
 .expand-bar { display: flex; align-items: center; justify-content: flex-end; gap: 6px; margin-bottom: 1rem; }
 .expand-btn { background: var(--white); border: 1px solid var(--border); color: var(--text-muted); padding: 5px 13px; border-radius: var(--radius-sm); font-size: 12px; font-weight: 500; cursor: pointer; transition: all .15s; font-family: inherit; }
 .expand-btn:hover { border-color: var(--sky); color: var(--sky); background: var(--sky-pale); }
 .expand-divider { width: 1px; height: 16px; background: var(--border); }
+
+/* ── OVERVIEW / README PAGE ── */
+#overview-page { display: none; }
+#overview-page.visible { display: block; }
+
+.readme-loading { display: flex; align-items: center; gap: 10px; color: var(--text-muted); font-size: 14px; padding: 3rem 0; }
+
+/* Rendered README prose */
+.readme-body { max-width: 720px; }
+.readme-body h1 { font-size: 1.8rem; font-weight: 600; color: var(--navy); margin-bottom: 1rem; padding-bottom: .75rem; border-bottom: 2px solid var(--border); }
+.readme-body h2 { font-size: 1.2rem; font-weight: 600; color: var(--navy); margin: 2rem 0 .6rem; padding-bottom: .35rem; border-bottom: 1px solid var(--border); }
+.readme-body h3 { font-size: 1rem; font-weight: 600; color: var(--navy-mid); margin: 1.5rem 0 .5rem; }
+.readme-body h4 { font-size: .9rem; font-weight: 600; color: var(--text-mid); margin: 1.25rem 0 .4rem; text-transform: uppercase; letter-spacing: .05em; font-size: 11px; }
+.readme-body p { font-size: 14px; color: var(--text-mid); line-height: 1.75; margin-bottom: .85rem; }
+.readme-body ul, .readme-body ol { padding-left: 1.5rem; margin-bottom: .85rem; }
+.readme-body li { font-size: 14px; color: var(--text-mid); line-height: 1.7; margin-bottom: .25rem; }
+.readme-body code { font-family: 'Consolas', monospace; background: #e8eef8; color: var(--navy-mid); padding: 2px 5px; border-radius: 3px; font-size: 12px; }
+.readme-body pre { background: #1a2a3a; border-radius: var(--radius); padding: 1rem 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+.readme-body pre code { background: none; color: #c8d8e8; font-size: 12.5px; padding: 0; }
+.readme-body blockquote { border-left: 3px solid var(--sky); background: var(--sky-pale); padding: .75rem 1rem; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; margin-bottom: .85rem; }
+.readme-body blockquote p { margin: 0; color: var(--sky); }
+.readme-body table { width: 100%; border-collapse: collapse; margin-bottom: 1rem; font-size: 13.5px; }
+.readme-body th { background: var(--sky-pale); color: var(--navy); font-weight: 600; padding: .5rem .75rem; border: 1px solid var(--border); text-align: left; }
+.readme-body td { padding: .5rem .75rem; border: 1px solid var(--border); color: var(--text-mid); }
+.readme-body tr:nth-child(even) td { background: var(--off-white); }
+.readme-body a { color: var(--sky); text-decoration: none; }
+.readme-body a:hover { text-decoration: underline; }
+.readme-body hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+.readme-body img { max-width: 100%; border-radius: var(--radius-sm); }
+
+.readme-not-found { background: var(--amber-bg); border: 1px solid var(--amber-bdr); border-radius: var(--radius); padding: 1.25rem 1.5rem; }
+.readme-not-found h3 { color: var(--amber); font-size: 15px; margin-bottom: .5rem; }
+.readme-not-found p { font-size: 13.5px; color: var(--text-mid); line-height: 1.6; margin: 0; }
+.readme-not-found code { font-family: 'Consolas', monospace; background: rgba(176,106,16,.12); color: var(--amber); padding: 1px 5px; border-radius: 3px; font-size: 12px; }
 
 /* ── LESSON ── */
 .lesson { display: none; }
@@ -181,73 +224,6 @@ main { margin-left: var(--sidebar-w); flex: 1; padding: 2.5rem 2.5rem 5rem; max-
 .hw-box { background: #eef5fd; border: 1px solid rgba(46,122,181,.3); border-radius: var(--radius); padding: 1rem; margin-top: .5rem; }
 .hw-box li { font-size: 13px !important; }
 
-/* ── NOTES SECTION ── */
-.notes-section { margin-bottom: .75rem; border: 1px solid var(--green-bdr); border-radius: var(--radius); overflow: hidden; background: var(--white); scroll-margin-top: calc(var(--hdr-h) + 12px); }
-.notes-toggle { display: flex; align-items: center; gap: .75rem; padding: .9rem 1.25rem; cursor: pointer; width: 100%; text-align: left; background: var(--white); border: none; transition: background .15s; font-family: inherit; }
-.notes-toggle:hover { background: var(--green-bg); }
-.notes-section.open .notes-toggle { background: var(--green-bg); border-bottom: 1px solid var(--green-bdr); }
-.notes-section.open .notes-title { color: var(--green); }
-.notes-section.open .notes-chevron { transform: rotate(90deg); color: var(--green); }
-.notes-title { font-size: 13.5px; font-weight: 500; color: var(--navy); flex: 1; }
-.notes-chevron { color: var(--text-pale); font-size: 11px; transition: transform .2s; flex-shrink: 0; }
-.notes-count { background: var(--green); color: #fff; font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 10px; }
-.notes-count.zero { background: var(--text-pale); }
-.notes-body { display: none; padding: 1.1rem 1.25rem; }
-.notes-section.open .notes-body { display: block; }
-
-.notes-local-banner { display: flex; align-items: center; gap: 8px; background: var(--amber-bg); border: 1px solid var(--amber-bdr); border-radius: var(--radius-sm); padding: .55rem .85rem; margin-bottom: .85rem; font-size: 12px; color: var(--amber); }
-.notes-local-banner button { margin-left: auto; background: none; border: none; color: var(--amber); cursor: pointer; font-size: 12px; font-family: inherit; font-weight: 600; white-space: nowrap; text-decoration: underline; }
-
-.notes-list { display: flex; flex-direction: column; gap: .4rem; margin-bottom: .9rem; }
-.note-item { display: flex; align-items: flex-start; gap: .6rem; background: var(--off-white); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: .6rem .75rem; }
-.note-text { flex: 1; font-size: 13.5px; color: var(--text-mid); line-height: 1.6; white-space: pre-wrap; word-break: break-word; }
-.note-del { background: none; border: none; color: var(--text-pale); cursor: pointer; font-size: 14px; padding: 0 2px; flex-shrink: 0; opacity: 0; transition: opacity .15s, color .15s; line-height: 1; margin-top: 1px; }
-.note-item:hover .note-del { opacity: 1; }
-.note-del:hover { color: var(--red) !important; }
-.notes-empty { font-size: 13px; color: var(--text-muted); font-style: italic; }
-
-.note-save-status { font-size: 11.5px; margin-bottom: .6rem; min-height: 18px; }
-.note-save-status.ok     { color: var(--green); }
-.note-save-status.error  { color: var(--red); }
-.note-save-status.saving { color: var(--text-muted); }
-
-.note-input-row { display: flex; gap: .6rem; align-items: flex-end; }
-.note-input-row textarea { flex: 1; resize: none; height: 60px; border: 1px solid var(--border); border-radius: var(--radius-sm); padding: .6rem .75rem; font-size: 13.5px; font-family: inherit; color: var(--text); background: #fff; outline: none; transition: border-color .15s; line-height: 1.5; }
-.note-input-row textarea:focus { border-color: var(--green); }
-.btn-add-note { background: var(--green); color: #fff; border: none; padding: 8px 16px; border-radius: var(--radius-sm); font-size: 13px; font-weight: 500; cursor: pointer; transition: background .15s; font-family: inherit; white-space: nowrap; align-self: flex-end; }
-.btn-add-note:hover { background: #1d6a3f; }
-.btn-add-note:disabled { opacity: .6; cursor: not-allowed; }
-
-/* ── SETTINGS MODAL ── */
-.modal-overlay { display: none; position: fixed; inset: 0; background: rgba(18,43,77,.7); z-index: 1000; align-items: center; justify-content: center; }
-.modal-overlay.open { display: flex; }
-.modal { background: #fff; border-radius: 12px; width: min(540px,95vw); max-height: 90vh; display: flex; flex-direction: column; box-shadow: 0 24px 80px rgba(0,0,0,.3); overflow: hidden; }
-.modal-header { padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
-.modal-header h2 { font-size: 16px; font-weight: 600; color: var(--navy); }
-.modal-close { background: none; border: none; font-size: 20px; cursor: pointer; color: var(--text-muted); }
-.modal-body { padding: 1.5rem; flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 1.25rem; }
-.modal-footer { padding: 1rem 1.5rem; border-top: 1px solid var(--border); display: flex; gap: .75rem; justify-content: flex-end; }
-.btn-primary { background: var(--sky); color: #fff; border: none; padding: 9px 20px; border-radius: var(--radius-sm); font-size: 14px; font-weight: 500; cursor: pointer; transition: background .15s; font-family: inherit; }
-.btn-primary:hover { background: var(--navy-mid); }
-.btn-secondary { background: none; color: var(--text-mid); border: 1px solid var(--border); padding: 8px 16px; border-radius: var(--radius-sm); font-size: 14px; cursor: pointer; font-family: inherit; }
-.btn-secondary:hover { background: var(--sky-bg); }
-
-.form-group { display: flex; flex-direction: column; gap: .45rem; }
-.form-group label { font-size: 12px; font-weight: 600; letter-spacing: .04em; color: var(--text-mid); text-transform: uppercase; }
-.form-group input { border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 9px 11px; font-size: 13.5px; font-family: inherit; color: var(--text); outline: none; transition: border-color .15s; }
-.form-group input:focus { border-color: var(--sky); }
-.form-group .hint { font-size: 12px; color: var(--text-muted); line-height: 1.55; }
-.form-group .hint code { font-family: 'Consolas', monospace; background: #f0f4f8; color: var(--navy-mid); padding: 1px 5px; border-radius: 3px; font-size: 11px; }
-.form-group .hint a { color: var(--sky); }
-.form-divider { height: 1px; background: var(--border); }
-
-.conn-status { display: none; font-size: 12.5px; padding: 8px 12px; border-radius: var(--radius-sm); line-height: 1.45; }
-.conn-status.show { display: block; }
-.conn-status.ok      { background: var(--green-bg); color: var(--green); border: 1px solid var(--green-bdr); }
-.conn-status.error   { background: var(--red-bg);   color: var(--red);   border: 1px solid var(--red-bdr); }
-.conn-status.testing { background: var(--sky-bg);   color: var(--sky);   border: 1px solid var(--border); }
-.conn-status.warning { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber-bdr); }
-
 /* ── RESPONSIVE ── */
 @media (max-width: 860px) {
   .menu-btn { display: block; }
@@ -256,7 +232,6 @@ main { margin-left: var(--sidebar-w); flex: 1; padding: 2.5rem 2.5rem 5rem; max-
   aside.open { transform: translateX(0); box-shadow: 6px 0 30px rgba(0,0,0,.25); }
   main { margin-left: 0; padding: 1.5rem 1rem 3rem; }
   .standards-grid { grid-template-columns: 1fr; }
-  .note-input-row { flex-direction: column; }
 }
 </style>
 </head>
@@ -266,50 +241,39 @@ main { margin-left: var(--sidebar-w); flex: 1; padding: 2.5rem 2.5rem 5rem; max-
   <div class="hdr-logo">
     <span class="hdr-logo-badge">GCSFT</span>
     <span class="hdr-title">Lesson Plans</span>
-    <span class="hdr-sub">— RPC Flight Training</span>
+    <span class="hdr-sub">Ab-Initio Lesson Plans</span>
   </div>
   <div class="hdr-right">
-    <button class="btn-hdr" onclick="refreshAll()" id="refresh-btn" title="Reload plans and notes from server">
+    <button class="btn-hdr" onclick="refreshAll()" id="refresh-btn" title="Reload plans from server">
       <span class="refresh-icon">↻</span> Refresh
-    </button>
-    <button class="btn-hdr" onclick="openSettings()" title="Settings">
-      ⚙ Settings
     </button>
     <button class="menu-btn" onclick="toggleSidebar()">☰</button>
   </div>
 </header>
 
 <div class="layout">
-<aside id="sidebar"><div id="sidebar-nav"></div></aside>
+<aside id="sidebar">
+  <div id="sidebar-nav"></div>
+</aside>
+
 <main id="main-content">
-  <!-- Loading -->
   <div class="main-state" id="state-loading">
     <div class="spinner"></div>
     <p>Loading lesson plans…</p>
   </div>
 
-  <!-- Setup required (no plans/index.json found) -->
   <div class="main-state" id="state-setup" style="display:none">
     <div class="state-icon">📁</div>
     <h2>No lesson plans found</h2>
-    <p>The app couldn't find <code>plans/index.json</code>. Follow these steps to add your lesson plans:</p>
-    <ol>
-      <li>Create a <code>plans/</code> folder in your repository</li>
-      <li>Add your <code>.typ</code> lesson plan files to it</li>
-      <li>Create <code>plans/index.json</code> listing the filenames</li>
-      <li>Commit and push — the site will load them automatically</li>
-    </ol>
-    <button class="btn-primary" onclick="openSettings()">⚙ Configure shared notes</button>
+    <p>The app couldn't find <code>plans/index.json</code>. Add your <code>.typ</code> files to the <code>plans/</code> folder and list them in <code>plans/index.json</code>.</p>
   </div>
 
-  <!-- Empty (index.json found but no plans listed) -->
   <div class="main-state" id="state-empty" style="display:none">
     <div class="state-icon">✈</div>
     <h2>No lesson plans listed</h2>
-    <p>Your <code>plans/index.json</code> exists but is empty. Add filenames to it to load your plans.</p>
+    <p><code>plans/index.json</code> exists but is empty. Add filenames to load your plans.</p>
   </div>
 
-  <!-- Error -->
   <div class="main-state" id="state-error" style="display:none">
     <div class="state-icon">⚠️</div>
     <h2>Something went wrong</h2>
@@ -317,54 +281,12 @@ main { margin-left: var(--sidebar-w); flex: 1; padding: 2.5rem 2.5rem 5rem; max-
     <button class="btn-primary" onclick="refreshAll()">Try again</button>
   </div>
 
+  <!-- Overview / README page -->
+  <div id="overview-page"></div>
+
   <!-- Lesson plans -->
   <div id="lessons-container" style="display:none"></div>
 </main>
-</div>
-
-<!-- Settings Modal -->
-<div class="modal-overlay" id="settings-modal">
-  <div class="modal">
-    <div class="modal-header">
-      <h2>⚙ Settings — Shared Notes</h2>
-      <button class="modal-close" onclick="closeSettings()">✕</button>
-    </div>
-    <div class="modal-body">
-      <p style="font-size:13.5px;color:var(--text-mid);line-height:1.6;">
-        Notes are shared across the team via a <strong>GitHub Gist</strong>.
-        Create a free Gist, then paste the details below. Each team member
-        needs to do this once — the token is stored only in their browser.
-      </p>
-
-      <div class="form-divider"></div>
-
-      <div class="form-group">
-        <label>Gist ID</label>
-        <input type="text" id="setting-gist-id" placeholder="e.g. a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4">
-        <span class="hint">
-          Go to <a href="https://gist.github.com" target="_blank">gist.github.com</a>, create a
-          <strong>public</strong> Gist with one file named <code>gcsft-notes.json</code>
-          containing just <code>{}</code>. The Gist ID is the long string in its URL.
-        </span>
-      </div>
-
-      <div class="form-group">
-        <label>GitHub Personal Access Token</label>
-        <input type="password" id="setting-token" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx">
-        <span class="hint">
-          Go to GitHub → Settings → Developer settings → Personal access tokens → Tokens (classic).
-          Generate a token with only the <code>gist</code> scope checked.
-          This is stored only in your browser and never sent anywhere except GitHub's API.
-        </span>
-      </div>
-
-      <div class="conn-status" id="conn-status"></div>
-    </div>
-    <div class="modal-footer">
-      <button class="btn-secondary" onclick="closeSettings()">Close</button>
-      <button class="btn-primary" onclick="saveAndTestSettings()">Save &amp; Test Connection</button>
-    </div>
-  </div>
 </div>
 
 <script>
@@ -385,34 +307,18 @@ const SECTION_DEFS = [
 ];
 
 // ═══════════════════════════════════════════════════════════
-//  STATE  (in-memory — no localStorage for content)
+//  STATE
 // ═══════════════════════════════════════════════════════════
-let plans       = [];   // fetched from ./plans/
-let notesCache  = {};   // fetched from Gist (or localStorage fallback)
-let activePlanId = null;
+let plans        = [];
+let activePlanId = null;  // null = overview is showing
+let readmeHtml   = null;  // cached rendered README
 
 // ═══════════════════════════════════════════════════════════
-//  SETTINGS  (localStorage — credentials only, never content)
-// ═══════════════════════════════════════════════════════════
-const S = {
-  get gistId() { return localStorage.getItem('gcsft_gist_id') || ''; },
-  get token()  { return localStorage.getItem('gcsft_token')   || ''; },
-  set gistId(v) { localStorage.setItem('gcsft_gist_id', v); },
-  set token(v)  { localStorage.setItem('gcsft_token',   v); },
-};
-
-function gistHeaders(withAuth = false) {
-  const h = { 'Accept': 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28' };
-  if (withAuth && S.token) h['Authorization'] = 'Bearer ' + S.token;
-  return h;
-}
-
-// ═══════════════════════════════════════════════════════════
-//  FETCH PLANS FROM REPO
+//  FETCH PLANS
 // ═══════════════════════════════════════════════════════════
 async function fetchPlans() {
   const idxRes = await fetch('./plans/index.json', { cache: 'no-cache' });
-  if (!idxRes.ok) return null; // signals "setup required"
+  if (!idxRes.ok) return null;
   const files = await idxRes.json();
   if (!Array.isArray(files) || files.length === 0) return [];
 
@@ -423,195 +329,69 @@ async function fetchPlans() {
       const text = await r.text();
       const parsed = parseOneLesson(text);
       if (!parsed) throw new Error('Could not parse ' + filename);
-      // Use filename (without extension) as stable ID
       parsed.id       = filename.replace(/\.typ$/i, '').replace(/[^a-z0-9_-]/gi, '_');
       parsed.filename = filename;
       return parsed;
     })
   );
 
-  return settled
-    .filter(r => r.status === 'fulfilled')
-    .map(r => r.value);
+  return settled.filter(r => r.status === 'fulfilled').map(r => r.value);
 }
 
 // ═══════════════════════════════════════════════════════════
-//  NOTES — GIST OR LOCAL FALLBACK
+//  FETCH & RENDER README
 // ═══════════════════════════════════════════════════════════
-const LOCAL_NOTES_KEY = 'gcsft_notes_local_fallback';
-
-function isGistConfigured() { return !!(S.gistId && S.token); }
-
-async function fetchNotes() {
-  if (!S.gistId) {
-    return JSON.parse(localStorage.getItem(LOCAL_NOTES_KEY) || '{}');
+async function fetchReadme() {
+  // Try common README filenames
+  for (const name of ['README.md', 'readme.md', 'Readme.md']) {
+    try {
+      const r = await fetch('./' + name, { cache: 'no-cache' });
+      if (r.ok) return await r.text();
+    } catch(e) { /* try next */ }
   }
-  try {
-    const res = await fetch('https://api.github.com/gists/' + S.gistId, { headers: gistHeaders(true) });
-    if (!res.ok) return JSON.parse(localStorage.getItem(LOCAL_NOTES_KEY) || '{}');
-    const data = await res.json();
-    const file = data.files['gcsft-notes.json'];
-    if (!file || !file.content) return {};
-    const notes = JSON.parse(file.content);
-    localStorage.setItem(LOCAL_NOTES_KEY, JSON.stringify(notes)); // keep local backup
-    return notes;
-  } catch(e) {
-    return JSON.parse(localStorage.getItem(LOCAL_NOTES_KEY) || '{}');
-  }
+  return null;
 }
 
-// Returns 'ok' | 'local' | 'error'
-async function persistNotes() {
-  localStorage.setItem(LOCAL_NOTES_KEY, JSON.stringify(notesCache)); // always backup locally
-  if (!isGistConfigured()) return 'local';
-  try {
-    const res = await fetch('https://api.github.com/gists/' + S.gistId, {
-      method: 'PATCH',
-      headers: { ...gistHeaders(true), 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        files: { 'gcsft-notes.json': { content: JSON.stringify(notesCache, null, 2) } }
-      }),
-    });
-    return res.ok ? 'ok' : 'error';
-  } catch(e) { return 'error'; }
-}
+function showOverview() {
+  // Deactivate any active plan
+  activePlanId = null;
+  document.querySelectorAll('.lesson').forEach(el => el.classList.remove('visible'));
+  document.getElementById('lessons-container').style.display = 'none';
 
-// ═══════════════════════════════════════════════════════════
-//  NOTES CRUD
-// ═══════════════════════════════════════════════════════════
-function planKey(plan) { return plan.filename || plan.id; }
-function getNotes(pkey) { return notesCache[pkey] || []; }
+  // Update sidebar active state
+  document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+  document.querySelector('.nav-overview')?.classList.add('active');
 
-function noteId() { return Date.now() + '_' + Math.random().toString(36).slice(2); }
+  const page = document.getElementById('overview-page');
+  page.classList.add('visible');
 
-async function handleAddNote(pkey, pid) {
-  const ta  = document.getElementById('note-input-' + pid);
-  const btn = document.getElementById('note-add-btn-' + pid);
-  if (!ta || !ta.value.trim()) return;
+  // Already rendered — nothing more to do
+  if (readmeHtml !== null) return;
 
-  const text = ta.value.trim();
-  ta.value = '';
+  // Show loading, then fetch
+  page.innerHTML = '<div class="readme-loading"><div class="spinner"></div> Loading overview…</div>';
 
-  if (!notesCache[pkey]) notesCache[pkey] = [];
-  notesCache[pkey].push({ id: noteId(), text });
-
-  refreshNotesList(pkey, pid);
-  renderSidebar();
-
-  // Persist
-  btn.disabled = true;
-  showNoteStatus(pid, 'Saving…', 'saving');
-  const result = await persistNotes();
-  btn.disabled = false;
-
-  if (result === 'ok')    showNoteStatus(pid, '✓ Saved and shared with team.', 'ok');
-  else if (result === 'local') showNoteStatus(pid, '⚠ Saved locally only — configure a Gist in Settings to share.', 'error');
-  else                    showNoteStatus(pid, '✗ Save failed. Check your Settings.', 'error');
-
-  setTimeout(() => showNoteStatus(pid, '', ''), 4000);
-}
-
-async function handleDeleteNote(pkey, id, pid) {
-  if (notesCache[pkey]) notesCache[pkey] = notesCache[pkey].filter(n => n.id !== id);
-  refreshNotesList(pkey, pid);
-  renderSidebar();
-  showNoteStatus(pid, 'Saving…', 'saving');
-  const result = await persistNotes();
-  if (result === 'ok') showNoteStatus(pid, '✓ Deleted.', 'ok');
-  else if (result === 'error') showNoteStatus(pid, '✗ Delete failed to sync. Check Settings.', 'error');
-  setTimeout(() => showNoteStatus(pid, '', ''), 3000);
-}
-
-function showNoteStatus(pid, msg, type) {
-  const el = document.getElementById('note-status-' + pid);
-  if (!el) return;
-  el.textContent = msg;
-  el.className = 'note-save-status' + (type ? ' ' + type : '');
-}
-
-function refreshNotesList(pkey, pid) {
-  const listEl  = document.getElementById('notes-list-' + pid);
-  const badgeEl = document.getElementById('notes-count-' + pid);
-  const notes   = getNotes(pkey);
-  if (listEl) {
-    listEl.innerHTML = notes.length === 0
-      ? '<p class="notes-empty">No notes yet.</p>'
-      : notes.map(n => noteCard(n, pkey, pid)).join('');
-  }
-  if (badgeEl) {
-    badgeEl.textContent = notes.length;
-    badgeEl.className = 'notes-count' + (notes.length === 0 ? ' zero' : '');
-  }
-}
-
-function noteCard(n, pkey, pid) {
-  return `<div class="note-item">
-    <span class="note-text">${escHtml(n.text)}</span>
-    <button class="note-del" onclick="handleDeleteNote('${escHtml(pkey)}','${escHtml(n.id)}','${pid}')" title="Delete">✕</button>
-  </div>`;
-}
-
-// ═══════════════════════════════════════════════════════════
-//  SETTINGS UI
-// ═══════════════════════════════════════════════════════════
-function openSettings() {
-  document.getElementById('setting-gist-id').value = S.gistId;
-  document.getElementById('setting-token').value   = S.token;
-  setConnStatus('', '');
-  document.getElementById('settings-modal').classList.add('open');
-}
-function closeSettings() { document.getElementById('settings-modal').classList.remove('open'); }
-
-async function saveAndTestSettings() {
-  const gistId = document.getElementById('setting-gist-id').value.trim();
-  const token  = document.getElementById('setting-token').value.trim();
-  S.gistId = gistId;
-  S.token  = token;
-
-  if (!gistId && !token) { setConnStatus('No Gist configured — notes will be saved locally only in each browser.', 'warning'); return; }
-  if (!gistId) { setConnStatus('Please enter a Gist ID.', 'error'); return; }
-  if (!token)  { setConnStatus('Please enter a GitHub token.', 'error'); return; }
-
-  setConnStatus('Testing connection…', 'testing');
-
-  try {
-    const res = await fetch('https://api.github.com/gists/' + gistId, { headers: gistHeaders(true) });
-    if (res.status === 200) {
-      const data = await res.json();
-      const hasFile = 'gcsft-notes.json' in data.files;
-      if (hasFile) {
-        setConnStatus('✓ Connected. Notes will be shared across the team.', 'ok');
-        notesCache = await fetchNotes();
-        renderPlansContainer(); // re-render notes sections with fresh data
-        renderSidebar();
-      } else {
-        setConnStatus('✓ Gist found, but it has no gcsft-notes.json file. Add a file with that name containing {} and try again.', 'error');
-      }
-    } else if (res.status === 401) {
-      setConnStatus('✗ Authentication failed — check your token has the gist scope.', 'error');
-    } else if (res.status === 404) {
-      setConnStatus('✗ Gist not found — check the Gist ID.', 'error');
+  fetchReadme().then(md => {
+    if (md) {
+      // marked.js is loaded from CDN
+      readmeHtml = marked.parse(md);
+      page.innerHTML = `<div class="readme-body">${readmeHtml}</div>`;
     } else {
-      setConnStatus('✗ GitHub API error: ' + res.status, 'error');
+      readmeHtml = ''; // mark as attempted
+      page.innerHTML = `
+        <div class="readme-not-found">
+          <h3>No README found</h3>
+          <p>Add a <code>README.md</code> to the root of your repository and it will appear here automatically.</p>
+        </div>`;
     }
-  } catch(e) {
-    setConnStatus('✗ Network error: ' + e.message, 'error');
-  }
-}
+  });
 
-function setConnStatus(msg, type) {
-  const el = document.getElementById('conn-status');
-  el.textContent = msg;
-  el.className = 'conn-status' + (type ? ' ' + type + ' show' : ' show');
-  if (!msg) el.className = 'conn-status';
+  if (window.innerWidth <= 860) document.getElementById('sidebar').classList.remove('open');
 }
 
 // ═══════════════════════════════════════════════════════════
 //  TYPST PARSER
 // ═══════════════════════════════════════════════════════════
-function parseTypstContent(raw) {
-  return raw.split(/(?=#import\s+"template\.typ")/).map(s => s.trim()).filter(s => s.length > 20).map(parseOneLesson).filter(Boolean);
-}
 function parseOneLesson(raw) {
   const meta = parseMetadata(raw), lesson = parseLessonBlock(raw);
   if (!meta && !lesson) return null;
@@ -693,32 +473,45 @@ function escHtml(s)    { return String(s).replace(/&/g,'&amp;').replace(/</g,'&l
 // ═══════════════════════════════════════════════════════════
 function renderSidebar() {
   const nav = document.getElementById('sidebar-nav');
+  nav.innerHTML = '';
+
+  // ── Overview item (always first) ──
+  const overviewEl = document.createElement('div');
+  overviewEl.className = 'nav-overview' + (activePlanId === null ? ' active' : '');
+  overviewEl.innerHTML = '<span class="nav-overview-icon">📄</span> Overview';
+  overviewEl.onclick = showOverview;
+  nav.appendChild(overviewEl);
+
   if (plans.length === 0) {
-    nav.innerHTML = '<div class="sidebar-empty"><div class="icon">✈</div><p>No lesson plans loaded.</p></div>';
+    const empty = document.createElement('div');
+    empty.className = 'sidebar-empty';
+    empty.innerHTML = '<div class="icon">✈</div><p>No lesson plans loaded.</p>';
+    nav.appendChild(empty);
     return;
   }
+
+  // ── Phase groups ──
   const groups = {};
-  plans.forEach(p => { const ph = guessPhase(p.meta.unit || ''); if (!groups[ph]) groups[ph] = []; groups[ph].push(p); });
-  nav.innerHTML = '';
+  plans.forEach(p => {
+    const ph = guessPhase(p.meta.unit || '');
+    if (!groups[ph]) groups[ph] = [];
+    groups[ph].push(p);
+  });
+
   for (const [phase, items] of Object.entries(groups)) {
     const grp = document.createElement('div');
     grp.className = 'phase-group';
     grp.innerHTML = `<div class="phase-label">${escHtml(phase)}</div>`;
+
     items.forEach(p => {
-      const isActive  = p.id === activePlanId;
-      const code      = extractCode(p.meta.unit || '');
-      const name      = p.meta.title || stripTypst(p.lesson.title || '') || 'Untitled';
-      const pkey      = planKey(p);
-      const noteCount = getNotes(pkey).length;
+      const isActive = p.id === activePlanId;
+      const code     = extractCode(p.meta.unit || '');
+      const name     = p.meta.title || stripTypst(p.lesson.title || '') || 'Untitled';
 
       const sectionLinks = SECTION_DEFS
         .filter(def => p.lesson[def.key] && p.lesson[def.key].trim())
         .map(def => `<button class="nav-subitem" onclick="scrollToSection('${p.id}','${def.key}')"><span class="sub-dot"></span>${escHtml(def.label)}</button>`)
         .join('');
-
-      const notesLink = `<button class="nav-subitem notes-link" onclick="scrollToSection('${p.id}','notes')">
-        <span class="sub-dot"></span>Notes${noteCount > 0 ? `<span class="sub-count">${noteCount}</span>` : ''}
-      </button>`;
 
       const el = document.createElement('div');
       el.className = 'nav-item' + (isActive ? ' active' : '');
@@ -731,7 +524,7 @@ function renderSidebar() {
           </div>
           <span class="nav-chevron">▶</span>
         </div>
-        <div class="nav-submenu">${sectionLinks}${notesLink}</div>`;
+        <div class="nav-submenu">${sectionLinks}</div>`;
       grp.appendChild(el);
     });
     nav.appendChild(grp);
@@ -758,7 +551,6 @@ function renderLesson(plan) {
   const m = plan.meta, l = plan.lesson;
   const title = stripTypst(l.title || m.title || 'Untitled');
   const pid   = plan.id;
-  const pkey  = planKey(plan);
 
   let html = `
     <div class="lesson-header">
@@ -789,35 +581,6 @@ function renderLesson(plan) {
       </div>`;
   }
 
-  // Notes section
-  const notes = getNotes(pkey);
-  const noteItems = notes.length === 0
-    ? '<p class="notes-empty">No notes yet.</p>'
-    : notes.map(n => noteCard(n, pkey, pid)).join('');
-
-  const localBanner = !isGistConfigured()
-    ? `<div class="notes-local-banner">⚠ Notes are saved in this browser only. <button onclick="openSettings()">Configure shared storage →</button></div>`
-    : '';
-
-  html += `
-    <div class="notes-section open" id="sec-${pid}-notes">
-      <button class="notes-toggle" onclick="toggleSection(this.closest('.notes-section'))">
-        <div class="section-icon ic-green">📝</div>
-        <span class="notes-title">Notes</span>
-        <span class="notes-count ${notes.length === 0 ? 'zero' : ''}" id="notes-count-${pid}">${notes.length}</span>
-        <span class="notes-chevron" style="margin-left:8px;font-size:11px;color:var(--text-pale);transition:transform .2s;">▶</span>
-      </button>
-      <div class="notes-body">
-        ${localBanner}
-        <div class="note-save-status" id="note-status-${pid}"></div>
-        <div class="notes-list" id="notes-list-${pid}">${noteItems}</div>
-        <div class="note-input-row">
-          <textarea id="note-input-${pid}" placeholder="Add a note… (Ctrl+Enter to save)" onkeydown="if((event.ctrlKey||event.metaKey)&&event.key==='Enter'){event.preventDefault();handleAddNote('${escHtml(pkey)}','${pid}')}"></textarea>
-          <button class="btn-add-note" id="note-add-btn-${pid}" onclick="handleAddNote('${escHtml(pkey)}','${pid}')">Add</button>
-        </div>
-      </div>
-    </div>`;
-
   return html;
 }
 
@@ -838,9 +601,16 @@ function renderPlansContainer() {
 // ═══════════════════════════════════════════════════════════
 function showPlan(id) {
   activePlanId = id;
+
+  // Hide overview
+  document.getElementById('overview-page').classList.remove('visible');
+
+  // Show lessons container
+  document.getElementById('lessons-container').style.display = 'block';
   document.querySelectorAll('.lesson').forEach(el => el.classList.remove('visible'));
   const target = document.getElementById('plan-' + id);
   if (target) target.classList.add('visible');
+
   renderSidebar();
   window.scrollTo({ top: 0, behavior: 'smooth' });
   if (window.innerWidth <= 860) document.getElementById('sidebar').classList.remove('open');
@@ -860,27 +630,13 @@ function doScroll(planId, sectionKey) {
 
 function expandAll() {
   const active = document.querySelector('.lesson.visible');
-  if (active) active.querySelectorAll('.section, .notes-section').forEach(s => s.classList.add('open'));
+  if (active) active.querySelectorAll('.section').forEach(s => s.classList.add('open'));
 }
 function collapseAll() {
   const active = document.querySelector('.lesson.visible');
-  if (active) active.querySelectorAll('.section, .notes-section').forEach(s => s.classList.remove('open'));
+  if (active) active.querySelectorAll('.section').forEach(s => s.classList.remove('open'));
 }
 function toggleSection(el) { el.classList.toggle('open'); }
-
-// Notes section chevron follows open state via CSS on .notes-section.open
-// (we add/remove 'open' on the .notes-section element via toggleSection)
-// Inline style on .notes-chevron mirrors what the regular sections do in CSS,
-// but the notes section uses a slightly different DOM so we handle it here:
-document.addEventListener('click', e => {
-  const toggle = e.target.closest('.notes-toggle');
-  if (!toggle) return;
-  const section = toggle.closest('.notes-section');
-  if (!section) return;
-  section.classList.toggle('open');
-  const chev = toggle.querySelector('.notes-chevron');
-  if (chev) chev.style.transform = section.classList.contains('open') ? 'rotate(90deg)' : '';
-});
 
 // ═══════════════════════════════════════════════════════════
 //  UI HELPERS
@@ -889,43 +645,40 @@ function showState(state) {
   ['loading','setup','empty','error'].forEach(s => {
     document.getElementById('state-' + s).style.display = s === state ? 'flex' : 'none';
   });
-  document.getElementById('lessons-container').style.display = state === 'content' ? 'block' : 'none';
+  const isContent = state === 'content';
+  document.getElementById('lessons-container').style.display = isContent ? 'block' : 'none';
+  if (!isContent) document.getElementById('overview-page').classList.remove('visible');
 }
 
 function toggleSidebar() { document.getElementById('sidebar').classList.toggle('open'); }
-document.getElementById('settings-modal').addEventListener('click', e => { if (e.target === e.currentTarget) closeSettings(); });
 
 // ═══════════════════════════════════════════════════════════
 //  INIT & REFRESH
 // ═══════════════════════════════════════════════════════════
 async function init() {
   showState('loading');
+  readmeHtml = null; // clear cache on refresh so README reloads too
 
-  let fetchedPlans, fetchedNotes;
+  let fetchedPlans;
   try {
-    [fetchedPlans, fetchedNotes] = await Promise.all([fetchPlans(), fetchNotes()]);
+    fetchedPlans = await fetchPlans();
   } catch(e) {
     document.getElementById('error-msg').textContent = e.message;
     showState('error');
     return;
   }
 
-  notesCache = fetchedNotes;
-
-  if (fetchedPlans === null)         { showState('setup');   return; }
-  if (fetchedPlans.length === 0)     { showState('empty');   return; }
+  if (fetchedPlans === null)     { renderSidebar(); showState('setup'); return; }
+  if (fetchedPlans.length === 0) { renderSidebar(); showState('empty'); return; }
 
   plans = fetchedPlans;
-
-  // Preserve active plan across refresh if it still exists
-  if (!activePlanId || !plans.find(p => p.id === activePlanId)) {
-    activePlanId = plans[0].id;
-  }
 
   renderSidebar();
   renderPlansContainer();
   showState('content');
-  showPlan(activePlanId);
+
+  // Default to Overview page on first load
+  showOverview();
 }
 
 async function refreshAll() {
