@@ -2,7 +2,7 @@
 
 #let metadata = (
   title: "Solo Navigation",
-  unit: "Cross Country Endorsement | Lesson 7",
+  unit: "Cross Country Endorsement | Lesson 8",
   author: "C.Moroney",
   version: "v1.0.0",
 )
