@@ -39,10 +39,10 @@ This lesson addresses elements *1.1 Prepare flight plan* (determine fuel require
 ]
 
 ,theory_knowledge: [
-- Fuel requirements *(Pg 89 — refer FOM for RAAus specifics)*
-- Endurance *(Pg 122)*; loading charts *(Pg 247)*
-- QNH, pressure height and density *(Pg 236, 234)* — effect on TAS and fuel flow
-- v8 Theory Unit 2.03 §1.1.6 (fuel use, fuel required, fuel remaining, fuel consumption problems) and fuel-reserve requirements based on forecast.
+- Fuel calculations *(Pg 146)*: fuel consumption rate and start-up/taxi allowance *(Pg 146–147)*; fixed reserve, margin fuel and reserves *(Pg 147)*; safe endurance *(Pg 148)* — refer FOM for RAAus specifics
+- Alternate aerodromes and holding requirements *(Pg 117)*
+- Flight plan and allowing for the climb *(Pg 172–173)*
+- Vertical navigation — altimetry: altimeter *(Pg 175–177)*, QFE *(Pg 178)*
 ]
 
 ,ground_brief_topics: [
@@ -140,10 +140,10 @@ Equipment required: VNC, ERSA, plotter, E6B, EFB, nav log, AC 91-15, current GAF
 ]
 
 ,homework:[
-- Read Bob Tait's RAAus BAK:
-  - Fuel requirements (Pg 89); endurance (Pg 122); loading charts (Pg 247); density/pressure height (Pg 234, 236).
+- Read Bob Tait's RAAus Cross Country Endorsement:
+  - Fuel calculations (Pg 146–148); alternate aerodromes and holding requirements (Pg 117); flight plan and allowing for the climb (Pg 172–173).
   - Review RAAus FOM fuel provisions and AC 91-15.
-- Prepare for next lesson (*Diversions & Lost Procedure*): read the lost procedure (Pg 259) and decision-making (false hypothesis, mind-set, Pg 34–35).
+- Prepare for next lesson (*Diversions & Lost Procedure*): read establishing a DR position and area of probability (Pg 187–189) and reading from the ground to the map (Pg 190).
 - Practice: complete a full fuel plan (including hold and reserve) for a route with a fuel stop.
 ]
 )

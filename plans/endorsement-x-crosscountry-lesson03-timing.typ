@@ -37,9 +37,10 @@ This lesson addresses the timing aspect of dead reckoning. The previous lesson f
 ]
 
 ,theory_knowledge: [
-- True airspeed, indicated airspeed, ground speed *(Pg 146)*
-- Endurance *(Pg 122)*
-- v8 Theory Unit 2.03 §1.1.2 (time interval from GS and distance), §1.1.4 Time (UTC/LMT/Local/DST conversions, civil twilight), §1.1.6 (GS, distance, ETI computation).
+- Measuring distance — nautical mile and scale *(Pg 138)*
+- Measuring speed — TAS, IAS, ground speed and estimated time interval *(Pg 140)*; actual ground speed *(Pg 143)*
+- Safe endurance *(Pg 148)*
+- Time: local time and standard times *(Pg 150–151)*; first light, last light and civil twilight *(Pg 152)*; effect of date and latitude *(Pg 152–153)*
 ]
 
 ,ground_brief_topics: [
@@ -125,9 +126,9 @@ Equipment required: VNC, ERSA, plotter, E6B, EFB, nav log, current GAF/GPWT and 
 ]
 
 ,homework:[
-- Read Bob Tait's RAAus BAK:
-  - TAS/IAS/GS (Pg 146); endurance (Pg 122); time conversions and civil twilight (BAK navigation/time section).
-- Prepare for next lesson (*Consolidation / Fuel Planning*): read fuel requirements (Pg 89) and the RAAus FOM fuel provisions; review AC 91-15 (Guidelines for aircraft fuel requirements).
+- Read Bob Tait's RAAus Cross Country Endorsement:
+  - Measuring speed and estimated time interval (Pg 140); safe endurance (Pg 148); time — standard times, first/last light and civil twilight (Pg 150–153).
+- Prepare for next lesson (*Consolidation & Fuel Planning*): read fuel calculations (Pg 146–148) and the RAAus FOM fuel provisions; review AC 91-15 (Guidelines for aircraft fuel requirements).
 - Practice: calculate GS, ETI and ETA for a four-leg route, then check against the EFB.
 ]
 )

@@ -36,10 +36,10 @@ This is the integrating lesson of the Cross Country Endorsement. It addresses el
 ]
 
 ,theory_knowledge: [
-- Carriage of documents *(Pg 80)*; pilot recency *(Pg 80)*; aeronautical experience requirements *(Pg 78)*
-- Fuel requirements *(Pg 89 — refer FOM)*
-- Airspace classifications *(Pg 256)*; Restricted and Danger areas *(Pg 258–259)*
-- v8 Theory Unit 2.03 §1.1 navigation and §1.2 meteorology as integrated for self-briefing.
+- Documents to be carried *(Pg 245)*; pilot in command *(Pg 253)*; equipment required — serviceable instruments and radio *(Pg 253)*
+- Fuel calculations *(Pg 146–148)* — refer FOM
+- Classification of airspace *(Pg 260)*; avoiding controlled airspace *(Pg 275)*
+- SARTIME *(Pg 274)*
 ]
 
 ,ground_brief_topics: [
@@ -143,11 +143,10 @@ _Weather on the day:_
 
 ,homework:[
 - Plan the route for the flight test, given by the instructor.
-- Read Bob Tait's RAAus BAK:
-  - Carriage of documents and recency (Pg 80); aeronautical experience (Pg 78); fuel requirements (Pg 89).
-  - Revise airspace (Pg 256) and Restricted/Danger areas (Pg 258–259).
+- Read Bob Tait's RAAus Cross Country Endorsement:
+  - Documents to be carried (Pg 245); pilot in command and equipment required (Pg 253); fuel calculations (Pg 146–148).
+  - Revise classification of airspace (Pg 260) and avoiding controlled airspace (Pg 275).
 - Consolidate for the Navigation & Meteorology theory examination (v8 Theory Unit 2.03) and the Cross Country Endorsement flight test.
-- Reflect: prepare a self-debrief of the solo navex to discuss at the next session.
 ]
 )
 

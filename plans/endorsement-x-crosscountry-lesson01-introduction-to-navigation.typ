@@ -40,11 +40,11 @@ This is the first lesson of the Cross Country Endorsement. The student is introd
 ]
 
 ,theory_knowledge: [
-- Airspace classifications *(Pg 256)*
-- Restricted and Danger areas *(Pg 258–259)*
-- Loading/chart use and Visual Meteorological Conditions *(Pg 247, 90)*
-- Situational awareness; vision, spotting landmarks *(Pg 3, 13–16)*
-- v8 Theory Unit 2.03 §1.1.1 Documentation (ERC-L, VTC, VNC, WAC, PCA, ERSA) and §1.1.7 map-reading principles / ded reckoning. \[Page references are from the Bob Tait BAK mapping — confirm against the student's edition.\]
+- Reading a map: true direction from a map *(Pg 132)*; measuring distance and scale *(Pg 138)*
+- Map reading; reading from the ground to the map *(Pg 189–190)*
+- Classification of airspace *(Pg 260)*; avoiding controlled airspace *(Pg 275)*
+- Documents to be carried *(Pg 245)*
+- Types of charts *(Pg 239)*
 ]
 
 ,ground_brief_topics: [
@@ -154,10 +154,10 @@ Equipment required: VNC/VTC for the route, ERSA, nav log, plotter/ruler, EFB, cu
 ]
 
 ,homework:[
-- Read Bob Tait's RAAus BAK:
-  - Airspace classifications (Pg 256); Restricted and Danger areas (Pg 258–259).
-  - Charts and VMC (Pg 247, 90); SA and vision (Pg 3, 13–16).
-- Prepare for next lesson (*Maintain Track*): read the sections on the magnetic compass and variation (Pg 225) and revise track, heading and drift concepts.
+- Read Bob Tait's RAAus Cross Country Endorsement:
+  - Classification of airspace (Pg 260); avoiding controlled airspace (Pg 275); documents to be carried (Pg 245).
+  - Reading a map: true direction from a map (Pg 132); measuring distance and scale (Pg 138).
+- Prepare for next lesson (*Maintain Track*): read magnetic direction and variation (Pg 134–135) and flight planned track, heading and drift (Pg 164–165).
 - Prepare a basic route: plot the route for next flight, avoiding controlled airspace and SUA. Measure tracks and distances and record on a navigation log. This will be used as the basis of the next briefing.
 - Reflect: "On today's route, which legs were best suited to DR and which to pilotage, and why?"
 ]

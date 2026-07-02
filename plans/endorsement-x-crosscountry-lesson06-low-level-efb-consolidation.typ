@@ -38,10 +38,9 @@ This lesson addresses element *1.4 Low level navigation* (navigate at low level,
 ]
 
 ,theory_knowledge: [
-- Meteorological hazards — fog, thunderstorms, gusts/squalls, microbursts, dust (Pg 262–266)
-- Lost procedure *(Pg 259)*
-- Fatigue and body rhythms *(Pg 39–40)*
-- v8 Theory Unit 2.03 §1.1.7 (map reading at low level — 500 ft AGL, over mountainous/coastal/settled/sparsely-populated terrain) and §1.1.8 (EFB/GPS: position determination, limitations, legislative and backup requirements, mounting/storage).
+- Meteorological hazards: fog *(Pg 57–60)*, thunderstorms *(Pg 70–75)*, microbursts *(Pg 75)*, dust storms *(Pg 76)*, gusts and squalls *(Pg 19)*, mountain waves *(Pg 61–64)*
+- Map reading; reading from the ground to the map *(Pg 189–190)*
+- GPS / RNAV (GNSS) *(Pg 213)*
 ]
 
 ,ground_brief_topics: [
@@ -131,10 +130,10 @@ Equipment required: VNC/WAC for the route, ERSA, plotter, E6B, EFB, nav log, NAI
 ]
 
 ,homework:[
-- Read Bob Tait's RAAus BAK:
-  - Meteorological hazards (Pg 262–266); lost procedure (Pg 259); fatigue/body rhythms (Pg 39–40).
+- Read Bob Tait's RAAus Cross Country Endorsement:
+  - Meteorological hazards — fog (Pg 57–60), thunderstorms (Pg 70–75), dust storms (Pg 76), mountain waves (Pg 61–64); GPS / RNAV (GNSS) (Pg 213).
   - EFB/GPS limitations and requirements (v8 Theory §1.1.8).
-- Prepare for next lesson (*Solo Navigation*): consolidate full manual planning; review carriage of documents (Pg 80), recency (Pg 80) and fuel requirements (Pg 89).
+- Prepare for next lesson (*Pre-Solo Consolidation*): consolidate full manual planning to solo standard across all elements; review documents to be carried (Pg 245), pilot in command (Pg 253) and fuel calculations (Pg 146–148).
 - Reflect: "What are the three things most likely to make a low-level leg unsafe, and how would you mitigate each?"
 ]
 )

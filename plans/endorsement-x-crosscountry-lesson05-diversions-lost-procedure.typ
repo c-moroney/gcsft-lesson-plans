@@ -39,10 +39,10 @@ This lesson addresses elements *1.5 Perform lost procedure* (fix position, calcu
 ]
 
 ,theory_knowledge: [
-- Lost procedure *(Pg 259)*
-- Restricted and Danger areas *(Pg 258–259)*
-- Decision-making — false hypothesis, mind-set *(Pg 34–35)*
-- v8 Theory Unit 2.03 §1.1.7 (in-flight diversion principles, decision-making for diversions around adverse weather, diversion to an alternate aerodrome; establishing a DR position; map reading for the lost procedure).
+- Establishing a DR position *(Pg 187)*; actual drift value and actual ground speed *(Pg 188)*; area of probability *(Pg 189)*; reading from the ground to the map *(Pg 190)*
+- Alternate aerodromes *(Pg 255)*; holding requirements *(Pg 117)*
+- Classification of airspace *(Pg 260)*; avoiding controlled airspace *(Pg 275)*
+- SARTIME *(Pg 274)*
 ]
 
 ,ground_brief_topics: [
@@ -138,9 +138,9 @@ Equipment required: VNC, ERSA, plotter, E6B, EFB, nav log, NAIPS access, current
 ]
 
 ,homework:[
-- Read Bob Tait's RAAus BAK:
-  - Lost procedure (Pg 259); Restricted and Danger areas (Pg 258–259); decision-making (Pg 34–35).
-- Prepare for next lesson (*Low Level / Consolidation*): review LSALT, low-level hazards and meteorological hazards (Pg 262–266).
+- Read Bob Tait's RAAus Cross Country Endorsement:
+  - Establishing a DR position and area of probability (Pg 187–189); reading from the ground to the map (Pg 190); alternate aerodromes (Pg 255); SARTIME (Pg 274).
+- Prepare for next lesson (*Low Level & EFB Consolidation*): review meteorological hazards — thunderstorms (Pg 70–75), fog (Pg 57–60), dust storms (Pg 76) and mountain waves (Pg 61–64).
 - Practice: plan a diversion to an alternate from a mid-route point, including revised ETA and a fuel/daylight check.
 ]
 )

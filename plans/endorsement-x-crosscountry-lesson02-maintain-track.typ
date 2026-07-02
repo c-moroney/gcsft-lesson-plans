@@ -40,10 +40,11 @@ This lesson builds on the workflow from Lesson 1 - the student now produces the 
 ]
 
 ,theory_knowledge: [
-- Magnetic compass; true vs magnetic north and variation *(Pg 225)*
-- True airspeed, indicated airspeed, ground speed *(Pg 146)*
-- v8 Theory Unit 2.03 §1.1.2 (application of variation), §1.1.3 (true/magnetic north, variation), §1.1.6 (heading, GS and drift), §1.1.7 (TMG, drift, alteration of heading, 1-in-60, parallel/intercept track).
-  \[Specific technique pages — measuring track, the wind triangle, 1-in-60 — are not itemised in the Bob Tait mapping; confirm against the student's BAK edition.\]
+- True and magnetic direction *(Pg 131, 134)*; magnetic variation *(Pg 135)*; compass deviation *(Pg 136)*
+- Measuring true track from a map *(Pg 132)*
+- Drift and the wind triangle: factors that affect drift *(Pg 165)*; planning for drift and computer solution *(Pg 168–169)*
+- The one-in-sixty rule *(Pg 190)*: track error *(Pg 192)*; applying the track error *(Pg 198)*; closing angle and heading change required *(Pg 199)*
+- Measuring speed — TAS, IAS and ground speed *(Pg 140)*
 ]
 
 ,ground_brief_topics: [
@@ -136,9 +137,9 @@ Equipment required: VNC for the route, ERSA, plotter, E6B, EFB, nav log, current
 ]
 
 ,homework:[
-- Read Bob Tait's RAAus BAK:
-  - Magnetic compass and variation (Pg 225); TAS/IAS/GS (Pg 146).
-- Prepare for next lesson (*Timing*): revise distance measurement and read on ground speed and endurance (Pg 146, 122); pre-read the time/ETI concepts in BAK navigation.
+- Read Bob Tait's RAAus Cross Country Endorsement:
+  - Magnetic direction and variation (Pg 134–135); measuring speed — TAS/IAS/GS (Pg 140); the one-in-sixty rule (Pg 190–199).
+- Prepare for next lesson (*Timing*): read measuring distance (Pg 138) and measuring speed / estimated time interval (Pg 140); pre-read fuel calculations (Pg 146–148).
 - Practice: measure track and apply variation for three legs of a route of your choosing, then compare your heading with the EFB.
 ]
 )

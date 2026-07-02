@@ -42,9 +42,8 @@ All assessed to solo standard, unassisted.
 ]
 
 ,theory_knowledge: [
-- Revision across the navigation syllabus: charts and ERSA, track/variation/wind, timing, fuel, diversions and lost procedure.
-- Carriage of documents and recency *(Pg 80)*; fuel requirements *(Pg 89 — refer FOM)*; airspace *(Pg 256)*; Restricted and Danger areas *(Pg 258–259)*.
-- v8 Theory Unit 2.03 §1.1 navigation and §1.2 meteorology — the Navigation & Meteorology exam (minimum 80%) must be passed before the subsequent solo flight.
+- Revision across the navigation syllabus: reading a map *(Pg 131–138)*; track, variation and drift *(Pg 134–135, 164–169)*; the one-in-sixty rule *(Pg 190–199)*; timing *(Pg 140, 150–153)*; fuel calculations *(Pg 146–148)*; DR position and area of probability *(Pg 187–190)*.
+- Documents to be carried *(Pg 245)*; pilot in command *(Pg 253)*; classification of airspace *(Pg 260)*; fuel calculations *(Pg 146–148 — refer FOM)*.
 ]
 
 ,ground_brief_topics: [
@@ -136,8 +135,8 @@ Equipment required: Student's completed plan and nav log, VNC, ERSA, plotter, E6
 ,homework:[
 - Ensure the Navigation & Meteorology theory exam (v8 Theory Unit 2.03, minimum 80%) is passed before the solo flight.
 - Plan the solo navigation route to be confirmed with the instructor: a leg of 75 NM from departure, two landings at different locations, minimum 2-hour total.
-- Read Bob Tait's RAAus BAK: carriage of documents and recency (Pg 80); aeronautical experience (Pg 78); fuel requirements (Pg 89).
-- Reflect: identify any element from today that was below solo standard and how you will close it next flight.
+- Read Bob Tait's RAAus Cross Country Endorsement: documents to be carried (Pg 245); pilot in command (Pg 253); fuel calculations (Pg 146–148).
+- Reflect: identify any element from today that was below solo standard and how you will fix it on the next flight.
 ]
 )
 
