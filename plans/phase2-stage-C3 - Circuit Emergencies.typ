@@ -144,7 +144,7 @@ Equipment required: Circuit diagram showing EFATO and EFIC positions, whiteboard
 - *Attempting a turn back after EFATO*: Land ahead — this is non-negotiable; a turn-back at low level is too risky.
 - *Not lowering the nose in EFATO*: Immediate action is attitude first — nose down, throttle closed.
 - *Delayed EFIC response*: The plan must exist before the emergency — pre-brief at each leg position before it happens.
-- *Sideslip entered too late or too low*: Sideslip must be entered with sufficient height to recover cleanly before the hold-off; never below 200 ft without runway assured.
+- *Sideslip entered too late or too low*: Sideslip must be entered with sufficient height to recover before the hold-off; never below 200 ft without runway assured.
 - *Flapless hold-off too aggressive*: Aircraft floats with extra speed; hold attitude; do not haul back; go-around if runway is running short.
 ]
 

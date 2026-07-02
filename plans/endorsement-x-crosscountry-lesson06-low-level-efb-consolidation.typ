@@ -28,7 +28,7 @@ This lesson addresses element *1.4 Low level navigation* (navigate at low level,
 #text(size:12pt)[*Skills*]
 - Navigate safely at low level to a nominated destination, following a feature (road, rail, river, powerline).
 - Configure the aircraft appropriately for low-level performance (speed/flap as required).
-- Operate the EFB in operational mode and, on instructor command, in a limited mode (simulated signal loss/degraded) — reverting cleanly to DR/pilotage.
+- Operate the EFB in operational mode and, on instructor command, in a limited mode (simulated signal loss/degraded) — reverting to DR/pilotage.
 - Conduct a low-level diversion.
 #text(size:12pt)[*Non-Technical Skills*]
 - [TEM] Maintain a continuous "Plan B": where to go if the valley/route ahead is blocked.
@@ -63,7 +63,7 @@ Equipment required: VNC/WAC for the route, ERSA, plotter, E6B, EFB, nav log, NAI
 - Navigate by ground features; follow a feature to the destination; navigate away from high terrain; keep position on the chart at all times.
 
 *EFB operational vs limited mode* (15 minutes)
-- How devices determine position; non-TSO limitations; triangulation/position error on signal loss; redundancy/regulatory requirements; mounting and storage. Plan to demonstrate a simulated signal loss and clean reversion to DR (v8 §1.8 competency variable).
+- How devices determine position; non-TSO limitations; triangulation/position error on signal loss; redundancy/regulatory requirements; mounting and storage. Plan to demonstrate a simulated signal loss and reversion to DR (v8 §1.8 competency variable).
 ]
 
 ,ground_tasks:[
@@ -79,7 +79,7 @@ Equipment required: VNC/WAC for the route, ERSA, plotter, E6B, EFB, nav log, NAI
 
 ,in_flight_tasks:[
 #text(size:12pt)[*Demonstration*]
-- A simulated EFB signal loss/limited mode and clean reversion to DR/pilotage.
+- A simulated EFB signal loss/limited mode and reversion to DR/pilotage.
 #text(size:12pt)[*Student Practice*]
 - Navigate the aircraft to solo standard following a pre-planned route, and perform a normal (high altitude) diversion.
 - Navigate the route largely unassisted; instructor assists keeping up with the chart at low level.
@@ -101,7 +101,7 @@ Equipment required: VNC/WAC for the route, ERSA, plotter, E6B, EFB, nav log, NAI
 - *Instructor Feedback* (10 min):
   - Evaluate against the standards below (S / C / NC).
   - Highlight strengths; nominate focus areas.
-  - Discuss TEM/ADM (eg. terrain decision points; clean EFB reversion).
+  - Discuss TEM/ADM (eg. terrain decision points; EFB reversion).
 - *Scenario Reflection*: "Cloud lowers ahead while you're at 700 ft following a valley — what are your options and triggers?"
 - *Next Steps*: Assign homework. See below.
 ]
@@ -114,7 +114,7 @@ Equipment required: VNC/WAC for the route, ERSA, plotter, E6B, EFB, nav log, NAI
 - Arrives at and conducts a touch-and-go at a foreign aerodrome without assistance.
 - Conducts a low-level diversion effectively and safely; identifies LSALT and hazards.
 - Operates the EFB in both operational and limited modes, reverting to DR.
-- *Competency stage*: this lesson completes pre-solo consolidation — assess toward *S (Solo standard)*. Record S / P / C / NC.
+- *Competency stage*: this lesson all required lessons — next lesson will assess all elements toward *S (Solo standard)*. Record S / P / C / NC.
 ]
 
 ,safety:[

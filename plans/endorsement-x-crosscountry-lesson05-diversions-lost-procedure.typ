@@ -121,7 +121,7 @@ Equipment required: VNC, ERSA, plotter, E6B, EFB, nav log, NAIPS access, current
 - Recalls and implements CLEAROFF; arrives at and conducts a touch-and-go at a foreign aerodrome without assistance.
 - Plans and flies a diversion to a new destination and recalls the lost procedure.
 - Submits a flight notification to NAIPS and manages SARWATCH.
-- *Competency stage (v8)*: record S / C / NC. Diversion planning and lost procedure assessed toward C (competent, pre-flight-test).
+- *Competency stage*: record S / C / P / NC. Diversion (1.6) and lost procedure (1.5) are introduced and developed here toward *S* — they must reach S in the Pre-Solo Consolidation (Lesson 7) before solo navigation.
 ]
 
 ,safety:[
