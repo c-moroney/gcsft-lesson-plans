@@ -8,7 +8,7 @@
 )
 
 #let lesson = (
-title: [#metadata.title]
+title: [Navigation: Consolidation & Fuel Planning]
 
 ,aim: [
 To consolidate dead reckoning and pilotage on a complete, self-prepared flight plan, and to calculate, plan and manage fuel throughout the flight.

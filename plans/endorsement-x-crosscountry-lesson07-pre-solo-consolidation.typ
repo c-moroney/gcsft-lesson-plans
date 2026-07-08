@@ -8,7 +8,7 @@
 )
 
 #let lesson = (
-title: [#metadata.title]
+title: [Navigation: Pre-Solo Consolidation]
 
 ,aim: [
 To confirm and record the student's navigation competency against every Cross Country element at solo standard, by flying a complete, self-planned navigation exercise as pilot-in-command with the instructor acting as a silent observer, in preparation for solo navigation authorisation.

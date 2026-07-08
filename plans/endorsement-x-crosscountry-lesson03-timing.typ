@@ -8,7 +8,7 @@
 )
 
 #let lesson = (
-title: [#metadata.title]
+title: [Navigation: Timing]
 
 ,aim: [
 To measure distance and calculate estimated time interval (ETI), and to revise the ETA in flight as ground speed changes.

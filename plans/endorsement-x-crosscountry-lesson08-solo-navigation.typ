@@ -8,7 +8,7 @@
 )
 
 #let lesson = (
-title: [#metadata.title]
+title: [Navigation: Solo Navigation]
 
 ,aim: [
 To plan and conduct a solo navigation exercise that satisfies the v8 Cross Country Endorsement competency variables — including at least one leg of 75 NM from the departure aerodrome, landings at two different locations, and a minimum total duration of two hours — submitting and cancelling SARWATCH.

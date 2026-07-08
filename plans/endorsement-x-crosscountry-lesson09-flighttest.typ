@@ -8,7 +8,7 @@
 )
 
 #let lesson = (
-title: [#metadata.title]
+title: [Navigation: RPC Cross Country/Navigation Endorsement Flight Test]
 
 ,aim: [
 Demonstrate all elements, to the required standard, for the issue of the RAAus Cross Country endorsement.

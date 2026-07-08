@@ -8,7 +8,7 @@
 )
 
 #let lesson = (
-title: [#metadata.title]
+title: [Navigation: Maintain Track]
 
 ,aim: [
 To measure track on a chart, apply variation and wind correction to obtain a heading, and then maintain that track in flight using the 1-in-60 rule (or track-and-error guidelines) to detect and correct deviations.

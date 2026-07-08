@@ -8,7 +8,7 @@
 )
 
 #let lesson = (
-title: [#metadata.title]
+title: [Navigation: Low Level Navigation, EFB, Consolidation, Solo assessment]
 
 ,aim: [
 To navigate safely at low level to a nominated destination by dead reckoning on ground-based features, and to consolidate the use of the EFB/GPS as a supplement to navigation — including operating it in a limited (degraded) mode and reverting to DR, assess navigation standard in preparation for solo flight.

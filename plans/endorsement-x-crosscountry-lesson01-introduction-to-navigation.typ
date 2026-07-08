@@ -8,7 +8,7 @@
 )
 
 #let lesson = (
-title: [#metadata.title]
+title: [Navigation: Introduction to Navigation]
 
 ,aim: [
 To introduce the basic methods of navigation — pilotage and dead reckoning — and the in-flight workflow needed to navigate.

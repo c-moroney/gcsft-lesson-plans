@@ -8,7 +8,7 @@
 )
 
 #let lesson = (
-title: [#metadata.title]
+title: [Navigation: Diversions & Lost Procedure]
 
 ,aim: [
 To divert the aircraft from the planned track — both temporarily (around weather or terrain) and to a new destination — and to carry out the lost procedure to re-establish position. To introduce low-level navigation by demonstration as context for the next lesson.
