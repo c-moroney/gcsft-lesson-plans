@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GCSFT — Ab-Initio Lesson Plans</title>
+<title>GCSFT — Lesson Plans</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
@@ -351,7 +351,7 @@ main { margin-left: var(--sidebar-w); flex: 1; padding: 2.5rem 2.5rem 5rem; max-
   <div class="hdr-logo">
     <span class="hdr-logo-badge">GCSFT</span>
     <span class="hdr-title">Lesson Plans</span>
-    <span class="hdr-sub">Ab-Initio Lesson Plans</span>
+    <span class="hdr-sub">Lesson Plans</span>
   </div>
   <div class="hdr-right">
     <button class="btn-hdr" onclick="refreshAll()" id="refresh-btn" title="Reload from server">
@@ -712,7 +712,7 @@ function renderSidebar() {
   // Phase groups
   const groups = {};
   plans.forEach(p => {
-    const ph = guessPhase(p.meta.unit || '');
+    const ph = guessPhase(p.filename || '');
     if (!groups[ph]) groups[ph] = [];
     groups[ph].push(p);
   });
@@ -747,10 +747,14 @@ function renderSidebar() {
   }
 }
 
-function guessPhase(unit) {
-  if (/phase\s*1|lesson\s*[1-9]/i.test(unit)) return 'Phase 1 — Dual';
-  if (/phase\s*2|stage\s*c/i.test(unit)) return 'Phase 2 — Circuits';
-  if (/phase\s*3/i.test(unit)) return 'Phase 3 — Area';
+function guessPhase(filename) {
+  if (/^endorsement-pax/i.test(filename)) return 'Passenger Endorsement';
+  if (/^endorsement-x-crosscountry/i.test(filename)) return 'Cross Country Endorsement';
+  if (/^phase0-/i.test(filename)) return 'Trial Introductory Flight';
+  if (/^phase1-/i.test(filename)) return 'Ab-Initio [Phase 1]';
+  if (/^phase2-/i.test(filename)) return 'Ab-Initio [Phase 2]';
+  if (/^phase3-/i.test(filename)) return 'Ab-Initio [Phase 3]';
+  if (/^phase4-/i.test(filename)) return 'Ab-Initio [Phase 4]';
   return 'Other';
 }
 function extractCode(unit) {

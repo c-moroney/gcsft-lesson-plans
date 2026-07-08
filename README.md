@@ -1,9 +1,4 @@
-# GCSFT — Ab-Initio Lesson Plans
-
-These lesson plans are the proposed plans going forward from June 01.
-- Please review the plans carefully and provide any feedback via email to the CFI by May 15th.
-- The FSP structure will be implemented and available from May 18th.
-- Instructor workshop will be held between May 25th and 30th.
+# GCSFT — Lesson Plans
 
 These new lessons are designed to comply with the V8 RAAus RPC syllabus. Although not formally required yet, at a time in the not-too-distant future RAAus will require flight schools to implement some new syllabus elements.
 This will also clean up FSP and make the records far more readable for us and external parties.
@@ -12,9 +7,9 @@ The lesson plans are very verbose (wordy). And they are done this way intentiona
 
 ## To-Do
 - Rework the briefings to align with the new syllabus
-- FSP update
 
 ## Changes made
+- 08/07 - Added cross country, passenger endorsement and trial flight lesson plans
 - 08/05 - Added Lesson 00, Flight Preparation and Ground Operations. Adjusted lesson 1, EOC
 - 08/05 - Add configuration stall to the basic stalling lesson.
 - 13/05 - First draft of the kneeboard plans
@@ -43,6 +38,12 @@ The lessons in phase 1 only include the basics - i.e., no steep turns, no advanc
 Lesson 00 is a ground only lesson - covering an overview of the entire training process, pre-flight inspection, documentation, weather and the effects of controls briefing.
 
 EXX is the element from the RAAus V8 syllabus exposure draft that will be assessed in the lesson.
+
+### Phase 0 — Trial Introductory Flight
+
+| Lesson | Element | Topic |
+|--------|---------|-------|
+| 0 | - | Trial Introductory Flight |
 
 ### Phase 1 — Ab Initio
 
@@ -93,6 +94,31 @@ Preparation for the flight test, including documentation checks, the flight test
 | 15 | ALL | Practice Flight Test |
 | 16 | AS RQD | Remediation |
 | 17 | ALL | RPC Flight Test |
+
+---
+
+### Passenger Endorsement
+Passenger Endorsement
+
+| Lesson | Elements | Topic |
+|--------|----------|-------|
+| 1 | - | RAAus Passenger Endorsement |
+---
+
+### Cross Country Endorsement
+Cross Country endorsement, preparing for the RAAus navigation endorsement.
+
+| Lesson | Elements | Topic |
+|--------|----------|-------|
+| 1 | - | Introduction to Navigation |
+| 2 | - | Maintain Track |
+| 3 | - | Timing |
+| 4 | - | Consolidation and Fuel Planning |
+| 5 | - | Diversions and Lost Procedure |
+| 6 | - | Low Level, EFB Consolidation |
+| 7 | - | Pre-Solo Consolidation |
+| 8 | - | Solo Navigation |
+| 9 | - | Flight Test |
 
 ---
 
