@@ -317,6 +317,10 @@ main { margin-left: var(--sidebar-w); flex: 1; padding: 2.5rem 2.5rem 5rem; max-
 .section-body h4:first-child { margin-top: 0; }
 .section-body strong { color: var(--navy); font-weight: 600; }
 .section-body em { color: var(--sky); font-style: normal; font-weight: 500; }
+.section-body table { width: 100%; border-collapse: collapse; margin: .75rem 0 1rem; font-size: 12.5px; }
+.section-body th { background: var(--sky-pale); color: var(--navy); font-weight: 600; padding: .45rem .65rem; border: 1px solid var(--border); text-align: left; }
+.section-body td { padding: .45rem .65rem; border: 1px solid var(--border); color: var(--text-mid); }
+.section-body tr:nth-child(even) td { background: var(--off-white); }
 .standards-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: .75rem; }
 .std-card { border-radius: var(--radius); padding: 1rem; border: 1px solid var(--border); }
 .std-card.prog { background: #eef5fd; border-color: rgba(46,122,181,.3); }
@@ -827,9 +831,70 @@ function extractBracketField(text, field) {
 // ─────────────────────────────────────────────
 //  TYPST → HTML
 // ─────────────────────────────────────────────
+// Typst punctuation escapes, e.g. \< \> — used where a literal markup
+// character is meant literally (a bare "<" would otherwise open a label
+// and get swallowed by the browser as an unknown tag). Resolved inside
+// processInline so it applies uniformly to list items, paragraphs and
+// table cells, and before */_ delimiters so an escaped \* etc. can't be
+// mistaken for emphasis markup.
+const TYPST_ESCAPES = { '\\':'&#92;', '#':'&#35;', '*':'&#42;', '_':'&#95;', '`':'&#96;', '$':'&#36;', '<':'&lt;', '>':'&gt;', '&':'&amp;', '@':'&#64;', '~':'&#126;', '[':'&#91;', ']':'&#93;' };
+
+// #table(...) is a real multi-line function call (with nested parens in
+// e.g. columns: (auto, auto)), so it can't be handled by the line-based
+// pass below. Pull each table out first, render it, and drop a
+// placeholder line the line-based pass will swap back in verbatim.
+function extractTypstTables(raw) {
+  const tables = [];
+  let out = '', i = 0;
+  while (true) {
+    const idx = raw.indexOf('#table(', i);
+    if (idx === -1) { out += raw.slice(i); break; }
+    out += raw.slice(i, idx);
+    const bodyStart = idx + '#table('.length;
+    let depth = 1, j = bodyStart;
+    while (j < raw.length && depth > 0) {
+      if (raw[j] === '(') depth++;
+      else if (raw[j] === ')') depth--;
+      j++;
+    }
+    tables.push(renderTypstTable(raw.slice(bodyStart, j - 1)));
+    out += '\nTBL' + (tables.length - 1) + '\n';
+    i = j;
+  }
+  return { text: out, tables };
+}
+function renderTypstTable(body) {
+  const colsMatch = body.match(/columns\s*:\s*\(([^)]*)\)/);
+  let numCols = 2;
+  if (colsMatch) {
+    const parts = colsMatch[1].split(',').map(p => p.trim()).filter(Boolean);
+    if (parts.length) numCols = parts.length;
+  }
+  const cells = [];
+  for (let i = 0; i < body.length; i++) {
+    if (body[i] !== '[') continue;
+    let depth = 1, j = i + 1;
+    while (j < body.length && depth > 0) {
+      if (body[j] === '[') depth++;
+      else if (body[j] === ']') depth--;
+      j++;
+    }
+    cells.push(body.slice(i + 1, j - 1).trim());
+    i = j - 1;
+  }
+  if (!cells.length) return '';
+  const rows = [];
+  for (let r = 0; r < cells.length; r += numCols) rows.push(cells.slice(r, r + numCols));
+  let html = '<table><thead><tr>' + rows[0].map(c => `<th>${processInline(c)}</th>`).join('') + '</tr></thead><tbody>';
+  for (let r = 1; r < rows.length; r++) html += '<tr>' + rows[r].map(c => `<td>${processInline(c)}</td>`).join('') + '</tr>';
+  html += '</tbody></table>';
+  return html;
+}
+
 function typstToHtml(raw) {
   if (!raw) return '';
-  let s = raw;
+  const { text, tables } = extractTypstTables(raw);
+  let s = text;
   s = s.replace(/#text\s*\([^)]*\)\s*\[([^\]]*)\]/g, (_, inner) => '<h4>' + inner.replace(/\*/g, '') + '</h4>');
   s = s.replace(/#set\s[^\n]+/g, '');
   s = s.replace(/#underline\[([^\]]*)\]/g, '<u>$1</u>');
@@ -842,6 +907,8 @@ function typstToHtml(raw) {
   const closeList = () => { if (listTag) { out.push('</' + listTag + '>'); listTag = null; } };
   for (const line of lines) {
     const t = line.trim();
+    const tblMatch = t.match(/^TBL(\d+)$/);
+    if (tblMatch) { closeList(); out.push(tables[+tblMatch[1]]); continue; }
     if (t.startsWith('- ')) {
       if (listTag !== 'ul') { closeList(); out.push('<ul>'); listTag = 'ul'; }
       out.push('<li>' + processInline(t.slice(2)) + '</li>');
@@ -858,6 +925,7 @@ function typstToHtml(raw) {
   return out.join('\n');
 }
 function processInline(s) {
+  s = s.replace(/\\([\\#*_`$<>&@~\[\]])/g, (_, ch) => TYPST_ESCAPES[ch]);
   s = s.replace(/\*([^*]+)\*/g, '<strong>$1</strong>');
   s = s.replace(/_([^_]+)_/g, '<em>$1</em>');
   s = s.replace(/#underline\[([^\]]*)\]/g, '<u>$1</u>');
