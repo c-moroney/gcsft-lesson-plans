@@ -19,7 +19,7 @@ Currency review, not a syllabus lesson — not pass/fail. Examiner is PIC (dual 
 
 *GCSFT SOP*: No BFRs on non-GCSFT aircraft except at CFI discretion — confirm before booking.\
 *Who can conduct*: Senior Instructor, DCFI, CFI, or PE only.\
-*Not pass/fail*: if standard isn't met, don't log it complete — agree remedial plan and reassess. Candidate resisting remediation or "BFR-shopping" → refer to CFI, don't sign off. [UNSURE] confirm current internal escalation contact (CFI vs HFO).
+*Not pass/fail*: if standard isn't met, don't log it complete — agree remedial plan and reassess. Candidate resisting remediation or "BFR-shopping" → refer to CFI and don't sign off.
 ]
 
 ,learning_outcomes: [
@@ -27,7 +27,7 @@ No new outcomes — recurrent currency check against existing RPC standard (Know
 ]
 
 ,theory_knowledge: [
-No mandated reading. Direct candidate to relevant Bob Tait BAK chapter only if a gap surfaces. [UNSURE] no page mapping exists for BFR content — bobtait_syllabus_mapping_v8 covers V8 syllabus elements only.
+No mandated reading.
 - Send RAAP 5 to candidate before the review (sets expectations).
 ]
 
