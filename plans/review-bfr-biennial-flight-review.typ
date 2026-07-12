@@ -15,11 +15,11 @@ Confirm the candidate still meets RPC standard via combined ground + flight revi
 ]
 
 ,overview: [
-Currency review, not a syllabus lesson — not pass/fail. Examiner is PIC (dual time logged), so unlike an assessment gate you *teach and re-demonstrate* as needed, not just observe.
+Currency review, not a syllabus lesson — not pass/fail, so unlike an assessment gate you can *teach and re-demonstrate* as needed, not just observe. Examiner is PIC for the flight, student logs time as Dual.
 
 *GCSFT SOP*: No BFRs on non-GCSFT aircraft except at CFI discretion — confirm before booking.\
-*Who can conduct*: Senior Instructor, DCFI, CFI, or PE only.\
-*Not pass/fail*: if standard isn't met, don't log it complete — agree remedial plan and reassess. Candidate resisting remediation or "BFR-shopping" → refer to CFI and don't sign off.
+*Who can conduct*: Senior Instructor, DCFI, CFI, or PE only/.\
+*Not pass/fail*: if standard isn't met, don't log it complete — agree remedial plan and reassess. For candidates resisting remediation or "BFR-shopping", refer to CFI and don't sign off logbook or training record as meeting standard.
 ]
 
 ,learning_outcomes: [
@@ -33,15 +33,14 @@ No mandated reading.
 
 ,ground_brief_topics: [
 Total time: 60 min minimum \
-Equipment required: Logbook, RAAus membership (Instructor Portal), POH, MR, ERSA, NAIPS/EFB, BFR001 \
+Equipment required: Logbook, RAAus membership (Instructor Portal), POH, MR, ERSA, NAIPS/EFB, BFR001 form \
 
 *Non-Technical Skills* (5 min) [THIS TOPIC IS IN ALL BRIEFINGS]
 - Honest self-report of currency, not over/under-claiming [HF]
-- Rustiness flagged openly, addressed same-day [TEM]
 
 *History, Currency, Objectives* (10 min) [SA]
-- Hours/types/groups since last review; recency of stalls, FLWOP, nav
-- Future flying plans shape today's content (nav planned → include diversion)
+- Hours/types/groups since last review; recency of stalls, FLWOP, navigation
+- Future flying plans shape today's content (nav planned → include navigation component)
 - Confirm correct Group if candidate flies 2+ Groups (S2.07(5)(c))
 - *GCSFT SOP check*: aircraft is GCSFT-operated, or CFI discretion recorded
 
@@ -49,8 +48,8 @@ Equipment required: Logbook, RAAus membership (Instructor Portal), POH, MR, ERSA
 - Agree who takes control in a real emergency; radio/troubleshooting/landing-site task split
 
 *Regulatory & Currency* (10 min)
-- Changes since last BFR; VMC criteria; CTA/PRD avoidance; membership/endorsements/rego confirmed
-- Draw oral questions from the attached Question Bank (see appendix) as needed to probe currency
+- Changes since last BFR; VMC criteria; CTA/SUA avoidance; membership/endorsements/rego confirmed
+- Complete the oral exam (see appendix) with the candidate, and record any answers in the flight training record that needed further training.
 
 *Aircraft & W&B* (10 min)
 - POH limits (Vne/Vno/Vfe/Vs/Vx, best glide); W&B for today's load; MR review
@@ -64,10 +63,8 @@ Equipment required: Logbook, RAAus membership (Instructor Portal), POH, MR, ERSA
 
 ,ground_tasks:[
 #text(size:12pt)[*Instructor*]
-- Confirm membership, rego, MR/SB/AD currency
-- *GCSFT SOP*: aircraft policy met or CFI discretion obtained
-- If "observed" BFR requested: candidate's *existing* BFR must still be current — can't revive a lapsed one this way
-- Lead PIC-in-emergency and regulatory review; prep BFR Record + BFR001
+- Confirm candidates membership, MR, and weather
+- Conduct the oral exam and note any deficiencies, where further training was needed, in the training record
 #text(size:12pt)[*Candidate*]
 - Bring logbook + membership info; complete W&B, weather brief, IMSAFE, flight plan (if nav), pre-flight inspection
 ]
@@ -77,29 +74,24 @@ Equipment required: Logbook, RAAus membership (Instructor Portal), POH, MR, ERSA
 - Demonstrate/re-teach any item candidate can't perform to standard, then reassess
 
 #text(size:12pt)[*Minimum required items (RAAP 6)*]
-- Start-up, taxi (±1.0m), radio, lookout; takeoff centreline
-- Climb/descend; turns medium+steep; stalls (power on/off, turning, landing config)
-- Slow flight/flap changes; crosswind + short field if applicable
-- PSL; practice forced landing (aim point, actions, MAYDAY)
-- ≥1 simulated non-engine emergency (agree which: partial power, electrical, flap, brake, carb icing, oil pressure, fire) — briefed as simulation, no unsafe system operation
+- Start-up, taxi, radio, lookout; takeoff centreline
+- Climb/descend; turns medium+steep; stalls (50% power/power off, turning, landing config)
+- Forced landing without power: (aim point, actions, MAYDAY)
+- ≥1 simulated non-engine emergency (electrical, flap, brake, fire, flight control) — briefed as simulation, no unsafe system operation
 - EFATO, circuit emergencies, go-around
-- Diversion (if agreed); CTAF procedures
 - 3 landings: flap/clean combination + go-around + short field or combination
+- Diversion (if conducting navigation component); CTAF procedures
 
 #text(size:12pt)[*Assessment*]
-- Competent / Not Competent per item (RAAus BFR Record); coach and correct throughout; note remedial items for debrief
+- Competent / Not Competent per item; coach and correct throughout; note remedial items for debrief
 ]
 
 ,common_errors:[
-- *Instrument fixation*: Cover panel partially, refocus outside.
-- *No trim discipline*: Trim check after every config change.
+- *Lack of checklist discipline*: Always operate with a checklist.
 - *No verbalised take-off safety brief*: Require one every take-off.
-- *Fuel estimate, not fuel log*: Insist on logged burn rate.
-- *CTAF omissions*: Usually inbound/joining calls.
-- *No EFATO plan stated*: "Make a plan, fly the plan" before every departure.
-- *FLWOP — poor aim point discipline*: Fly the aircraft first, checklist second.
+- *Fuel estimate, not fuel log*: Insist on a fuel log.
 - *Landing-config stall recovery weak*: Least-practiced — revisit specifically.
-- *Steep turns chasing instruments*: Horizon primary, instrument cross-check only.
+- *Turning stalls/unbalanced stalls weak*: Practice these recoveries specifically (no pro-spin inputs below Va).
 ]
 
 ,post_flight:[
@@ -113,15 +105,14 @@ Equipment required: Logbook, RAAus membership (Instructor Portal), POH, MR, ERSA
 ,standards_for_progression:[
 
 #text(size:12pt)[*Pre-conditions*]
-- ☐ Membership current; endorsements correct; rego/MR/SB/AD current
+- ☐ Membership current; endorsements correct
 - ☐ *GCSFT SOP*: aircraft is GCSFT-operated, or CFI discretion recorded
-- ☐ If observed BFR: candidate's existing BFR still current
 - ☐ Correct Group selected if candidate flies 2+ Groups
 
 #text(size:12pt)[*Completion requirements*]
-- ☐ ≥1 hr ground + ≥1 hr flight logged
-- ☐ 3 landings (flap/clean + go-around + short field/combination)
-- ☐ Stall entry/recovery; practice forced landing; radio/circuit procedures
+- ☐ 45 min ground + ≥0.8 hr flight logged
+- ☐ 3 landings
+- ☐ Stall entry/recovery; FLWOP; radio/circuit procedures
 - ☐ ≥1 simulated non-engine emergency
 - ☐ All BFR Record items Competent; all S2.07(5) requirements met
 
@@ -143,10 +134,11 @@ Equipment required: Logbook, RAAus membership (Instructor Portal), POH, MR, ERSA
   [Touchdown / centreline], [± 60 m / ± 2 m],
 )
 
-*Outcome*: All met ✓ → complete, logbook + BFR001. Any item NC → not signed off (not a fail) — remediate, reassess. Resistance to remediation → refer to CFI/HFO, don't sign off.
+*Outcome*: All met: complete logbook + BFR001 form. Any item NC: not signed off (not a fail) — remediate, reassess. Resistance to remediation: refer to CFI.
 ]
 
 ,safety:[
+- *GCSFT Aircraft Only*: Flights in aircraft not operated by GCSFT must be approved by the CFI.
 - *Weather*: VMC with margin for a below-currency candidate; wind within candidate's stated minimums + aircraft crosswind limit
 - *Altitude*: Recovery height check before stalls/steep turns; FLWOP go-around height briefed
 - *Emergency*: PIC-in-emergency plan agreed pre-start; forced landing areas discussed for route
@@ -155,7 +147,7 @@ Equipment required: Logbook, RAAus membership (Instructor Portal), POH, MR, ERSA
 ]
 
 ,homework:[
-No standard homework — remedial items only, if any. Recommend candidate re-read RAAP 5 in light of today's debrief.
+No standard homework — remedial items only, if any.
 ]
 )
 
@@ -171,7 +163,7 @@ No standard homework — remedial items only, if any. Recommend candidate re-rea
 )
 
 #text(size: 10pt)[
-Draw from these during the Regulatory & Currency and Aircraft & W&B ground briefing topics, or in flight where relevant. Citations are provided for instructor reference — pose the question only, not the source.
+The candidate must complete these questions orally with the instructor. Citations are provided for instructor reference — ask the question only, not the source.
 
 *CASR Part 91*
 + A fixed-wing aircraft and a helicopter are converging at the same height, neither overtaking, and the helicopter is on the fixed-wing aircraft's left — who gives way? _(CASR Pt 91 — Rules to avoid collision)_
@@ -181,9 +173,9 @@ Draw from these during the Regulatory & Currency and Aircraft & W&B ground brief
 
 *AC91-10 — Non-Controlled Aerodromes*
 + Describe the standard overhead join procedure. _(AC91-10)_
-+ What are the recommended/mandatory broadcast points in the circuit at a non-controlled aerodrome? _(AC91-10, Table 3)_
++ What are the recommended and mandatory broadcast points in the circuit at a non-controlled aerodrome? _(AC91-10, Table 3)_
 + Your radio fails in flight, mid-circuit — what are you required to do? _(CASR 91.400; Part 91 MOS s11.10)_
-+ You're on base and another pilot waiting to depart asks if it's OK for them to take off — how do you respond? _(CASR 91.215; CASR 91.257 — applicable only within controlled airspace via a Part 172/65 certified ATS provider; AC91-10)_
++ You're on base and another pilot waiting to depart asks if it's OK for them to take off — how do you respond? _(CASR 91.215; CASR 91.257)_
 
 *Aerodynamics*
 + Does an aircraft always stall at the same airspeed? _(General aerodynamics — angle of attack)_
