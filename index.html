@@ -291,7 +291,15 @@ main { margin-left: var(--sidebar-w); flex: 1; padding: 2.5rem 2.5rem 5rem; max-
 .lesson-badge { display: inline-flex; align-items: center; background: var(--sky-pale); color: var(--sky); border: 1px solid rgba(46,122,181,.3); font-size: 11px; font-weight: 600; letter-spacing: .06em; padding: 4px 10px; border-radius: 20px; margin-bottom: .75rem; }
 .lesson-title { font-size: 1.9rem; font-weight: 600; color: var(--navy); line-height: 1.2; margin-bottom: .75rem; }
 .lesson-aim { font-size: 14.5px; color: var(--text-mid); line-height: 1.7; max-width: 680px; }
+.lesson-aim strong { color: var(--navy); font-weight: 600; }
+.lesson-aim em { color: var(--sky); font-style: normal; font-weight: 500; }
 .overview-box { background: var(--sky-pale); border-left: 3px solid var(--sky); border-radius: 0 var(--radius) var(--radius) 0; padding: 1rem 1.25rem; margin-bottom: 1.25rem; font-size: 14px; color: var(--text-mid); line-height: 1.7; }
+.overview-box p { margin-bottom: .6rem; }
+.overview-box p:last-child { margin-bottom: 0; }
+.overview-box strong { color: var(--navy); font-weight: 600; }
+.overview-box em { color: var(--sky); font-style: normal; font-weight: 500; }
+.overview-box ul, .overview-box ol { padding-left: 1.25rem; margin-bottom: .6rem; }
+.overview-box li { margin-bottom: 3px; }
 
 .section { margin-bottom: .75rem; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: var(--white); scroll-margin-top: calc(var(--hdr-h) + 12px); }
 .section-toggle { display: flex; align-items: center; gap: .75rem; padding: .9rem 1.25rem; cursor: pointer; width: 100%; text-align: left; background: var(--white); border: none; transition: background .15s; font-family: inherit; }
@@ -933,6 +941,14 @@ function processInline(s) {
   s = s.replace(/#[a-z]+\([^)]*\)/g, '');
   return s.replace(/\\\s*$/, '');
 }
+// Collapses a multi-line Typst field (soft linebreaks via trailing "\",
+// blank lines) into one flowing line, then runs it through processInline
+// for bold/em/escape handling — for single-paragraph fields like `aim`
+// that render inside a plain <p>, as opposed to `overview`/section
+// bodies which go through the block-level typstToHtml.
+function flattenInline(raw) {
+  return processInline(raw.replace(/\\(?=\s|$)/g, ' ').replace(/\s+/g, ' ').trim());
+}
 function stripTypst(s) { return String(s).replace(/\[|\]/g, '').replace(/#[a-z]+/g, '').trim(); }
 function escHtml(s)    { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 
@@ -947,9 +963,9 @@ function renderLesson(plan) {
     <div class="lesson-header">
       <div class="lesson-badge">${escHtml(m.unit || '')}</div>
       <h1 class="lesson-title">${escHtml(title)}</h1>
-      ${l.aim ? `<p class="lesson-aim">${escHtml(stripTypst(l.aim).replace(/\n/g,' '))}</p>` : ''}
+      ${l.aim ? `<p class="lesson-aim">${flattenInline(l.aim)}</p>` : ''}
     </div>`;
-  if (l.overview) html += `<div class="overview-box">${escHtml(stripTypst(l.overview).replace(/\s+/g,' ').trim())}</div>`;
+  if (l.overview) html += `<div class="overview-box">${typstToHtml(l.overview)}</div>`;
   html += `<div class="expand-bar">
     <button class="expand-btn" onclick="expandAll()">Expand all</button>
     <div class="expand-divider"></div>
