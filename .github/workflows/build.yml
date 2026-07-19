@@ -75,6 +75,7 @@ jobs:
         run: |
           mkdir -p _site
           cp index.html _site/
+          cp fsp-guide.html _site/
           cp README.md _site/
           cp -r plans _site/
           cp -r kneeboard-cards _site/
