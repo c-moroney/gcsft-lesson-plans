@@ -173,6 +173,10 @@ main { margin-left: var(--sidebar-w); flex: 1; padding: 2.5rem 2.5rem 5rem; max-
 #kneeboard-page { display: none; }
 #kneeboard-page.visible { display: block; }
 
+/* ── FSP GUIDE PAGE ── */
+#fspguide-page { display: none; }
+#fspguide-page.visible { display: block; }
+
 .kb-header { margin-bottom: 1.75rem; padding-bottom: 1.25rem; border-bottom: 2px solid var(--border); }
 .kb-header h1 { font-size: 1.9rem; font-weight: 600; color: var(--navy); margin-bottom: .4rem; }
 .kb-header p { font-size: 14px; color: var(--text-muted); }
@@ -301,6 +305,190 @@ main { margin-left: var(--sidebar-w); flex: 1; padding: 2.5rem 2.5rem 5rem; max-
 .overview-box ul, .overview-box ol { padding-left: 1.25rem; margin-bottom: .6rem; }
 .overview-box li { margin-bottom: 3px; }
 
+/* ── FSP GUIDE CONTENT ── */
+.fspg-hero { margin-bottom: 1.75rem; padding-bottom: 1.25rem; border-bottom: 2px solid var(--border); }
+.fspg-hero h1 { font-size: 1.9rem; font-weight: 600; color: var(--navy); margin-bottom: .5rem; }
+.fspg-hero p { font-size: 14.5px; color: var(--text-mid); line-height: 1.7; max-width: 720px; }
+.fspg-section { margin: 2.25rem 0 1.25rem; }
+.fspg-section h2 { font-size: 1.2rem; font-weight: 600; color: var(--navy); margin-bottom: .35rem; padding-bottom: .5rem; border-bottom: 1px solid var(--border); }
+.fspg-section > p { font-size: 14px; color: var(--text-mid); line-height: 1.7; margin: .75rem 0; max-width: 720px; }
+.fspg-section h3 { font-size: 1rem; font-weight: 600; color: var(--navy-mid); margin: 1.25rem 0 .5rem; }
+
+.fspg-callout { border-radius: var(--radius); padding: .9rem 1.1rem; margin: .85rem 0; font-size: 13.5px; line-height: 1.65; border: 1px solid; }
+.fspg-callout strong { display: block; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin-bottom: .35rem; }
+.fspg-callout p { margin: 0; color: inherit; }
+.fspg-callout.rule { background: var(--sky-pale); border-color: rgba(46,122,181,.3); color: var(--text-mid); }
+.fspg-callout.rule strong { color: var(--sky); }
+.fspg-callout.warn { background: var(--amber-bg); border-color: var(--amber-bdr); color: var(--text-mid); }
+.fspg-callout.warn strong { color: var(--amber); }
+.fspg-callout.caution { background: var(--red-bg); border-color: var(--red-bdr); color: var(--text-mid); }
+.fspg-callout.caution strong { color: var(--red); }
+.fspg-callout.tip { background: var(--green-bg); border-color: var(--green-bdr); color: var(--text-mid); }
+.fspg-callout.tip strong { color: var(--green); }
+
+.fspg-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: .75rem; margin: 1rem 0; }
+.fspg-gradecard { border: 1px solid var(--border); border-radius: var(--radius); padding: .85rem 1rem; background: var(--white); border-top: 3px solid var(--border); }
+.fspg-gradecard.nc { border-top-color: var(--red); }
+.fspg-gradecard.p  { border-top-color: var(--amber); }
+.fspg-gradecard.s  { border-top-color: var(--green); }
+.fspg-gradecard.c  { border-top-color: var(--sky); }
+.fspg-gradecard.ng { border-top-color: var(--navy); }
+.fspg-gradecard .code { font-size: 11px; font-weight: 700; letter-spacing: .08em; color: var(--text-muted); text-transform: uppercase; }
+.fspg-gradecard .name { font-size: 14px; font-weight: 600; color: var(--navy); margin: .15rem 0 .35rem; }
+.fspg-gradecard p { font-size: 12.5px; color: var(--text-mid); line-height: 1.55; margin: 0; }
+
+.fspg-steps { counter-reset: fspstep; list-style: none; padding: 0; margin: 1rem 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: .85rem; align-items: start; }
+.fspg-steps li { counter-increment: fspstep; border: 1px solid var(--border); border-radius: var(--radius); background: var(--white); padding: 1rem 1.1rem 1.1rem; display: flex; flex-direction: column; gap: .5rem; }
+.fspg-step-title { display: flex; align-items: center; gap: .6rem; font-size: 13.5px; font-weight: 700; color: var(--navy); }
+.fspg-step-title::before { content: counter(fspstep); flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%; background: var(--sky); color: #fff; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.fspg-step-body { font-size: 13px; color: var(--text-mid); line-height: 1.65; }
+.fspg-step-body strong { color: var(--navy); }
+
+.fspg-toc { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0 1.5rem; }
+.fspg-toc a { font-size: 12px; font-weight: 500; color: var(--sky); background: var(--sky-pale); border: 1px solid rgba(46,122,181,.25); padding: 5px 11px; border-radius: 20px; text-decoration: none; transition: all .15s; }
+.fspg-toc a:hover { background: var(--sky); color: #fff; }
+
+.fspg-example { border: 1px solid var(--border); border-radius: var(--radius); background: var(--white); margin-bottom: 1.75rem; overflow: hidden; scroll-margin-top: calc(var(--hdr-h) + 12px); }
+.fspg-example-head { padding: 1rem 1.25rem; background: var(--off-white); border-bottom: 1px solid var(--border); display: flex; align-items: flex-start; gap: .85rem; }
+.fspg-example-num { flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%; background: var(--navy); color: #fff; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.fspg-example-head h3 { font-size: 15px; font-weight: 600; color: var(--navy); margin: 0 0 .3rem; }
+.fspg-example-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+.fspg-tag { font-size: 10px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; padding: 3px 8px; border-radius: 4px; background: #e8eef8; color: var(--navy-mid); }
+.fspg-tag.performance { background: var(--sky-pale); color: var(--sky); }
+.fspg-tag.gate { background: var(--red-bg); color: var(--red); }
+.fspg-tag.combined { background: var(--amber-bg); color: var(--amber); }
+.fspg-tag.solo { background: var(--green-bg); color: var(--green); }
+.fspg-tag.assumption { background: var(--amber-bg); color: var(--amber); }
+.fspg-example-body { padding: 1.1rem 1.25rem 1.4rem; }
+.fspg-example-body p.scenario { font-size: 13.5px; color: var(--text-mid); line-height: 1.7; margin-bottom: .9rem; }
+.fspg-example-body h4 { font-size: 10.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--sky); margin: 1rem 0 .5rem; }
+.fspg-example-body h4:first-of-type { margin-top: 0; }
+.fspg-example-body ul { padding-left: 1.15rem; margin-bottom: .5rem; }
+.fspg-example-body li { font-size: 13px; color: var(--text-mid); line-height: 1.65; margin-bottom: 3px; }
+.fspg-example-body strong { color: var(--navy); }
+
+/* ── FSP MOCKUP COMPONENT (modelled on the real Log Session modal DOM) ── */
+.fsp-modal { border: 1px solid #d7dee8; border-radius: 10px; overflow: hidden; margin: 1rem 0; box-shadow: 0 10px 30px rgba(18,43,77,.15); background: #fff; max-width: 100%; }
+.fsp-modal-header { background: #14213a; color: #fff; padding: 13px 18px; display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.fsp-modal-header h4 { margin: 0; font-size: 14.5px; font-weight: 600; }
+.fsp-modal-close { background: none; border: none; color: rgba(255,255,255,.55); font-size: 17px; cursor: default; line-height: 1; padding: 2px; }
+.fsp-modal-body { overflow-x: auto; }
+.fsp-card { border-bottom: 1px solid #e2e8f2; }
+.fsp-card-header { display: flex; align-items: center; gap: 7px; padding: 11px 18px; background: #f5f7fb; font-size: 11.5px; font-weight: 700; color: #33465e; letter-spacing: .04em; text-transform: uppercase; }
+.fsp-card-header .car { font-size: 9px; color: #8a97ab; }
+.fsp-card-body { padding: 12px 18px 16px; min-width: 480px; }
+.fsp-field-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); gap: .55rem 1rem; }
+.fsp-field .k { display: block; font-size: 9.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #8a97ab; margin-bottom: 2px; }
+.fsp-field .v { font-size: 12.5px; font-weight: 600; color: #1a2a3a; }
+.fsp-field .v.req::before { content: '* '; color: #b02828; }
+.fsp-lesson-header { padding: 11px 18px; border-bottom: 1px solid #e2e8f2; background: #fff; display: flex; align-items: center; gap: 8px; }
+.fsp-lesson-link { font-size: 13px; font-weight: 700; color: #2e5ea8; }
+.fsp-tasklist { min-width: 480px; }
+.fsp-heading-group { border-bottom: 1px solid #eef1f6; }
+.fsp-heading-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 18px; background: #e4e9f1; font-size: 11px; font-weight: 700; color: #2a3a52; letter-spacing: .02em; flex-wrap: wrap; }
+.fsp-heading-row.required { background: #7c1518; color: #fff; }
+.fsp-bulk { display: inline-flex; gap: 4px; flex-shrink: 0; }
+/* Heading-level bulk selector is a row of plain tick boxes in real FSP —
+   one per grade column, unlabelled — not a second copy of the NC/P/S/C/NG
+   scale. Checking one bulk-grades every task in the heading. Width/gap
+   match .fsp-pill exactly so each box sits directly above its grade
+   button in the task rows below (both rows share the same 18px right
+   padding and are pushed flush-right, so matching column widths is
+   enough to line them up). */
+.fsp-bulk-box { width: 26px; height: 16px; border: 1px solid #c3cbda; border-radius: 3px; background: #fff; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0; flex-shrink: 0; }
+.fsp-bulk-box:hover { border-color: #526077; }
+.fsp-heading-row.required .fsp-bulk-box { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.4); }
+.fsp-bulk-box.active { background: #33465e; border-color: #33465e; }
+.fsp-bulk-box.active::after { content: '✓'; color: #fff; font-size: 10px; font-weight: 700; line-height: 1; }
+.fsp-task-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 14px; padding: 9px 18px 15px; border-bottom: 1px solid #f2f4f8; background: #fff; }
+.fsp-task-row:last-child { border-bottom: none; }
+/* Task name + (non-functional) Notes toggle sit together on the left,
+   stacked — matches the real Log Session row layout, where Notes appears
+   under the task title rather than beside the grade buttons. */
+.fsp-task-main { flex: 1 1 210px; min-width: 170px; display: flex; flex-direction: column; gap: 3px; }
+.fsp-task-name { font-size: 12.5px; font-weight: 600; color: #33465e; }
+.fsp-notes-label { font-size: 10.5px; font-weight: 500; color: #8a97ab; display: flex; align-items: center; gap: 4px; }
+.fsp-notes-label .car { font-size: 9px; }
+.fsp-req-badge { font-size: 8.5px; font-weight: 700; letter-spacing: .04em; background: #7c1518; color: #fff; padding: 1px 6px; border-radius: 3px; margin-left: 6px; vertical-align: middle; white-space: nowrap; }
+/* Small circular badge showing the grade from the previous attempt at this
+   task — real FSP shows this next to the selector on a repeat/continue
+   session, separate from today's (still-ungraded) selector default. */
+.fsp-prev-badge { width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 9.5px; font-weight: 700; color: #fff; flex-shrink: 0; }
+.fsp-prev-badge.nc { background: var(--red); }
+.fsp-prev-badge.p  { background: var(--amber); }
+.fsp-prev-badge.s  { background: var(--green); }
+.fsp-prev-badge.c  { background: var(--sky); }
+.fsp-grade-row { display: inline-flex; gap: 4px; flex-shrink: 0; position: relative; }
+/* Fixed width (rather than padding-based auto-width) so each button lines
+   up with its column in the heading's bulk-select row above — "NC"/"NG"
+   dictate the minimum, "S"/"P"/"C" just centre within the same box. */
+.fsp-pill { width: 26px; text-align: center; font-family: inherit; font-size: 10.5px; font-weight: 700; letter-spacing: .02em; padding: 4px 0; border: 1px solid var(--sky); border-radius: 4px; background: #fff; color: var(--sky); cursor: pointer; position: relative; }
+.fsp-pill:hover { background: var(--sky-pale); }
+/* Position 3 (S) is always the lowest passing grade on our scale — real
+   FSP marks it with a small permanent dot under the button regardless of
+   what's currently selected. */
+.fsp-pill:nth-child(3)::after { content: ''; position: absolute; left: 50%; bottom: -7px; transform: translateX(-50%); width: 4px; height: 4px; border-radius: 50%; background: var(--green); }
+.fsp-pill.selected { color: #fff; border-color: transparent; }
+.fsp-pill.selected.nc { background: var(--red); }
+.fsp-pill.selected.p  { background: var(--amber); }
+.fsp-pill.selected.s  { background: var(--green); }
+.fsp-pill.selected.c  { background: var(--sky); }
+.fsp-pill.selected.ng { background: #33465e; }
+.fsp-overall { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 14px; padding: 12px 18px; background: #eef5fd; border-top: 2px solid #cddff0; }
+.fsp-overall .fsp-task-name { font-size: 13px; font-weight: 700; color: #14213a; }
+/* Overall grade is a dropdown in real FSP ("* Lesson Grade and Status"),
+   not the same button row used for individual tasks — shown as a static
+   closed select, not interactive. */
+.fsp-select { display: flex; align-items: center; gap: 8px; border: 1px solid #cbd5e3; border-radius: 6px; padding: 8px 12px; background: #fff; min-width: 240px; }
+.fsp-select-label { font-size: 10.5px; font-weight: 600; color: #8a97ab; padding-right: 8px; border-right: 1px solid #e5e9f1; }
+.fsp-select-value { flex: 1; font-size: 12.5px; font-weight: 600; color: #1a2a3a; }
+.fsp-select-caret { color: #8a97ab; font-size: 11px; }
+/* Signatures / PIN block — static, matches the real Log Session footer;
+   nothing here is wired up. */
+.fsp-sig-section { padding: 12px 18px 4px; border-top: 1px solid #e2e8f2; }
+.fsp-sig-block { margin-bottom: 14px; }
+.fsp-sig-title { font-size: 11px; font-weight: 700; color: #33465e; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 6px; }
+.fsp-sig-text { font-size: 11.5px; color: #526077; line-height: 1.6; margin-bottom: 6px; }
+.fsp-sig-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.fsp-pin-input { width: 70px; border: 1px solid #cbd5e3; border-radius: 5px; padding: 6px 8px; font-family: inherit; font-size: 12px; color: #33465e; background: #f5f7fb; }
+.fsp-sig-check { display: flex; align-items: center; gap: 5px; font-size: 11px; color: #8a97ab; }
+.fsp-session-notes { padding: 12px 18px 16px; border-top: 1px solid #e2e8f2; min-width: 480px; }
+.fsp-session-notes .fsp-notes-label { display: block; font-size: 10px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: #8a97ab; margin-bottom: 5px; }
+.fsp-session-notes textarea { width: 100%; min-height: 48px; resize: vertical; border: 1px solid #cbd5e3; border-radius: 6px; padding: 8px 10px; font-family: inherit; font-size: 12px; color: #33465e; background: #fff; }
+.fsp-actions { display: flex; justify-content: flex-end; gap: 8px; padding: 12px 18px 16px; min-width: 480px; }
+.fsp-btn { font-family: inherit; font-size: 12px; font-weight: 600; padding: 7px 16px; border-radius: 5px; border: 1px solid #cbd5e3; background: #fff; color: #526077; cursor: default; }
+.fsp-btn.primary { background: #14213a; border-color: #14213a; color: #fff; }
+.fsp-btn:disabled { opacity: .5; cursor: default; }
+.fsp-hint { font-size: 10.5px; color: #8a97ab; margin-top: .5rem; font-style: italic; }
+
+/* ── COURSE PROGRESS PAGE (static recreation, not interactive) ── */
+.fspg-progress { border: 1px solid #d7dee8; border-radius: 10px; overflow: hidden; margin: 1rem 0; background: #fff; }
+.fspg-stage { border-bottom: 1px solid #e2e8f2; }
+.fspg-stage:last-child { border-bottom: none; }
+.fspg-stage-title { padding: 10px 16px; background: #f5f7fb; font-size: 13px; font-weight: 700; color: #14213a; border-left: 3px solid var(--sky); }
+.fspg-col-labels { display: flex; align-items: center; gap: 12px; padding: 6px 16px; background: #eef1f6; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: #8a97ab; }
+.fspg-col-labels .name { flex: 2; min-width: 190px; }
+.fspg-col-labels .mrg { width: 34px; text-align: center; flex-shrink: 0; }
+.fspg-col-labels .hrs { width: 44px; text-align: center; flex-shrink: 0; }
+.fspg-col-labels .sess { flex: 3; min-width: 160px; }
+.fspg-row { display: flex; align-items: center; gap: 12px; padding: 8px 16px; border-bottom: 1px solid #f2f4f8; background: #fff; }
+.fspg-row:last-child { border-bottom: none; }
+.fspg-row .name { flex: 2; min-width: 190px; font-size: 12.5px; font-weight: 600; color: #2e5ea8; }
+.fspg-stagecheck-pill { display: inline-block; margin-left: 7px; font-size: 8.5px; font-weight: 700; letter-spacing: .04em; color: var(--green); border: 1px solid var(--green); border-radius: 20px; padding: 1px 8px; text-transform: uppercase; vertical-align: middle; }
+.fspg-mrg { width: 34px; height: 24px; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: #fff; flex-shrink: 0; }
+.fspg-mrg.s { background: var(--green); }
+.fspg-mrg.p { background: #526077; }
+.fspg-mrg.nc { background: var(--red); }
+.fspg-mrg.none { background: transparent; color: #c3cbda; border: 1px dashed #c3cbda; font-size: 12px; }
+.fspg-hrs { width: 44px; text-align: center; font-size: 12px; color: #526077; flex-shrink: 0; }
+.fspg-chips { flex: 3; display: flex; gap: 4px; flex-wrap: wrap; align-items: center; min-width: 160px; }
+.fspg-chip { width: 22px; height: 22px; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: #fff; flex-shrink: 0; }
+.fspg-chip.s { background: var(--green); }
+.fspg-chip.p { background: #8a97ab; }
+.fspg-chip.nc { background: var(--red); }
+.fspg-chip-add { width: 22px; height: 22px; border: 1px dashed #c3cbda; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #8a97ab; font-size: 12px; flex-shrink: 0; }
+.fspg-stage-foot { display: flex; justify-content: space-between; padding: 7px 16px; background: #f0f2f5; font-size: 11px; font-weight: 600; color: #33465e; }
+
 .section { margin-bottom: .75rem; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: var(--white); scroll-margin-top: calc(var(--hdr-h) + 12px); }
 .section-toggle { display: flex; align-items: center; gap: .75rem; padding: .9rem 1.25rem; cursor: pointer; width: 100%; text-align: left; background: var(--white); border: none; transition: background .15s; font-family: inherit; }
 .section-toggle:hover { background: var(--sky-bg); }
@@ -399,6 +587,7 @@ main { margin-left: var(--sidebar-w); flex: 1; padding: 2.5rem 2.5rem 5rem; max-
 
   <div id="overview-page"></div>
   <div id="kneeboard-page"></div>
+  <div id="fspguide-page"></div>
   <div id="lessons-container" style="display:none"></div>
 </main>
 </div>
@@ -450,9 +639,10 @@ const SECTION_DEFS = [
 let plans          = [];
 let kneeboardCards = [];   // { filename, title, path }
 let activePlanId   = null; // null = top-level page showing
-let activeTopPage  = 'overview'; // 'overview' | 'kneeboard'
+let activeTopPage  = 'overview'; // 'overview' | 'kneeboard' | 'fspguide'
 let readmeHtml     = null;
 let kneeboardLoaded = false;
+let fspGuideLoaded = false;
 
 // ─────────────────────────────────────────────
 //  FETCH PLANS
@@ -659,6 +849,74 @@ async function showKneeboard() {
 }
 
 // ─────────────────────────────────────────────
+//  FSP SESSION LOG GUIDE PAGE
+// ─────────────────────────────────────────────
+async function showFspGuide() {
+  activeTopPage = 'fspguide';
+  activePlanId  = null;
+  hideAllContent();
+  const page = document.getElementById('fspguide-page');
+  page.classList.add('visible');
+  renderSidebar();
+  if (window.innerWidth <= 860) document.getElementById('sidebar').classList.remove('open');
+
+  if (fspGuideLoaded) return; // already rendered
+
+  page.innerHTML = '<div class="readme-loading"><div class="spinner"></div> Loading guide…</div>';
+  try {
+    const r = await fetch('./fsp-guide.html', { cache: 'no-cache' });
+    if (!r.ok) throw new Error('fsp-guide.html not found');
+    page.innerHTML = await r.text();
+    initFspMockups(page);
+    fspGuideLoaded = true;
+  } catch (e) {
+    page.innerHTML = `<div class="readme-not-found"><h3>Guide not found</h3><p>Add <code>fsp-guide.html</code> to the repository root.</p></div>`;
+  }
+}
+
+// Populate every .fsp-grade-row placeholder with the five grade pills
+// (NC/P/S/C/NG), pre-selecting whichever grade the example specifies via
+// data-grade, and every .fsp-bulk placeholder with the matching "grade
+// this whole heading at once" boxes (mirrors the real FSP Log Session
+// modal's select-all-grades control per sub-element). Kept data-driven
+// rather than hand-authoring every button tag in fsp-guide.html — that
+// file has dozens of these rows.
+function initFspMockups(root) {
+  root.querySelectorAll('.fsp-grade-row').forEach(row => {
+    const current = (row.dataset.grade || 'NG').toUpperCase();
+    row.innerHTML = ['NC', 'P', 'S', 'C', 'NG'].map(g => {
+      const sel = g === current ? ' selected ' + g.toLowerCase() : '';
+      return `<button class="fsp-pill${sel}" onclick="fspSelectGrade(this,'${g}')">${g}</button>`;
+    }).join('');
+  });
+  // Heading-level bulk selector: plain tick boxes, one per grade column,
+  // unlabelled (matches the real modal — it's not a second grade scale).
+  root.querySelectorAll('.fsp-bulk').forEach(bulk => {
+    bulk.innerHTML = ['NC', 'P', 'S', 'C', 'NG'].map(g =>
+      `<button class="fsp-bulk-box" onclick="fspBulkGrade(this,'${g}')" title="Set all tasks in this heading to ${g}"></button>`
+    ).join('');
+  });
+}
+function fspSelectGrade(el, grade) {
+  const row = el.closest('.fsp-grade-row');
+  row.querySelectorAll('.fsp-pill').forEach(b => { b.className = 'fsp-pill'; });
+  el.classList.add('selected', grade.toLowerCase());
+}
+// Heading-level "select all" — sets every task in the enclosing
+// .fsp-heading-group to the chosen grade in one click, same shortcut the
+// real modal offers per sub-element.
+function fspBulkGrade(el, grade) {
+  const group = el.closest('.fsp-heading-group');
+  if (!group) return;
+  group.querySelectorAll('.fsp-grade-row').forEach(row => {
+    const pill = Array.from(row.querySelectorAll('.fsp-pill')).find(b => b.textContent === grade);
+    if (pill) fspSelectGrade(pill, grade);
+  });
+  group.querySelectorAll('.fsp-bulk-box').forEach(b => { b.className = 'fsp-bulk-box'; });
+  el.classList.add('active');
+}
+
+// ─────────────────────────────────────────────
 //  LIGHTBOX
 // ─────────────────────────────────────────────
 function openLightbox(cardIndex) {
@@ -707,6 +965,13 @@ function renderSidebar() {
   kbEl.innerHTML = '<span class="nav-top-icon">🗂️</span> Kneeboard Cards';
   kbEl.onclick = showKneeboard;
   nav.appendChild(kbEl);
+
+  // FSP Session Log Guide
+  const fspEl = document.createElement('div');
+  fspEl.className = 'nav-top-item' + (activeTopPage === 'fspguide' && activePlanId === null ? ' active' : '');
+  fspEl.innerHTML = '<span class="nav-top-icon">🧾</span> FSP Session Log Guide';
+  fspEl.onclick = showFspGuide;
+  nav.appendChild(fspEl);
 
   // Divider
   const div = document.createElement('div');
@@ -1016,6 +1281,7 @@ function renderPlansContainer() {
 function hideAllContent() {
   document.getElementById('overview-page').classList.remove('visible');
   document.getElementById('kneeboard-page').classList.remove('visible');
+  document.getElementById('fspguide-page').classList.remove('visible');
   document.getElementById('lessons-container').style.display = 'none';
   document.querySelectorAll('.lesson').forEach(el => el.classList.remove('visible'));
 }
@@ -1073,6 +1339,7 @@ async function init() {
   showState('loading');
   readmeHtml      = null;
   kneeboardLoaded = false;
+  fspGuideLoaded  = false;
 
   let fetchedPlans;
   try {

@@ -3,7 +3,7 @@
   title: "Straight and Level Flight",
   unit: "Phase 1 — Lesson 2 | E3",
   author: "C.Moroney",
-  version: "v1.0.0",
+  version: "v1.1.0",
 )
 #let card = (
   aim: [Fly constant direction and altitude at varying airspeeds using the PAT and LARI workcycles.],
@@ -16,8 +16,9 @@
     (badge: "p",  content: [*Level flight*: Maintain ±150 ft; use LARI to maintain]),
     (badge: "dp", content: [*Coordination*: Demo ball movement and rudder correction; student maintains ball ±1/4 width]),
     (badge: "dp", content: [*Slow cruise*: PAT to transition; LARI to maintain; student practices]),
-    (badge: "p",  content: [*Deviation correction*: Recognise and correct within 15 s]),
-    (badge: "p",  content: [*Scenario*: Cruise hdg 2 min -> slow cruise 2 min -> resume cruise]),
+    (badge: "p",  content: [*Practice S&L*: Recognise and correct deviations within 15 s]),
+    (badge: "dp", content: [*Slow cruise with flap*: PAT to transition; LARI to maintain; student practices]),
+    (badge: "p",  content: [*Scenario*: Cruise on hdg 2 min -> slow cruise 2 min -> extend flaps -> retract flaps -> resume cruise]),
   ),
   errors: [
     - *Chasing instruments* -> Horizon first; instruments confirm

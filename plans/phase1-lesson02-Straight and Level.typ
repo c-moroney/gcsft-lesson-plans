@@ -4,7 +4,7 @@
   title: "Straight and Level Flight",
   unit: "Group A (3-Axis) | Phase 1 — Lesson 2 | E3, E8",
   author: "C.Moroney",
-  version: "v1.0.0",
+  version: "v1.1.0",
 )
 
 #let lesson = (
@@ -22,6 +22,7 @@ Building on the control skills from Lesson 1, the student now integrates all pri
 #text(size:12pt)[*Knowledge*]
 - Recall the four aerodynamic forces (lift, weight, thrust, drag) and their importance in straight and level flight
 - Explain lift generation and how angle of attack and airspeed affect lift
+- Explain how flaps generate more lift and drag
 - Describe the concept of attitude flying: Power + Attitude = Performance
 - Explain the PAT and LARI workcycles and when each is used
 - Explain the altimeter subscale purpose and the QNH setting procedure
@@ -29,6 +30,7 @@ Building on the control skills from Lesson 1, the student now integrates all pri
 
 #text(size:12pt)[*Skills*]
 - Establish and maintain straight and level flight at cruise and slow cruise using the PAT workcycle
+- Establish and maintain straight and level flight with various flap settings
 - Apply the LARI workcycle to detect and correct deviations in heading (±5°) and altitude (±150 ft)
 - Set QNH and verify against aerodrome elevation or using AWIS/ATIS
 - Maintain coordinated flight with ball centred ±1/4 width
@@ -98,6 +100,7 @@ Instructor conducts takeoff and lift off. Student takes control during the initi
 - Deviation and correction: demonstrate correcting back to straight and level attitude after deviations in pitch, roll and power
 - S&L at normal cruise: now, introduce establishing with PAT and maintenance with LARI
 - Slow cruise: transition using PAT, maintain with LARI
+- Slow cruise with flap: transition using PAT, maintain with LARI
 - Coordination: demonstrate ball movement and rudder correction
 
 #text(size:12pt)[*Student Practice*]
@@ -109,6 +112,7 @@ Instructor conducts takeoff and lift off. Student takes control during the initi
   - Coordination: keep ball centred ±1/4 width
   - Slow cruise: transition using PAT; maintain with LARI
   - Deviation correction: recognise and correct heading and altitude deviations
+  - Slow cruise with flap: transition using PAT, adjust attitude and power with flap deployment and retraction
 - Scenario task: "Fly a steady heading toward the Gold Coast at normal cruise for 2 minutes, then transition to slow cruise maintaining altitude. Maintain for 2 minutes, then resume a normal cruise"
 ]
 
