@@ -16,7 +16,7 @@ Deliver an instructor-standard theory briefing and in-flight lesson on the effec
 ]
 
 ,overview: [
-This is the first of the syllabus walkthrough lessons and maps to Ab Initio Phase 1, Lesson 1 (*"Effects of Controls"*, see `phase1-lesson01-Effects of Controls.typ` for full ab-initio content, tolerances, and homework). Per CFI direction, this walkthrough covers *only* the in-flight instructional content and the theory briefing — the ground operations/taxi/documentation portions folded into the ab-initio lesson (and covered separately in Lesson 0) are out of scope here.
+This is the first of the syllabus walkthrough lessons and maps to Ab Initio Phase 1, Lesson 1 (*"Effects of Controls"*, see `phase1-lesson01-Effects of Controls` for full ab-initio content, tolerances, and homework). Per CFI direction, this walkthrough covers *only* the in-flight instructional content and the theory briefing — the ground operations/taxi/documentation portions folded into the ab-initio lesson (and covered separately in Lesson 0) are out of scope here.
 
 Structure: the Instructor Trainer (IT) first delivers the theory brief and flies the full in-flight demonstration sequence exactly as it would be taught to a real first-lesson student, with full patter. The IC observes as a student would. The IC then recreates both the brief and the in-flight teaching sequence, with the IT role-playing an ab-initio student at a capability level of the IT's choosing (recorded in the training record — see Safety). Progression to the next walkthrough lesson requires the IC to be at or near instructor standard, not full mastery — the consolidation pass later in the course confirms full C standard across all walkthrough lessons.
 ]
@@ -35,7 +35,7 @@ Structure: the Instructor Trainer (IT) first delivers the theory brief and flies
 ]
 
 ,theory_knowledge: [
-- Ab initio source content in full: `phase1-lesson01-Effects of Controls.typ` — Theory Knowledge and Ground Brief Topics sections
+- Ab initio source content in full: `phase1-lesson01-Effects of Controls` — Theory Knowledge and Ground Brief Topics sections
 - FAA-H-8083-9A — Ch.4 (The Teaching Process — demonstration–performance method), Ch.3 (Effective Communication — abstractions and concrete examples, relevant when explaining "further effects")
 ]
 
@@ -95,17 +95,17 @@ Equipment required: Aircraft model, whiteboard \
 ]
 
 ,safety:[
-- *Weather*: As per ab-initio source lesson (horizon clearly visible, ceiling >2000 ft AGL, surface wind \<25 kt).
-- *Altitude*: As per ab-initio source lesson (above 1500 ft AGL).
+- *Weather*: Lesson can go ahead if conditions are VMC. IT can pretend a horizon exists if required. (ceiling >1500 ft AGL, surface wind \<30 kt).
+- *Altitude*: Above 1000 ft AGL).
 - *Emergency Procedures*: IT retains PIC authority throughout; forced landing area pre-selected as normal.
 - *TEM*:
-  - IT records the student capability level played this session (e.g. "capable and compliant") in the IC training record — this becomes a longitudinal record of the IC's exposure to different student types across the walkthrough.
-  - Clear control-authority vs role-play distinction: the IT is PIC throughout even while role-playing "the student."
+  - IT records the student capability level played this session (e.g. "capable and compliant") in the IC training record — this becomes a record of the IC's exposure to different student types across the walkthrough.
+  - Clear control-authority vs role-play distinction: when the IT begins role-playing a student, they will state "student taking over". (eg. "My controls, student taking over"). When the IT begins coaching the IC or demonstrating something as the IT, they will state "instructor taking over".
 - *Aircraft Limits*: As per ab-initio source lesson.
 ]
 
 ,homework:[
-- Review `phase1-lesson02-Straight and Level.typ` in full ahead of the next walkthrough lesson.
+- Review `phase1-lesson02-Straight and Level` in full ahead of the next walkthrough lesson.
 ]
 )
 
