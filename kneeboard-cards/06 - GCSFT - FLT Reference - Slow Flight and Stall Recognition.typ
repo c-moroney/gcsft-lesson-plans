@@ -3,13 +3,13 @@
   title: "Slow Flight and Stall Recognition",
   unit: "Phase 1 — Lesson 6 | E7",
   author: "C.Moroney",
-  version: "v1.0.1",
+  version: "v1.0.2",
 )
 #let card = (
   aim: [Identify approaching stall symptoms in a range of configurations; execute a safe, timely recovery.],
   sequence: (
     (badge: "p",  content: [*E8*: Independent; no prompting at any stage]),
-    (badge: "dp", content: [*HASSELL*: Demo all items; student participates — _before stalling begins, and every 15 min_]),
+    (badge: "dp", content: [*HASSELL*: Student follows—_before stalling begins (360° lookout), and every 15 min thereafter (180° lookout)_]),
     (badge: "dp", content: [*Slow flight*: ~1.3Vs, coordinated S&L; student manages PAT/LARI; note control position at slow speed]),
     (badge: "p",  content: [*Slow flight turns*: Shallow banked; maintain coordination and altitude; lead with rudder]),
     (badge: "d",  content: [*Pre-stall symptoms*: While in slow flight, patter each in sequence — _control position_, airspeed decay, high nose, sloppiness, stall warning, buffet]),
@@ -20,7 +20,7 @@
     (badge: "p",  content: [*Scenario*: "Nose high attitude held, power reduced to idle. Note airspeed dropping — controls? Actions?"]),
   ),
   errors: [
-    - *HASSELL forgotten* -> Mandatory; 360° lookout required
+    - *HASSELL forgotten* -> Mandatory; 360° lookout required; perform every 15mins with 180° lookout
     - *Overzealous recovery\/flap limit exceeded* -> *Relax* backpressure — don't push aggressively
     - *Ailerons on wing drop* -> Rudder only; ailerons neutral until unstalled _instructor intervention required_
     - *Recovery to S&L* -> All stalls must be recovered to Vy climb

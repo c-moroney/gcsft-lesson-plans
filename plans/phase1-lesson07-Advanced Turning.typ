@@ -4,7 +4,7 @@
   title: "Advanced Turning",
   unit: "Group A (3-Axis) | Phase 1 — Lesson 7 | E9",
   author: "C.Moroney",
-  version: "v1.0.0",
+  version: "v1.0.2",
 )
 
 #let lesson = (
@@ -35,7 +35,7 @@ Full C standard for E9 requires the element to be revisited in Phase 3, where th
 - Describe the significance of elevated stall speed in level turns
 
 #text(size:12pt)[*Skills*]
-- Complete the HASSELL check before the manoeuvre sequence begins, and every 15 minutes
+- Complete the HASSELL at appropriate times throughout the lesson (360° lookout turn), and every 15 minutes thereafter (subsequent lookout 180° turn)
 - Enter, maintain, and exit a level turn at 45° and 60° AoB, maintaining altitude ±150 ft
 - Maintain appropriate coordination throughout all turns
 - Identify and recover from a spiral dive: close throttle, level wings, ease out of the dive
@@ -135,7 +135,7 @@ HASSELL check completed by student before the manoeuvre sequence. Instructor dem
 - *Altitude loss/gain in steep turn*: Check and correct bank first — if correct, adjust backpressure; correct horizon reference.
 - *Backpressure before wings level in spiral dive recovery*: Level wings first; backpressure with banked wings tightens the spiral and stresses the airframe.
 - *Chasing the balance ball in steep turns*: The ball will be slightly low in a steep turn — do not add inside rudder as a primary correction.
-- *HASSELL*: HASSELL before the sequence begins, then every 15 minutes — not before each individual manoeuvre.
+- *HASSELL*: HASSELL before the sequence begins, then every 15 minutes — not required before each individual manoeuvre.
 ]
 
 ,post_flight:[

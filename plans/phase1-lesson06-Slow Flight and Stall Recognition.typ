@@ -4,7 +4,7 @@
   title: "Slow Flight and Stall Recognition",
   unit: "Group A (3-Axis) | Phase 1 — Lesson 6 | E7, E8",
   author: "C.Moroney",
-  version: "v1.0.0",
+  version: "v1.0.2",
 )
 
 #let lesson = (
@@ -30,7 +30,7 @@ Stall awareness is a prerequisite for safe circuit operations — every approach
 - Explain why ailerons must not be used during a wing drop stall
 
 #text(size:12pt)[*Skills*]
-- Complete the HASSELL check before each stall practice sequence
+- Complete the HASSELL check at appropriate times throughout the lesson
 - Configure and maintain slow flight in straight and level
 - Maintain balance and trim effectively during slow flight
 - Identify pre-stall symptoms and apply timely recovery before the full stall develops
@@ -54,7 +54,7 @@ Equipment required: Aircraft model, access to electronic briefing, whiteboard \
 
 *Non-Technical Skills* (5 minutes)
 - [TEM] Threats: low altitude, uncoordinated stall entry, incorrect recovery; minimum recovery height (aircraft control is higher priority)
-- [SA] HASSELL check: purpose and procedure; airspace clearance before each manoeuvre
+- [SA] HASSELL check: purpose and procedure — a full 360° lookout turn on the first HASSELL of the flight, then a 180° lookout turn on each subsequent check (every 15 minutes); airspace clearance before each manoeuvre
 - [HF] Startle response: physiological effects; strategies to maintain control authority
 - [CRM] Control handover: immediately relinquish controls, without delay, on instructor command
 
@@ -100,7 +100,7 @@ Equipment required: Aircraft model, access to electronic briefing, whiteboard \
 Student conducts takeoff independently. Instructor does not prompt during ground roll or lift-off unless a safety issue arises. Pre-takeoff brief and after-takeoff checks without prompting.
 
 #text(size:12pt)[*Demonstration*]
-- HASSELL check: demonstrate thoroughly before first manoeuvre; explain each item
+- HASSELL check: demonstrate thoroughly before first manoeuvre, including the full 360° lookout turn; explain each item and that subsequent checks (every 15 minutes) use a 180° lookout turn instead
 - Slow flight configuration: establish at ~1.3Vs, coordinated, straight and level; demonstrate control position
 - Slow flight turns: gentle shallow-banked turns maintaining coordination; lead with rudder for roll control
 - Pre-stall symptoms: demonstrate slowly and clearly; call out each symptom as it appears
@@ -156,7 +156,7 @@ Student conducts takeoff independently. Instructor does not prompt during ground
 
 #text(size:12pt)[*Solo Standard (S) — required before first solo*]
 - *Slow flight*: Maintains airspeed +10/−0 kts of target (S), altitude ±150 ft (S), heading ±5° (S)
-- *HASSELL check*: Completed thoroughly and without prompting before each exercise
+- *HASSELL check*: Completed thoroughly and without prompting
 - *Impending stall recognition*: Consistently identifies symptoms before the full stall develops (S)
 - *Impending stall recovery*: Recognises a stall is certain and initiates correct recovery within 3 seconds (S); recovers with ≤300 ft height loss (S)
 - *Stall recovery*: Initiates recovery at the point the aircraft stalls, without overcontrolling or incorrect control input; height loss ≤400 ft

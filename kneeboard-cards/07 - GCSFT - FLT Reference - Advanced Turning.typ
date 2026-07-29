@@ -3,14 +3,14 @@
   title: "Advanced Turning",
   unit: "Phase 1 — Lesson 7 | E9",
   author: "C.Moroney",
-  version: "v1.0.1",
+  version: "v1.0.2",
 )
 #let card = (
   aim: [Perform steep turns at 45° and 60° AoB. Identify and recover from a spiral dive. Demonstrate slipping turns and dutch roll reversals.],
   sequence: (
     (badge: "p",  content: [*E8*: Independent takeoff; no prompting at any stage]),
     (badge: "dp", content: [*20° AoB roll reversals*: Smooth coordinated rolls alternating left and right; remind student of parallax and balance]),
-    (badge: "p",  content: [*HASSELL*: Student completes — _mandatory before steep turns begin, every 15 mins_]),
+    (badge: "p",  content: [*HASSELL*: Student completes — _mandatory before steep turns begin (360° lookout), every 15 mins thereafter (180° lookout)_]),
     (badge: "dp", content: [*45° steep turn L and R*: Bank, Balance, Backpressure; overbanking tendency; hold AoB ±5°, alt ±100 ft; rollout ±10°]),
     (badge: "dp", content: [*Spiral dive*: Instructor initiates by increasing bank and lowering nose; student practices recovery — _throttle, wings level, ease back_]),
     (badge: "dp", content: [*60° steep turn L and R*: Same sequence; increased backpressure and overbanking; demonstrate visual difference from 45°]),

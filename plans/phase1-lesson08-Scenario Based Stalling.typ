@@ -4,7 +4,7 @@
   title: "Scenario Based Stalling",
   unit: "Group A (3-Axis) | Phase 1 — Lesson 8 | E10, E8, E1",
   author: "C.Moroney",
-  version: "v1.0.0",
+  version: "v1.0.1",
 )
 
 #let lesson = (
@@ -44,7 +44,7 @@ The first assessment of solo standard is for E1 (Flight Preparation and Ground O
 - Complete HASSELL check before the stalling sequence begins, then every 15 minutes
 
 #text(size:12pt)[*Non-Technical Skills*]
-- [SA] HASSELL before exercise and every 15 minutes; 360° lookout required before each stall entry
+- [SA] HASSELL at start of stalling sequence (360° lookout turn) and every 15 minutes thereafter (180° lookout turn)
 - [TEM] Identify the TEM chain that leads to each scenario stall: distraction, task overload, fixation; verbalise before each exercise
 - [HF] Manage startle response in unexpected stall entries; brief management strategies before flight
 - [CRM] Student confirms control handover before flight; on verbal command from instructor, student immediately relinquishes control
@@ -65,7 +65,7 @@ Equipment required: Aircraft model, whiteboard \
 
 *Non-Technical Skills* (5 minutes)
 - [TEM] The TEM chain that produces scenario stalls: distraction in the go-around, fixation on the landing area during EFATO, time pressure; brief countermeasures
-- [TEM/SA] HASSELL is mandatory before the stalling sequence begins and every 15 minutes; 360° lookout required
+- [TEM/SA] HASSELL is mandatory before the stalling sequence begins (360° lookout turn) and every 15 minutes thereafter (180° lookout turn)
 - [HF] Startle response management in unexpected stall entries; the natural reflex is almost always wrong, and large in magnitude, making the situation worse; brief countermeasures
 - [CRM] Immediately relinquish controls if instructor commands; use correct control handover
 
@@ -103,7 +103,7 @@ Equipment required: Aircraft model, whiteboard \
 - A spin requires: stall + yaw at the moment of stall
 - Uncoordinated flight (ball displaced) at high AoA is the risk combination
 - Visual cue of spin entry: rapid yaw/roll in one direction; nose pitches steeply down
-- Recovery awareness: close throttle; opposite rudder; forward stick; recover from the dive (refer POH)
+- Recovery awareness: close throttle; opposite rudder; forward stick; recover from the dive (PARE is generic recovery BUT it is vital to refer to POH)
 - Emphasis: awareness only; intentional spinning is not part of this training; pro-spin inputs below Va are not permitted
 ]
 
