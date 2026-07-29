@@ -16,7 +16,7 @@ Deliver an instructor-standard ground briefing and in-flight lesson on unusual a
 ]
 
 ,overview: [
-Maps to Ab Initio Phase 3, Lesson 4 (*"Unusual Attitudes and Emergencies"* — see `phase3-lesson04-Unusual Attitudes and Emergencies.typ` for full ab-initio content, tolerances, and homework). *Per CFI direction, this walkthrough covers only the E16 (Unusual Attitudes and Emergencies) content.* The ab-initio lesson's E10 (Scenario Based Stalling) student-led recap/confirmation component is out of scope here — Scenario Based Stalling instructing competency was already covered in full in Walkthrough Lesson 8.
+Maps to Ab Initio Phase 3, Lesson 4 (*"Unusual Attitudes and Emergencies"* — see `phase3-lesson04-Unusual Attitudes and Emergencies` for full ab-initio content, tolerances, and homework). *This walkthrough covers only the E16 (Unusual Attitudes and Emergencies) content.* The ab-initio lesson's E10 (Scenario Based Stalling) student-led recap/confirmation component is out of scope here — Scenario Based Stalling instructing competency was already covered in full in Walkthrough Lesson 8.
 
 This is the final lesson in the syllabus walkthrough before the consolidation pass begins. Structure unchanged: IT demonstrates brief + flight in full; IC recreates both with the IT role-playing an assigned student capability.
 ]
@@ -24,7 +24,6 @@ This is the final lesson in the syllabus walkthrough before the consolidation pa
 ,learning_outcomes: [
 #text(size:12pt)[*Knowledge*]
 - Recall the ab-initio E16 technical content in full: nose-high and nose-low unusual attitude recognition and recovery, in-flight fire/smoke/fumes immediate actions, the ADM framework (Time → Assess → Predict → Evaluate) (per source lesson plan)
-- Explain why the nose-low recovery sequence (throttle, wings level, ease back) mirrors the spiral dive recovery taught earlier in the walkthrough, and why teaching this connection reinforces both
 #text(size:12pt)[*Skills*]
 - Teach nose-high and nose-low unusual attitude recovery with patter that reinforces the "wings level before backpressure" principle from the earlier Advanced Turning walkthrough lesson
 - Teach in-flight fire and smoke/fumes immediate actions as memory items, coached to fluency
@@ -35,7 +34,7 @@ This is the final lesson in the syllabus walkthrough before the consolidation pa
 ]
 
 ,theory_knowledge: [
-- Ab initio source content in full: `phase3-lesson04-Unusual Attitudes and Emergencies.typ` — Theory Knowledge and Ground Brief Topics sections (E16 portions only)
+- Ab initio source content in full: `phase3-lesson04-Unusual Attitudes and Emergencies` — Theory Knowledge and Ground Brief Topics sections (E16 portions only)
 - FAA-H-8083-9A — Ch.2 (Learning Process — this lesson is a strong example of positive transfer: the spiral dive principle from Advanced Turning transfers directly to nose-low recovery here; the IC should teach that connection explicitly)
 ]
 
@@ -53,16 +52,19 @@ Equipment required: Aircraft model, whiteboard \
 
 ,ground_tasks:[
 #text(size:12pt)[*Instructor Trainer (IT)*]
-- Deliver the full brief and in-flight demonstration first, with complete patter, for the E16 content only
-- Choose and play a student capability level for the IC's turn; log it — this is a good lesson to trial a more challenging/struggling student role-play, since it is late in the walkthrough and the consolidation pass will re-confirm every lesson regardless
+- Deliver the full brief, for the E16 content only
+- Choose and play a student capability level for the IC's turn — this is a good lesson to trial a more challenging/struggling student role-play, since it is late in the walkthrough and the consolidation pass will re-confirm every lesson regardless
+- Review weather, NOTAMs, and maintenance release with the IC
 #text(size:12pt)[*Instructor Candidate (IC)*]
+- Present pertinent weather, NOTAMs, and maintenance release items to the IT
+- Conduct the pre-flight inspection and fuelling as required
 - Observe the IT's demonstration
 - Deliver the brief and in-flight demonstration to the IT-as-student, for the E16 content only
 ]
 
 ,in_flight_tasks:[
 #text(size:12pt)[*IT Demonstration*]
-- Fly the E16 sequence from the ab-initio lesson plan (nose-high unusual attitude recovery, nose-low unusual attitude recovery, in-flight fire simulation, smoke/fumes simulation) with complete patter — the ADM scenario (locked controls) and E10 recap are out of scope for this walkthrough
+- Fly the E16 sequence from the ab-initio lesson plan with complete patter — the ADM scenario (locked controls) and E10 recap are out of scope for this walkthrough
 #text(size:12pt)[*IC Recreation*]
 - IC flies the identical E16 sequence, delivering patter to the IT-as-student
 - IC introduces at least one novel, unscripted scenario for the IT-as-student to work through using the ADM framework, coaching "Time" as the first question asked
@@ -70,9 +72,8 @@ Equipment required: Aircraft model, whiteboard \
 
 ,common_errors:[
 - *Nose-low recovery order reversed*: The same critical error as the spiral dive recovery — wings level must precede backpressure; the IC should make the connection to the earlier lesson explicit, not just repeat the rule in isolation.
-- *ADM skipped in favour of an immediate scripted response*: For genuinely novel scenarios, the IC should coach "how much time do I have?" first — reinforce this is the point of the framework.
+- *ADM skipped in favour of an immediate scripted response*: For novel scenarios, the IC should coach "how much time do I have?" first — reinforce this is the point of the framework.
 - *Fire/smoke immediate actions hesitant*: These are memory items — the IC should be as fluent teaching them as the student is expected to be executing them.
-- *E10 content inadvertently reintroduced*: Since the ab-initio lesson bundles E10 and E16 together, watch for the IC drifting into the E10 recap content by habit — keep this walkthrough lesson scoped to E16 only.
 ]
 
 ,post_flight:[
@@ -86,14 +87,15 @@ Equipment required: Aircraft model, whiteboard \
 - IC teaches fire/smoke/fumes immediate actions fluently as memory items
 - IC coaches a novel scenario using the ADM framework, asking "Time" first
 - IC's briefing and flight remain scoped to E16 content only, without drifting into E10 recap material
-- *Outcome*: Recorded in IC training record (NC/C, Instructor Training Syllabus Elements 6.2, 9.2, 9.3, 11.1–11.4). "At or near" instructor standard is sufficient to progress — this being the final walkthrough lesson, the consolidation pass immediately follows.
+- *Outcome*: Recorded in IC training record (NC/C, Instructor Training Syllabus Elements 6.2, 6.4, 9.2, 9.3, 11.1–11.4). "At or near" instructor standard is sufficient to progress — this being the final walkthrough lesson, the consolidation pass immediately follows.
 ]
 
 ,safety:[
-- *Weather*: As per ab-initio source lesson (horizon clearly visible, ceiling >3000 ft AGL, smooth air essential, wind \<25 kt).
+- *Weather*: Lesson can go ahead if conditions are VMC. IT can simulate a clear horizon if required. (ceiling >3000 ft AGL, smooth air essential, surface wind \<25 kt).
 - *Altitude*: Unusual attitude exercises above 2500 ft AGL; recoveries complete above 2000 ft AGL.
 - *Emergency Procedures*: All exercises clearly briefed before entry; IT retains PIC authority throughout; nose-low exercise: exceeding Vno only permitted in smooth air, take control immediately if any risk of exceeding Vne.
-- *TEM*: IT logs the student capability level played this session in the IC training record — this closes out the per-lesson capability log for the syllabus walkthrough.
+- *TEM*: IT-as-student and IT-as-instructor distinction made clearly with "student/instructor taking over" and correct control handover — this closes out the per-lesson capability log for the syllabus walkthrough.
+- *HF (4.1/4.4)*: IT confirms the IC managed session prep and time effectively (materials ready, brief timed, no last-minute scramble) and monitors both own and simulated-student fatigue/workload throughout, adjusting pace if either degrades.
 - *Aircraft Limits*: As per ab-initio source lesson.
 ]
 

@@ -91,16 +91,17 @@ Equipment required: Aircraft model, whiteboard \
 - IC's in-flight patter is synchronised with aircraft behaviour for at least the majority of control effects demonstrated
 - IC applies correct control handover phrasing throughout
 - IC applies the demonstration–performance method correctly
-- *Outcome*: Recorded in IC training record (NC/C, Instructor Training Syllabus Elements 6.1–6.3, 9.2). "At or near" instructor standard is sufficient to progress — full C standard is confirmed in the consolidation pass.
+- *Outcome*: Recorded in IC training record (NC/C, Instructor Training Syllabus Elements 6.1–6.4, 9.2). "At or near" instructor standard is sufficient to progress — full C standard is confirmed in the consolidation pass.
 ]
 
 ,safety:[
-- *Weather*: Lesson can go ahead if conditions are VMC. IT can pretend a horizon exists if required. (ceiling >1500 ft AGL, surface wind \<30 kt).
+- *Weather*: Lesson can go ahead if conditions are VMC. IT can simulate a clear horizon if required. (ceiling >1500 ft AGL, surface wind \<30 kt).
 - *Altitude*: Above 1000 ft AGL).
 - *Emergency Procedures*: IT retains PIC authority throughout; forced landing area pre-selected as normal.
 - *TEM*:
   - IT records the student capability level played this session (e.g. "capable and compliant") in the IC training record — this becomes a record of the IC's exposure to different student types across the walkthrough.
   - Clear control-authority vs role-play distinction: when the IT begins role-playing a student, they will state "student taking over". (eg. "My controls, student taking over"). When the IT begins coaching the IC or demonstrating something as the IT, they will state "instructor taking over".
+- *HF (4.1/4.4)*: IT confirms the IC managed session prep and time effectively (materials ready, brief timed, no last-minute scramble) and monitors both own and simulated-student fatigue/workload throughout, adjusting pace if either degrades.
 - *Aircraft Limits*: As per ab-initio source lesson.
 ]
 

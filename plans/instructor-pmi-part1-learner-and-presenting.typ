@@ -29,20 +29,23 @@ Part 1 runs the learner and the learning process through to the practical skill 
 - Explain perception, insight, the four levels of learning, and Bloom's three domains
 - Describe the three-stage memory model, the four theories of forgetting, positive/negative transfer, and the learning plateau
 - Name the three elements of communication and the four barriers to it
+- Identify environmental and operational ground hazards and describe an instructor's ground safety management responsibilities: airside safety, hazard identification and communication, fuelling requirements, starting and movement management
 #text(size:12pt)[*Skills*]
 - Organise a lesson into introduction (attention/motivation/overview), development, and conclusion
 - Select and use visual aids to support — not replace — a briefing
 #text(size:12pt)[*Non-Technical Skills*]
 - Self-awareness of own communication style and its effect on a learner [HF]
+- [TEM] Proactively manage airside/ground hazards with a student throughout a training day, not only in a single opening brief
 ]
 
 ,theory_knowledge: [
 - RAAus PMI Course Guide v1.2 — Part 1 in full (Sessions 1–6, pp.6–18)
 - FAA-H-8083-9A Aviation Instructor's Handbook — Ch.1 (Human Behavior), Ch.2 (The Learning Process), Ch.3 (Effective Communication), Ch.4 (The Teaching Process — Preparation & Presentation)
+- Instructor Training Syllabus Element 8.2 (Manage Safety Outcomes — Ground): airside safety, hazard identification and communication, fuelling requirements, starting and movement management
 ]
 
 ,ground_brief_topics: [
-Total time: 4 hours (2 × 10 min breaks) \
+Total time: 4.5 hours (2 × 10 min breaks) \
 Equipment required: Whiteboard, projector/screen, PMI Course Guide (IT copy), printed Appendix A critique sheets for Part 2 \
 
 *Non-Technical Skills* (throughout) [HF]
@@ -64,6 +67,12 @@ Equipment required: Whiteboard, projector/screen, PMI Course Guide (IT copy), pr
 
 *Session 5 — Effective communication & its barriers* (25 min) [HF]
 - Source/symbols/receiver; the four barriers and how to counter each
+
+*Ground Safety Management as an Instructor* (30 min) [TEM] [SA] (GCSFT-added, Element 8.2)
+- Airside safety managed *with* the student throughout the day — not a single opening brief, but re-briefed and reinforced at each new phase (walkaround, start, taxi, shutdown)
+- Hazard identification and communication: propellers, prop wash, other aircraft, confined spaces, wind effects on the ramp — the instructor's job is to notice and narrate these before the student does, then hand that skill to the student over time
+- Fuelling requirements: instructor's responsibility to confirm correct fuel type/quantity and that no-smoking/ignition-source and static-discharge precautions are observed whenever the student is present at fuelling
+- Starting and movement management: instructor's responsibility for the start-up hazard check (clear prop, chocks, area), clearance calls, and authorising ground movement — the instructor remains accountable for this even once the student is doing it themselves
 
 *Session 6 — The teaching process: building & presenting a briefing* (55 min) [TEM]
 - Four-step teaching process (prep/presentation/application/assessment — today covers the first two); introduction–development–conclusion structure; delivery methods; visual aid principles; **set homework** (long briefing, 10–15 min, delivered start of Part 2)
@@ -87,6 +96,7 @@ No in-flight component — this is a ground-only training day.
 - *Reading the definition of learning rather than testing understanding*: Ask the IC to restate it in their own words, not recite it.
 - *Treating defence mechanisms as diagnosis*: Reinforce this is pattern recognition for coaching, not psychoanalysis — flag deeper distress to appropriate support instead.
 - *Rushing Session 6*: This is the practical heart of Part 1 and directly feeds the homework — protect its time per the Course Guide's instructor note.
+- *Treating ground safety management as a single opening brief*: Airside hazards, fuelling, and start/movement safety need re-briefing at each new phase of the day, not a one-off statement at the start.
 ]
 
 ,post_flight:[
@@ -100,8 +110,9 @@ No in-flight component — this is a ground-only training day.
 - IC can name Maslow's hierarchy levels in order and at least four defence mechanisms
 - IC can describe the four levels of learning and the three learning domains
 - IC can state the three elements of communication and the four barriers
+- IC can describe the instructor's ground safety management responsibilities: airside safety, hazard identification and communication, fuelling requirements, and starting/movement management
 - IC leaves Part 1 with a specific homework topic, structure sketch, and at least one planned visual aid
-- *Outcome*: Recorded in IC training record (NC/C per Instructor Training Syllabus Element 3.1–3.2). Progression to Part 2 does not require full instructor standard yet — only that the IC is ready to attempt the homework briefing.
+- *Outcome*: Recorded in IC training record (NC/C per Instructor Training Syllabus Element 3.1–3.2, 8.2). Progression to Part 2 does not require full instructor standard yet — only that the IC is ready to attempt the homework briefing.
 ]
 
 ,safety:[

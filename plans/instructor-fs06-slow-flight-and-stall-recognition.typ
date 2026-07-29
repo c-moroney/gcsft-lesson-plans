@@ -16,7 +16,7 @@ Deliver an instructor-standard ground briefing and in-flight lesson on slow flig
 ]
 
 ,overview: [
-Maps to Ab Initio Phase 1, Lesson 6 (*"Slow Flight and Stall Recognition"* — see `phase1-lesson06-Slow Flight and Stall Recognition.typ` for full ab-initio content, tolerances, and homework). This is the first high-risk-manoeuvre lesson in the walkthrough and introduces the HASSELL check — the IC's ability to teach and enforce this discipline, rather than treat it as a formality, is the core instructing skill under test.
+Maps to Ab Initio Phase 1, Lesson 6 (*"Slow Flight and Stall Recognition"* — see `phase1-lesson06-Slow Flight and Stall Recognition` for full ab-initio content, tolerances, and homework). This is the first high-risk-manoeuvre lesson in the walkthrough and introduces the HASSELL check — the IC's ability to teach and enforce this discipline, rather than treat it as a formality, is the core instructing skill under test.
 
 Structure unchanged: IT demonstrates brief + flight in full; IC recreates both with the IT role-playing an assigned student capability. Given the higher risk profile, the IT should retain a lower threshold for intervention during the IC's recreation than in earlier walkthrough lessons.
 ]
@@ -24,18 +24,17 @@ Structure unchanged: IT demonstrates brief + flight in full; IC recreates both w
 ,learning_outcomes: [
 #text(size:12pt)[*Knowledge*]
 - Recall the ab-initio technical content in full: critical angle of attack, stall speed factors, progressive pre-stall symptoms, minimum control speed, and the stall recovery sequence (per source lesson plan)
-- Explain why HASSELL must be taught as mandatory and non-negotiable, not as one option among several
 #text(size:12pt)[*Skills*]
-- Teach and enforce the HASSELL check before every manoeuvre sequence, exactly as it must be enforced with a real student
+- Teach and enforce the HASSELL as it must be enforced with a real student (once to begin the lesson, then every 15 mins)
 - Demonstrate progressive pre-stall symptoms with patter that calls out each symptom as it appears, in sequence
-- Coach correct wing-drop recovery technique (rudder, not aileron) using explicit, repeated reinforcement
+- Coach correct wing-drop recovery technique (rudder to stop roll) using explicit, repeated reinforcement
 #text(size:12pt)[*Non-Technical Skills*]
 - [HF] Brief and manage startle response coaching for a simulated student experiencing their first stall
 - [TEM] Patter the minimum recovery height discipline explicitly before every stall sequence
 ]
 
 ,theory_knowledge: [
-- Ab initio source content in full: `phase1-lesson06-Slow Flight and Stall Recognition.typ` — Theory Knowledge and Ground Brief Topics sections
+- Ab initio source content in full: `phase1-lesson06-Slow Flight and Stall Recognition` — Theory Knowledge and Ground Brief Topics sections
 - FAA-H-8083-9A — Ch.1 (Human Behavior — defence mechanisms and startle response are directly relevant to coaching a student through their first stall)
 ]
 
@@ -44,7 +43,7 @@ Total time: 40 min IT demonstration + 40 min IC recreation \
 Equipment required: Aircraft model, electronic briefing access, whiteboard \
 
 *IT Demonstration* (40 min)
-- Full ground brief per ab-initio source: NTS, aerodynamics of slow flight and stalling, slow flight configuration and control, stall recovery sequence — HASSELL briefed on the ground first per the source lesson
+- Full ground brief per ab-initio lesson-plan: NTS, aerodynamics of slow flight and stalling, slow flight configuration and control, stall recovery sequence — HASSELL briefed on the ground first per the source lesson
 
 *IC Recreation* (40 min)
 - IC delivers the identical brief; IT role-plays the assigned student capability
@@ -53,23 +52,26 @@ Equipment required: Aircraft model, electronic briefing access, whiteboard \
 
 ,ground_tasks:[
 #text(size:12pt)[*Instructor Trainer (IT)*]
-- Deliver the full brief and in-flight demonstration first, with complete patter
-- Choose and play a student capability level for the IC's turn; log it. Given the risk profile of this lesson, consider retaining a more capable/compliant role-play here even later in the walkthrough progression, unless the IC has clearly demonstrated readiness for a struggling student on stalling content specifically
+- Deliver the full brief
+- Choose and play a student capability level for the IC's turn. Given the risk profile of this lesson, consider retaining a more capable/compliant role-play here even later in the walkthrough progression, unless the IC has clearly demonstrated readiness for a struggling student on stalling content specifically
+- Review weather, NOTAMs, and maintenance release with the IC
 #text(size:12pt)[*Instructor Candidate (IC)*]
+- Present pertinent weather, NOTAMs, and maintenance release items to the IT
+- Conduct the pre-flight inspection and fuelling as required
 - Observe the IT's demonstration
 - Deliver the brief and in-flight demonstration to the IT-as-student
 ]
 
 ,in_flight_tasks:[
 #text(size:12pt)[*IT Demonstration*]
-- Fly the full sequence from the ab-initio lesson plan (HASSELL demonstration, slow flight configuration, slow flight turns, pre-stall symptom patter, impending stall recovery, straight and level idle-power stall and recovery, approach configuration stall and recovery, stall during configuration change) with complete patter
+- Fly the full sequence from the ab-initio lesson plan with complete patter
 #text(size:12pt)[*IC Recreation*]
 - IC flies the identical sequence, delivering patter to the IT-as-student
 - IC enforces HASSELL before the sequence and models the 15-minute repeat interval in patter even within the compressed walkthrough session
 ]
 
 ,common_errors:[
-- *HASSELL treated as a formality*: The single most important instructing error to catch in this lesson — the IC must teach it as genuinely mandatory, not recite it and move on.
+- *HASSELL treated as a formality*: The single most important instructing error to catch in this lesson — the IC must teach it as mandatory.
 - *Recovery patter arrives after the fact*: Coach the IC to patter recovery technique *as it's happening*, not summarise it afterward.
 - *Ailerons-on-wing-drop correction under-emphasised*: This is the highest-consequence error a real student can make in this lesson — the IC's patter must make the rudder-not-aileron point unmistakable.
 - *Startle response coaching skipped*: The IC should explicitly brief what a simulated student might feel and how to respond, not assume it's obvious.
@@ -85,19 +87,20 @@ Equipment required: Aircraft model, electronic briefing access, whiteboard \
 - IC enforces HASSELL as mandatory, before the sequence and at the correct interval
 - IC's patter calls out pre-stall symptoms in sequence as they appear
 - IC's recovery-technique patter correctly emphasises rudder (not aileron) for wing-drop correction
-- *Outcome*: Recorded in IC training record (NC/C, Instructor Training Syllabus Elements 6.2, 8.3, 9.2). "At or near" instructor standard is sufficient to progress.
+- *Outcome*: Recorded in IC training record (NC/C, Instructor Training Syllabus Elements 6.2, 6.4, 8.3, 9.2). "At or near" instructor standard is sufficient to progress.
 ]
 
 ,safety:[
-- *Weather*: As per ab-initio source lesson (horizon clearly visible, ceiling >3000 ft, smooth air, wind \<25 kt — postpone if turbulent).
-- *Altitude*: As per ab-initio source lesson (above 2500 ft AGL; all recoveries complete by 2500 ft AGL minimum).
-- *Emergency Procedures*: Forced landing area pre-selected before HASSELL; given the risk profile, the IT should be ready to intervene noticeably earlier during the IC's recreation than in prior walkthrough lessons.
-- *TEM*: IT logs the student capability level played this session in the IC training record.
+- *Weather*: Lesson can go ahead if conditions are VMC. IT can simulate a clear horizon if required. (ceiling >3000 ft AGL, smooth air, surface wind \<25 kt — postpone if turbulent).
+- *Altitude*: Above 2500 ft AGL; all recoveries complete by 2500 ft AGL minimum.
+- *Emergency Procedures*: Forced landing area pre-selected before HASSELL; IT retains PIC authority throughout; given the risk profile, the IT should be ready to intervene noticeably earlier during the IC's recreation than in prior walkthrough lessons.
+- *TEM*: IT-as-student and IT-as-instructor distinction made clearly with "student/instructor taking over" and correct control handover.
+- *HF (4.1/4.4)*: IT confirms the IC managed session prep and time effectively (materials ready, brief timed, no last-minute scramble) and monitors both own and simulated-student fatigue/workload throughout, adjusting pace if either degrades.
 - *Aircraft Limits*: As per ab-initio source lesson.
 ]
 
 ,homework:[
-- Review `phase1-lesson07-Advanced Turning.typ` in full ahead of the next walkthrough lesson.
+- Review `phase1-lesson07-Advanced Turning` in full ahead of the next walkthrough lesson.
 - Prepare brief notes on the spiral dive recovery sequence and why wings-level must precede backpressure — this principle recurs through several later lessons.
 ]
 )
