@@ -16,7 +16,7 @@ Rehearse the full Instructor Flight Test format and standard — conducted by th
 ]
 
 ,overview: [
-This rehearsal follows the same format the real Instructor Flight Test uses — structured against the RAAus Form INS001 (Instructor Issue or Upgrade) checklist, plus GCSFT's own lesson-plan-authorship spot-check — assessed against the same RAAP 5/6/7 flight tolerance table (see that lesson plan). The only difference from the real test is who is administering it.
+This rehearsal follows the same format the real Instructor Flight Test uses — structured against the RAAus Form INS001 (Instructor Issue or Upgrade) checklist, plus GCSFT's own spot check — assessed against the same RAAP 5/6/7 flight tolerance table (see that lesson plan). The only difference from the real test is who is administering it.
 ]
 
 ,learning_outcomes: [
@@ -31,7 +31,7 @@ No new outcomes — full rehearsal against the same standard the Instructor Flig
 
 ,ground_brief_topics: [
 Total time: 45–60 min \
-Equipment required: Logbook, syllabus/FIRM, nominated lesson topic, a second novel topic for the lesson-plan-authorship spot-check, whiteboard \
+Equipment required: Logbook, syllabus/FIRM, nominated lesson topic, a second novel topic for the lesson plan spot check, whiteboard \
 
 *Administration & Ground Based Assessment* (rehearsed, per INS001 — no paperwork actually submitted)
 - IT reviews logbook, flight activity, and instructor training record as the CFI will
@@ -44,9 +44,9 @@ Equipment required: Logbook, syllabus/FIRM, nominated lesson topic, a second nov
 - IC delivers the full pre-flight briefing for the nominated lesson, unaided, as they would for a real ab-initio student
 - IT questions technical/aerodynamic depth beyond the brief content itself, as a reviewing authority would, not as a coaching IT would
 
-*Lesson-Plan Authorship Spot-Check* (15–20 min)
+*lesson plan Authorship Spot Check* (15–20 min)
 - IT nominates a topic the IC has not previously drafted a lesson plan for (not FLWOP — that was rehearsed in Lesson 11)
-- IC sketches a lesson-plan outline live, referencing the RAAus Syllabus of Flight Training (V7) aloud — the same task the real test will require
+- IC sketches a lesson plan outline live, referencing the RAAus Syllabus of Flight Training (V7) aloud — the same task the real test will require
 
 *PIC-in-Emergency & Role-Play Protocol* (10 min)
 - Nominate PIC for a genuine emergency — usually whoever has greater currency/experience on type
@@ -58,13 +58,13 @@ Equipment required: Logbook, syllabus/FIRM, nominated lesson topic, a second nov
 - Review logbook, flight activity, and instructor training record
 - Question the Ground Based Assessment topics above
 - Nominate the lesson and student context; play "the student" for the briefing without coaching
-- Nominate the novel topic for the lesson-plan-authorship spot-check
+- Nominate the novel topic for the lesson plan-authorship spot check
 - Confirm PIC-in-emergency and handover/takeover phrasing before start-up
 #text(size:12pt)[*Instructor Candidate (IC)*]
 - Present logbook and instructor training record for review
 - Answer the Ground Based Assessment questioning to the required depth
 - Deliver the full pre-flight briefing for the nominated lesson to instructor standard
-- Sketch a lesson-plan outline live for the novel topic, referencing RAAus V7
+- Sketch a lesson plan outline live for the novel topic, referencing RAAus V7
 - Conduct normal pre-flight administration as if for a real student
 ]
 
@@ -93,7 +93,7 @@ Equipment required: Logbook, syllabus/FIRM, nominated lesson topic, a second nov
 
 ,post_flight:[
 - *IC Self-Debrief*: IC self-assesses first, using the same technique they would use with a real student.
-- *IT Feedback (as reviewing authority)*: Technical knowledge, briefing standard, lesson-plan-authorship transfer, patter, circle-of-confidence/takeover judgement, handling — plus, once the assessment role is dropped, mentoring notes on how to close any remaining gap.
+- *IT Feedback (as reviewing authority)*: Technical knowledge, briefing standard, lesson plan-authorship transfer, patter, circle-of-confidence/takeover judgement, handling — plus, once the assessment role is dropped, mentoring notes on how to close any remaining gap.
 - *Next Steps*: To standard → confirm readiness to book the real Instructor Flight Test. Not to standard → targeted remediation on the deficient item(s) (return to the relevant walkthrough lesson or a further consolidation session), then re-run this practice test in full.
 ]
 
@@ -104,7 +104,7 @@ Equipment required: Logbook, syllabus/FIRM, nominated lesson topic, a second nov
 
 #text(size:12pt)[*Completion requirements*]
 - ☐ Pre-flight briefing delivered for the nominated lesson, unaided, to instructor standard
-- ☐ Lesson-plan outline sketched live for a novel topic, correctly referencing RAAus V7
+- ☐ lesson plan outline sketched live for a novel topic, correctly referencing RAAus V7
 - ☐ In-flight patter matched to lesson content and normal aircraft handling/procedures
 - ☐ Pre-take-off safety brief, steep turns, stall entry/recovery (power on/off), forced landing to 500 ft AGL with patter, circuit incl. simulated emergency, unusual attitude recovery — all demonstrated
 - ☐ Circle of confidence and explicit, non-silent control takeover demonstrated, including under the deliberate error/unstable approach
