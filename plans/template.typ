@@ -33,7 +33,7 @@
             columns: (auto, 1fr),
             // Replace with your logo path or URL in typst.app
             image("resources/logo.png", height: 2cm),
-            align(right +horizon)[#text()[Lesson Plan - Ab Initio]]
+            align(right +horizon)[#text()[Lesson Plan - #{if "plan_type" in metadata { metadata.plan_type } else { "Ab Initio" }}]]
           )
         ]
       ]
