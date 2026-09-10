@@ -78,9 +78,9 @@ Equipment required: Aircraft, aircraft model, access to electronic briefing, POH
 - [CRM] Control handover procedure: "I have control/you have control" stated clearly; both occupants confirm on controls before release; "follow me through" technique — feel the input, do not add to it
 
 *Required Documents for Flight* (5 minutes)
-- Documents that must be available on board: pilot certificate; aircraft registration; maintenance release (current and signed)
+- Documents that must be available on board: pilot certificate; maintenance release (current and signed)
 - Documents are checked during the pre-flight sequence and held in the aircraft documentation folder
-- If any document is missing: the flight does not proceed; report to CFI
+- If any document is missing: the flight does not proceed; report to CFI or Senior Instructor
 
 *Aircraft Documentation — Maintenance Release and POH* (5 minutes)
 - Purpose: confirms the aircraft has been maintained in accordance with the correct schedule and is authorised for flight
