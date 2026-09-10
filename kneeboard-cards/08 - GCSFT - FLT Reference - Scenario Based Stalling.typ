@@ -13,7 +13,7 @@
     (badge: "p",  content: [*S&L stall review*: Clean and approach config; one of each; confirm L6 standard retained]),
     (badge: "dp", content: [*Turning stall 30° AoB*: Outer wing stalls; wing drop; _rudder stops roll, ailerons neutral_; student practices]),
     (badge: "dp", content: [*Climb (50% power) & Descent stall*: Demo symptoms; power causes instability; student practices]),
-    (badge: "dp",  content: [*Slipping turn stall 30° AoB*: Increased outer wing AoA; wing drop; recovery demo only]),
+    (badge: "dp",  content: [*Slipping turn stall 30° AoB*: Increased outer wing AoA; wing drop; recovery; student practices]),
     (badge: "dp", content: [*Go-around scenario*: Full flap; demo to pre-stall only; student prevents stall on "recover" prompt]),
     (badge: "dp", content: [*EFATO scenario*: Power to idle on upwind; demo fixation on landing area; student practices]),
     (badge: "dp", content: [*Elevator trim stall*: Trim nose-up, full power — rapid pitch-up; push against trim, reduce power if needed, retrim; student practices]),
