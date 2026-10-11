@@ -21,7 +21,6 @@ The student enters, maintains, and levels off from a range of descent profiles �
 ,learning_outcomes: [
 #text(size:12pt)[*Knowledge*]
 - Recall the four forces and their interaction during a steady descent
-- Explain that reduced thrust creates the descent — not reduced lift
 - Describe the factors affecting descent and glide performance (thrust, flap, wind, density altitude)
 - Explain the effect of flap on descent angle, rate, and airspeed
 - Apply a rule of thumb to estimate top of descent point
@@ -76,12 +75,12 @@ Equipment required: Aircraft model, access to electronic briefing, whiteboard \
 - Level-off: PAT — power leads because inertia causes continued sink
 
 *Flap Effect* (2 minutes)
-- Increasing flap increases rate and angle of descent; reduces best glide range
+- Increasing flap increases rate and angle of descent; reduces glide range
 - Any descent with flap requires more power to maintain the same airspeed
 
 *Emergency Descent* (3 minutes)
 - When it applies: fire, smoke or fumes in the cockpit where rapid altitude loss is required; or if oxygen were required at altitude
-- Entry: published emergency descent procedure from the POH; or if not published - power idle, roll to 45° AOB, pitch for 100-110 knots in a descending turn; control AoB and pitch carefully to avoid spiral dive
+- Entry: published emergency descent procedure from the POH; or if not published - power idle, pitch for 100-110 knots, roll to 45° AOB turn; control AoB and pitch carefully to avoid spiral dive
 - Communication: MAYDAY or PAN as appropriate; advise ATC (or transmit blind on CTAF/Centre) of intentions
 
 *E8 Introduction — Full Takeoff* (10 minutes)
