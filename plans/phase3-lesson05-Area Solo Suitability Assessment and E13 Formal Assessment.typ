@@ -4,7 +4,7 @@
   title: "Area Solo Suitability Assessment and E13 Formal Assessment",
   unit: "Group A (3-Axis) | Phase 3 — Lesson 5 | Decision Gate + E13",
   author: "C.Moroney",
-  version: "v1.0.0",
+  version: "v1.0.1",
 )
 
 #let lesson = (
@@ -172,11 +172,12 @@ All competency requirements met ✓ + Weather marginal = ❌ Defer; rebook when 
 ]
 
 ,safety:[
-- *Weather*: Ceiling >3000 ft AGL for E10/E16; >2500 ft for all other exercises; smooth air preferred; wind \<25 knots
-- *Altitude*: HASSELL minimum heights enforced; FLWOP go-around height confirmed before departure; unusual attitude exercises above 2500 ft AGL
+- *Weather*: E10: Cloud less than SCT below 3500 ft; maintain VMC throughout (above 3000 ft: 1500 m horizontal, 1000 ft vertical from cloud); ceiling >3000 ft AGL for E16; >2500 ft for all other exercises; smooth air preferred; wind \<25 knots
+- *Altitude*: HASSELL minimum heights enforced; E10 stalls: *Straight and steady stalls: recovery complete by 2500 ft AGL. All other stalls (turning, slipping, climbing, descending, scenario, accelerated): recovery complete by 3000 ft AGL.*; FLWOP go-around height confirmed before departure; unusual attitude exercises above 2500 ft AGL
 - *Emergency Procedures*: EFATO brief before departure; training go-around height confirmed before flight
 - *TEM*:
   - Assessment flight — instructor maintains non-interventionist stance while remaining safety-ready
+  - *No pro-spin inputs below Va — by student or instructor, not even to induce a wing drop.*
   - Overhead join: monitor for traffic conflicts; intervene if student is about to descend into conflict
   - Radio failure simulation: student does not actually turn off the radio — brief the simulation distinction before departure
   - MAYDAY simulation: transmit on pre-agreed training frequency; do not use CTAF without coordinating with CFI

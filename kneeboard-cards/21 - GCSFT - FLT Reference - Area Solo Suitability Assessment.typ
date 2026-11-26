@@ -4,7 +4,7 @@
   title: "Area Solo Suitability Assessment and E13",
   unit: "Phase 4 — Lesson 5 | Decision Gate + E13",
   author: "C.Moroney",
-  version: "v1.0.0",
+  version: "v1.0.1",
 )
 
 #let card = (
@@ -65,7 +65,7 @@
   ],
 
   safety: [
-    Element-specific minima apply: ceiling *>3000 ft* for stalling, *>2500 ft* for other area exercises
+    Element-specific minima apply: cloud *\<SCT below 3500 ft* (VMC) for stalling, ceiling *>2500 ft* for other area exercises · *Recover by 2500 ft AGL (straight & steady stalls only), all other stalls by 3000 ft AGL* · *No pro-spin inputs below V#sub[A], not even to induce a wing drop*
   ],
 )
 

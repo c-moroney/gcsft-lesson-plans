@@ -4,7 +4,7 @@
   title: "Area Solo Consolidation",
   unit: "Phase 4 — Lesson 6 | E9, E7, E14, E15, E16",
   author: "C.Moroney",
-  version: "v1.0.0",
+  version: "v1.0.1",
 )
 
 #let card = (
@@ -21,7 +21,7 @@
         - *Maintenance release:* reviewed; all items acceptable; anything to brief instructor?
         - *EFATO plan:* briefed
         - *Radio failure plan:* what will I do if radio fails in the training area?
-        - *HASSELL heights:* if conducting stalls or steep turns — note recovery heights
+        - *HASSELL heights:* if conducting stalls or steep turns — note recovery heights (straight & steady stalls 2500 ft AGL; all other stalls 3000 ft AGL)
         - *Training area boundaries:* noted
         - *IMSAFE:* am I genuinely fit to fly today?
       ],
@@ -69,7 +69,7 @@
   ],
 
   safety: [
-    Area solo minima every session: ceiling *>2500 ft AGL* · vis >10 km · no turbulence or convective activity · *Student must review MR and brief instructor before every solo* · Instructor confirms weather minima before every solo departure · If student reports concern after solo — debrief thoroughly before next flight
+    Area solo minima every session: ceiling *>2500 ft AGL* (stalling: cloud less than SCT below 3500 ft) · *Recover by 2500 ft AGL (straight & steady stalls only), all other stalls by 3000 ft AGL* · *No pro-spin inputs below V#sub[A], not even to induce a wing drop* · vis >10 km · no turbulence or convective activity · *Student must review MR and brief instructor before every solo* · Instructor confirms weather minima before every solo departure · If student reports concern after solo — debrief thoroughly before next flight
   ],
 )
 

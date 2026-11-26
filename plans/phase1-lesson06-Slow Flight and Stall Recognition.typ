@@ -4,7 +4,7 @@
   title: "Slow Flight and Stall Recognition",
   unit: "Group A (3-Axis) | Phase 1 — Lesson 6 | E7, E8",
   author: "C.Moroney",
-  version: "v1.0.2",
+  version: "v1.0.3",
 )
 
 #let lesson = (
@@ -16,6 +16,8 @@ Identify the symptoms of an impending stall in a range of configurations and exe
 
 ,overview: [
 Stall awareness is a prerequisite for safe circuit operations — every approach and landing involves flight close to minimum control speed. This lesson is therefore placed before circuit training begins not only to train the student in stall recognition and avoidance, but to prepare them for the landing manoeuvre. The student learns to configure and manage the aircraft in slow flight, recognise progressive pre-stall symptoms across configurations, and execute correct recovery actions. The HASSELL check is introduced and will be used for all subsequent high-risk manoeuvre training. This lesson is the first of a paired element: Scenario Based Stalling (E10) in Lesson 8 completes the two flight requirement for this element.
+
+All stalls in this lesson are straight and steady — recovery complete by 2500 ft AGL. *2500 ft applies to straight and steady stalls only; any other stall requires recovery complete by 3000 ft AGL.* *No pro-spin inputs below Va — by student or instructor, not even to induce a wing drop.* If a wing does not drop naturally, patter the recovery; never induce one.
 ]
 
 ,learning_outcomes: [
@@ -167,10 +169,11 @@ Student conducts takeoff independently. Instructor does not prompt during ground
 
 ,safety:[
 - *Weather*: Horizon clearly visible, ceiling >3000 ft, smooth air, wind \<25 knots. Postpone if turbulent
-- *Altitude*: Conduct manoeuvres above 2500 ft AGL; all recoveries complete by 2500 ft AGL minimum
+- *Altitude*: All stalls in this lesson are straight and steady — recovery complete by 2500 ft AGL. *2500 ft applies to straight and steady stalls only; any other stall requires recovery complete by 3000 ft AGL.*
 - *Emergency Procedures*: Forced landing area pre-selected before HASSELL; instructor ready to intervene immediately if wing drop develops with incorrect aileron input or minimum height is threatened
 - *TEM*:
   - Brief startle response management before first stall
+  - *No pro-spin inputs below Va — by student or instructor, not even to induce a wing drop.* If a wing does not drop naturally, patter the recovery; never induce one.
   - Ensure airspace is clear before each HASSELL and each manoeuvre
   - Be prepared to take control immediately if spin entry is imminent or minimum height is approached
   - Monitor for student overload — pause between exercises if stress or fatigue detected

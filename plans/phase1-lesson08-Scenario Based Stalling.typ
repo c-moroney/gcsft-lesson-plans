@@ -4,7 +4,7 @@
   title: "Scenario Based Stalling",
   unit: "Group A (3-Axis) | Phase 1 — Lesson 8 | E10, E8, E1",
   author: "C.Moroney",
-  version: "v1.0.1",
+  version: "v1.0.2",
 )
 
 #let lesson = (
@@ -17,7 +17,9 @@ Identify and recover from stalls in all configurations, attitudes, and power set
 ,overview: [
 This lesson pairs with E7 (Slow Flight and Stall Recognition, Lesson 6) to satisfy the two-flight requirement for stalling competency. Where Lesson 6 focused on recognising and recovering from the approaching stall in straightforward configurations, this lesson places stalling in realistic flight scenarios — the go-around, turning flight, and engine failure after takeoff. The student must connect the aerodynamic knowledge from E7 and E9 to the actual high-risk scenarios.
 
-Spin entry awareness is discussed as a familiarisation exercise as intentional spinning is not conducted within this syllabus. Pro-spin inputs below manoeuvring speed are not permitted.
+Spin entry awareness is discussed as a familiarisation exercise as intentional spinning is not conducted within this syllabus. *No pro-spin inputs below Va — by student or instructor, not even to induce a wing drop.* If a wing does not drop naturally, patter the recovery; never induce one.
+
+*Straight and steady stalls: recovery complete by 2500 ft AGL. All other stalls (turning, slipping, climbing, descending, scenario, accelerated): recovery complete by 3000 ft AGL.*
 
 The instructor demonstrates all new scenario content; the student then practises each scenario under supervision. Full C standard for E10 requires the element to be revisited in Phase 3. The standard required here is S — sufficient for safe operations before first solo.
 
@@ -104,12 +106,12 @@ Equipment required: Aircraft model, whiteboard \
 - Uncoordinated flight (ball displaced) at high AoA is the risk combination
 - Visual cue of spin entry: rapid yaw/roll in one direction; nose pitches steeply down
 - Recovery awareness: close throttle; opposite rudder; forward stick; recover from the dive (PARE is generic recovery BUT it is vital to refer to POH)
-- Emphasis: awareness only; intentional spinning is not part of this training; pro-spin inputs below Va are not permitted
+- Emphasis: awareness only; intentional spinning is not part of this training; *no pro-spin inputs below Va — by student or instructor, not even to induce a wing drop*
 ]
 
 ,ground_tasks:[
 #text(size:12pt)[*Instructor*]
-- Spot check of weather, NOTAMs, and maintenance briefing performed by the student — smooth air preferred; ceiling >3000 ft AGL required
+- Spot check of weather, NOTAMs, and maintenance briefing performed by the student — smooth air preferred; cloud less than SCT below 3500 ft (maintain VMC) required
 
 #text(size:12pt)[*Student*]
 - Complete IMSAFE self-assessment and operations whiteboard
@@ -184,12 +186,13 @@ Student conducts takeoff and transit to the training area. Instructor assumes an
 ]
 
 ,safety:[
-- *Weather*: Ceiling >3000 ft AGL; smooth air preferred — postpone if very turbulent; wind \<25 knots
-- *Altitude*: All stall exercises above 2500 ft AGL; all recoveries complete by 2500 ft AGL; HASSELL minimum height enforced
+- *Weather*: Cloud less than SCT below 3500 ft; maintain VMC throughout (above 3000 ft: 1500 m horizontal, 1000 ft vertical from cloud); smooth air preferred — postpone if very turbulent; wind \<25 knots
+- *Altitude*: *Straight and steady stalls: recovery complete by 2500 ft AGL. All other stalls (turning, slipping, climbing, descending, scenario, accelerated): recovery complete by 3000 ft AGL.*; HASSELL minimum height enforced
 - *Emergency Procedures*: Forced landing area preselected before HASSELL; instructor ready to intervene immediately if spin entry is imminent or minimum height is threatened
 - *TEM*:
   - Brief startle response management before flight — particularly for the go-around and EFATO scenarios
-  - Spin entry awareness: brief precise conditions and immediate recovery before flight; pro-spin inputs below Va are not permitted
+  - Spin entry awareness: brief precise conditions and immediate recovery before flight; demonstrated above Va only
+  - *No pro-spin inputs below Va — by student or instructor, not even to induce a wing drop.* If a wing does not drop naturally, patter the recovery; never induce one.
   - Instructor takes control at first sign of incipient spin development
   - Monitor student for overload — pause between exercises; do not stack scenarios
   - Maintain SA regarding controlled airspace boundaries

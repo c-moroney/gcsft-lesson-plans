@@ -4,7 +4,7 @@
   title: "Instructor Flight Test",
   unit: "Instructor Standards | Initial Issue — RAAus Instructor Rating, Group A (Three Axis) | RAAus Form INS001",
   author: "C.Moroney",
-  version: "v1.1.0",
+  version: "v1.1.1",
   plan_type: "Instructor Training",
 )
 
@@ -184,8 +184,8 @@ Equipment required: Logbook, RAAus membership (Instructor Portal), medical evide
 ]
 
 ,safety:[
-- *Weather*: Sufficient for full syllabus demonstration — stalls, steep turns, simulated forced landing, unusual attitudes; comparable to advanced-phase training minimums.
-- *Altitude*: Recovery height checked before stalls/steep turns/unusual attitudes; FLWOP floor at 500 ft AGL.
+- *Weather*: Sufficient for full syllabus demonstration — stalls, steep turns, simulated forced landing, unusual attitudes; comparable to advanced-phase training minimums; stalling: cloud less than SCT below 3500 ft; maintain VMC throughout (above 3000 ft: 1500 m horizontal, 1000 ft vertical from cloud).
+- *Altitude*: Recovery height checked before stalls/steep turns/unusual attitudes. *Straight and steady stalls: recovery complete by 2500 ft AGL. All other stalls (turning, slipping, climbing, descending, scenario, accelerated): recovery complete by 3000 ft AGL.* *No pro-spin inputs below Va — by student or instructor, not even to induce a wing drop.* FLWOP floor at 500 ft AGL.
 - *Emergency*: PIC-in-emergency nominated and briefed before start-up — two experienced pilots aboard is itself a specific risk; don't skip this step.
 - *TEM*: Real PIC authority and the CFI's role-play as "the student" kept clearly separated at all times via handover/takeover phraseology; simulated failures briefed clearly so no unsafe operation of real switches/throttle; control is never shared or silently assisted.
 - *Aircraft Limits*: Operate within POH limits; no abrupt inputs.

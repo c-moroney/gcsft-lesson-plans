@@ -3,7 +3,7 @@
   title: "Slow Flight and Stall Recognition",
   unit: "Phase 1 — Lesson 6 | E7",
   author: "C.Moroney",
-  version: "v1.0.2",
+  version: "v1.0.3",
 )
 #let card = (
   aim: [Identify approaching stall symptoms in a range of configurations; execute a safe, timely recovery.],
@@ -32,7 +32,7 @@
     *Note:* Full C requires E10 (L10)
   ],
   safety: [
-    *Smooth air required — postpone if turbulent* · *Above 2500 ft AGL* · All recoveries above 2500 ft AGL · HASSELL every 15 min · Intervene immediately on wing drop + reaction with aileron · surface wind \<25 knots
+    *Smooth air required — postpone if turbulent* · *Recover by 2500 ft AGL — straight & steady only (others 3000 ft)* · *No pro-spin inputs below V#sub[A], not even to induce a wing drop* · Wind \<25 kt
   ],
 )
 #show: body => kneeboard(metadata, card, body)

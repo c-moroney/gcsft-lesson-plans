@@ -4,7 +4,7 @@
   title: "Area Solo Consolidation",
   unit: "Group A (3-Axis) | Phase 3 — Lesson 6 | E9, E7, E14a, E14b, E15, E16",
   author: "C.Moroney",
-  version: "v1.0.0",
+  version: "v1.0.1",
 )
 
 #let lesson = (
@@ -144,9 +144,11 @@ Element-specific errors: refer to common errors in each Phase 3 lesson plan for 
 ]
 
 ,safety:[
-- *Weather*: Area solo minima apply: ceiling >2500 ft AGL; visibility >10 km; no significant turbulence or convective activity; crosswind within solo authorisation limit
+- *Weather*: Area solo minima apply: ceiling >2500 ft AGL; visibility >10 km; no significant turbulence or convective activity; crosswind within solo authorisation limit; if stalling solo: cloud less than SCT below 3500 ft; maintain VMC throughout (above 3000 ft: 1500 m horizontal, 1000 ft vertical from cloud)
 - *Maintenance release*: Student must review and brief instructor before every solo flight; any concern = consult instructor before flying
 - *HASSELL*: Student confirms HASSELL plan and minimum heights before every solo departure
+- *Stall recovery altitudes*: *Straight and steady stalls: recovery complete by 2500 ft AGL. All other stalls (turning, slipping, climbing, descending, scenario, accelerated): recovery complete by 3000 ft AGL.*
+- *Pro-spin inputs*: *No pro-spin inputs below Va — by student or instructor, not even to induce a wing drop.*
 - *TEM*:
   - Instructor confirms area solo weather minima are met before every solo departure
   - If student reports any concern after a solo session: debrief thoroughly before next flight

@@ -4,7 +4,7 @@
   title: "Unusual Attitudes and Emergencies",
   unit: "Group A (3-Axis) | Phase 3 — Lesson 4 | E16 + E10 check",
   author: "C.Moroney",
-  version: "v1.0.0",
+  version: "v1.0.1",
 )
 
 #let lesson = (
@@ -17,7 +17,9 @@ Recognise and recover from unusual attitudes, and manage other in-flight emergen
 ,overview: [
 This lesson has two distinct components: an E10 solo standard confirmation and the introduction of E16 (Unusual Attitudes and Emergencies).
 
-The E10 check is entirely student-led. The student completes HASSELL, briefs the stalling sequence, and executes scenario stalls without instructor input. The ceiling requirement for E10 (>3000 ft AGL) applies to the entire lesson. The instructor is a silent observer throughout the E10 check. If E10 is assessed as NC, the instructor notes this in the training record and continues to E16 for the lesson — remediation for E10 is scheduled as a separate flight before the area solo suitability assessment. The E16 result is independent.
+The E10 check is entirely student-led. The student completes HASSELL, briefs the stalling sequence, and executes scenario stalls without instructor input. The cloud requirement for E10 (less than SCT below 3500 ft; maintain VMC) applies to the entire lesson. The instructor is a silent observer throughout the E10 check. If E10 is assessed as NC, the instructor notes this in the training record and continues to E16 for the lesson — remediation for E10 is scheduled as a separate flight before the area solo suitability assessment. The E16 result is independent.
+
+*Straight and steady stalls: recovery complete by 2500 ft AGL. All other stalls (turning, slipping, climbing, descending, scenario, accelerated): recovery complete by 3000 ft AGL.* *No pro-spin inputs below Va — by student or instructor, not even to induce a wing drop.*
 
 The ADM framework is explicitly introduced in this lesson as a second exposure — the same framework from Lesson 9, now applied to novel in-flight emergency scenarios. This second exposure is deliberate: the student should recognise that ADM applies for any novel situation, not just PSL.
 
@@ -98,14 +100,14 @@ Equipment required: Aircraft model, whiteboard \
 
 ,ground_tasks:[
 #text(size:12pt)[*Student briefs the complete flight:*]
-- Obtains NAIPS TAF/GAF/GPWT; checks BOM radar; briefs conditions — smooth air preferred; ceiling >3000 ft AGL for E10 check; confirms suitability
+- Obtains NAIPS TAF/GAF/GPWT; checks BOM radar; briefs conditions — smooth air preferred; cloud less than SCT below 3500 ft for E10 check; confirms suitability
 - Checks NOTAMs; briefs relevant items
 - Reviews maintenance release; briefs instructor; instructor signs
 - Briefs planned flight: departure, E10 check sequence (HASSELL minimum height), E16 exercises, return, EFATO plan
 - Delivers pre-takeoff safety brief independently
 
 #text(size:12pt)[*Instructor*]
-- Receives brief; confirms conditions are suitable; confirms ceiling >3000 ft AGL
+- Receives brief; confirms conditions are suitable; confirms cloud less than SCT below 3500 ft
 - Confirms HASSELL minimum height for E10 check
 - Delivers E16 ground brief above; explicitly references ADM from Lesson 9
 - Does not provide any content on the E10 check — this is student-led
@@ -187,11 +189,12 @@ Student conducts return transit, circuit join, and landing independently.
 ]
 
 ,safety:[
-- *Weather*: Horizon clearly visible; ceiling >3000 ft AGL (E10 requirement); smooth air essential; wind \<25 knots
-- *Altitude*: E10 check above 2500 ft AGL; E16 unusual attitude exercises above 2500 ft AGL; recoveries complete above 2000 ft AGL
+- *Weather*: Horizon clearly visible; cloud less than SCT below 3500 ft; maintain VMC throughout (above 3000 ft: 1500 m horizontal, 1000 ft vertical from cloud) (E10 requirement); smooth air essential; wind \<25 knots
+- *Altitude*: E10 check: *Straight and steady stalls: recovery complete by 2500 ft AGL. All other stalls (turning, slipping, climbing, descending, scenario, accelerated): recovery complete by 3000 ft AGL.*; E16 unusual attitude exercises above 2500 ft AGL; recoveries complete above 2000 ft AGL
 - *Emergency Procedures*: All exercises clearly briefed; HASSELL before E10 check; brief nose-high maximum angle and nose-low maximum airspeed before flight
 - *TEM*:
   - E10 check: instructor is observer but safety-ready; take control at first sign of loss of control
+  - *No pro-spin inputs below Va — by student or instructor, not even to induce a wing drop.*
   - Nose-low exercise: Exceeding Vno only permitted in smooth air; take control immediately if any risk of exceeding Vne
   - Monitor for spatial disorientation or discomfort after unusual attitude recovery
 ]

@@ -4,7 +4,7 @@
   title: "Practice Flight Test",
   unit: "Phase 5 — Lesson 1 | All Elements",
   author: "C.Moroney",
-  version: "v1.0.0",
+  version: "v1.0.1",
 )
 
 #let card = (
@@ -78,7 +78,7 @@
   ],
 
   safety: [
-    All element-specific minima apply: ceiling *>3500 ft* for stalling, *>2500 ft* for area exercises, *>1500 ft* for circuit elements · EFATO brief before departure · ABCDEF sequence briefed before FLWOP sim · Examiner non-interventionist but safety-ready at all times
+    All element-specific minima apply: cloud *\<SCT below 3500 ft* (VMC) for stalling, ceiling *>2500 ft* for area exercises, *>1500 ft* for circuit elements · *Recover by 2500 ft AGL (straight & steady stalls only), all other stalls by 3000 ft AGL* · *No pro-spin inputs below V#sub[A], not even to induce a wing drop* · EFATO brief before departure · ABCDEF sequence briefed before FLWOP sim · Examiner non-interventionist but safety-ready at all times
   ],
 )
 

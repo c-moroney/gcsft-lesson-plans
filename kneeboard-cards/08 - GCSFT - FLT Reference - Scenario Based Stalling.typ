@@ -3,13 +3,13 @@
   title: "Scenario Based Stalling",
   unit: "Phase 1 — Lesson 8 | E10",
   author: "C.Moroney",
-  version: "v1.0.1",
+  version: "v1.0.2",
 )
 #let card = (
   aim: [Identify the symptoms of an impending stall in a range of configurations and execute a safe, timely recovery to normal flight. Recover from a fully developed stall to normal flight. Manage the aircraft confidently in slow flight.],
   sequence: (
     (badge: "p",  content: [*E8*: Independent; no prompting at any stage]),
-    (badge: "p",  content: [*HASSELL*: Student completes before sequence (360° lookout) — _and every 15 minutes thereafter (180° lookout)_]),
+    (badge: "p",  content: [*HASSELL*: Student completes before sequence (360° lookout) — _and every 15 min thereafter (180° lookout)_]),
     (badge: "p",  content: [*S&L stall review*: Clean and approach config; one of each; confirm L6 standard retained]),
     (badge: "dp", content: [*Turning stall 30° AoB*: Outer wing stalls; wing drop; _rudder stops roll, ailerons neutral_; student practices]),
     (badge: "dp", content: [*Climb (50% power) & Descent stall*: Demo symptoms; power causes instability; student practices]),
@@ -31,7 +31,7 @@
     *Note:* Two-flight stalling requirement (E7 + E10) now satisfied. Full C requires Phase 3.
   ],
   safety: [
-    *Smooth air required* · *Above 2500 ft AGL* · All recoveries above 2500 ft AGL · Pro-spin inputs below V#sub[A] *prohibited* · Take control at first sign of incipient spin · *+25° pitch limit when >5000 RPM*
+    *Smooth air required* · Cloud *\<SCT below 3500 ft* (VMC) · *Recover by 2500 ft AGL (straight & steady stalls only), all other stalls by 3000 ft AGL* · *No pro-spin inputs below V#sub[A], not even to induce a wing drop* · Take control at first sign of incipient spin · *+25° pitch limit when >5000 RPM*
   ],
 )
 #show: body => kneeboard(metadata, card, body)

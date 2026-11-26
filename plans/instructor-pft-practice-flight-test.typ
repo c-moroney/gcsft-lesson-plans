@@ -4,7 +4,7 @@
   title: "Instructor Practice Flight Test",
   unit: "Instructor Training | Post-Consolidation — IT-Conducted Rehearsal of the Instructor Flight Test",
   author: "C.Moroney",
-  version: "v1.0.0",
+  version: "v1.0.1",
   plan_type: "Instructor Training",
 )
 
@@ -132,8 +132,8 @@ Equipment required: Logbook, syllabus/FIRM, nominated lesson topic, a second nov
 ]
 
 ,safety:[
-- *Weather*: Sufficient for full syllabus demonstration — stalls, steep turns, simulated forced landing, unusual attitudes; comparable to the stricter end of the walkthrough's own minima (Lessons 6/8/12).
-- *Altitude*: Recovery height checked before stalls/steep turns/unusual attitudes; FLWOP floor at 500 ft AGL.
+- *Weather*: Sufficient for full syllabus demonstration — stalls, steep turns, simulated forced landing, unusual attitudes; comparable to the stricter end of the walkthrough's own minima (Lessons 6/8/12); stalling: cloud less than SCT below 3500 ft; maintain VMC throughout (above 3000 ft: 1500 m horizontal, 1000 ft vertical from cloud).
+- *Altitude*: Recovery height checked before stalls/steep turns/unusual attitudes. *Straight and steady stalls: recovery complete by 2500 ft AGL. All other stalls (turning, slipping, climbing, descending, scenario, accelerated): recovery complete by 3000 ft AGL.* *No pro-spin inputs below Va — by student or instructor, not even to induce a wing drop.* FLWOP floor at 500 ft AGL.
 - *Emergency Procedures*: PIC-in-emergency nominated and briefed before start-up — two experienced pilots aboard is itself a specific risk; don't skip this step.
 - *TEM*: Real PIC authority and the IT's role-play as "the student" kept clearly separated at all times via handover/takeover phraseology; control is never shared or silently assisted.
 - *Aircraft Limits*: Operate within POH limits; no abrupt inputs.

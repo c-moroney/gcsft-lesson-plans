@@ -4,7 +4,7 @@
   title: "Advanced Turning",
   unit: "Group A (3-Axis) | Phase 1 — Lesson 7 | E9",
   author: "C.Moroney",
-  version: "v1.0.2",
+  version: "v1.0.3",
 )
 
 #let lesson = (
@@ -19,7 +19,7 @@ This lesson builds directly on E6 (Basic Turning) and introduces steep turns at 
 
 The HASSELL check was introduced in Lesson 6 and is now mandatory before every manoeuvre sequence. The instructor demonstrates all new content; the student then practises each manoeuvre under supervision. The student should be able to manage most of the ground operations, including pre-flight, takeoff, and transit to the training area. The instructor should assume a supervisory role for these elements.
 
-Skidding turns are discussed for awareness but are not practised by the student. No pro-spin inputs by the student are required or permitted, and no pro-spin inputs by the instructor are permitted below Va.
+Skidding turns are discussed for awareness and demonstrated by the instructor only, above Va; they are not practised by the student. No pro-spin inputs by the student are required or permitted, and *no pro-spin inputs by the instructor are permitted below Va — not even to induce a wing drop.*
 
 Full C standard for E9 requires the element to be revisited in Phase 3, where the student operates as PIC in the training area environment. The standard required here is S — sufficient for safe operations before first solo.
 ]
@@ -179,7 +179,7 @@ HASSELL check completed by student before the manoeuvre sequence. Instructor dem
 - *TEM*:
   - Brief spiral dive recovery sequence on the ground and confirm student recall before first steep turn
   - Instructor ready to take control immediately if bank exceeds 60° or nose drops more than 30° below horizon without recovery initiated
-  - Skidding turn: instructor demonstration only; do not allow student to practise pro-spin inputs
+  - Skidding turn: instructor demonstration only, above Va; do not allow student to practise pro-spin inputs
   - Monitor for spatial disorientation in sustained steep turns; pause and allow reorientation if required
   - Monitor for G-strain or discomfort; pause if required
   - Maintain SA regarding controlled airspace throughout
