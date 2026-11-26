@@ -4,7 +4,7 @@
   title: "Phase 1 Consolidation and Radio Essentials",
   unit: "Group A (3-Axis) | Phase 1 — Lesson 9 | E1–E10, E13 assessed",
   author: "C.Moroney",
-  version: "v1.0.0",
+  version: "v1.0.1",
 )
 
 #let lesson = (
@@ -19,7 +19,9 @@ This lesson is the Phase 1 milestone check and the confirmation of readiness for
 
 The first part of the ground brief reviews Phase 1 theory and briefs the assessment sequence. The second part covers the radio and transponder procedures needed in the circuit. Full E13 competency — airspace detail, area procedures, and radio failure — is formally assessed later in Phase 3. In the air, the student demonstrates all Phase 1 elements in a connected sequence with relevant radio calls attempted throughout. The instructor observes and assesses; does not coach.
 
-Because E10 requires ceiling >3000 ft AGL, this condition applies to the full assessment flight. If conditions do not allow E10, E7 and E10 may be assessed separately on a different day; remaining elements may be assessed in lower conditions.
+Because E10 requires cloud less than SCT below 3500 ft (maintain VMC), this condition applies to the full assessment flight. If conditions do not allow E10, E7 and E10 may be assessed separately on a different day; remaining elements may be assessed in lower conditions.
+
+*Straight and steady stalls: recovery complete by 2500 ft AGL. All other stalls (turning, slipping, climbing, descending, scenario, accelerated): recovery complete by 3000 ft AGL.* *No pro-spin inputs below Va — by student or instructor, not even to induce a wing drop.*
 ]
 
 ,learning_outcomes: [
@@ -64,7 +66,7 @@ Equipment required: Student training record, progress checklist, local VTC \
 - Student briefs today's planned flight as pilot-in-command: departure, tasks, return, TEM threats
 - Assessment criteria confirmed: all elements assessed today; standards required
 - Pre-solo Air Legislation exam: confirm study is underway; must be passed before first solo
-- Weather check: ceiling >3000 ft AGL required to include E10; confirm before proceeding
+- Weather check: cloud less than SCT below 3500 ft required to include E10; confirm before proceeding
 
 *Radio Essentials for Circuit Operations* (20 minutes)
 
@@ -94,7 +96,7 @@ _Radio failure — initial actions_
 ,ground_tasks:[
 #text(size:12pt)[*Instructor*]
 - Review student training record before the lesson; identify any elements requiring focus
-- Spot check of weather and NOTAMs with student; confirm ceiling >3000 ft AGL for E10; if not, plan split assessment
+- Spot check of weather and NOTAMs with student; confirm cloud less than SCT below 3500 ft for E10; if not, plan split assessment
 
 #text(size:12pt)[*Student*]
 - Complete IMSAFE self-assessment and operations whiteboard
@@ -176,11 +178,12 @@ Instructor observes and assesses — does not lead or prompt. Student conducts a
 ]
 
 ,safety:[
-- *Weather*: Ceiling >3000 ft AGL and smooth air required to include E9 and E10; if conditions are marginal, E9/E10 may be assessed on a separate day and remaining elements assessed today. Wind \<15 knots.
-- *Altitude*: E10 above 2500 ft AGL; all stall recoveries complete above 2500 ft AGL; E9 above 2000 ft AGL; all other elements above 1000 ft AGL
+- *Weather*: Ceiling >3000 ft AGL and smooth air required to include E9; E10 requires cloud less than SCT below 3500 ft; maintain VMC throughout (above 3000 ft: 1500 m horizontal, 1000 ft vertical from cloud), and smooth air; if conditions are marginal, E9/E10 may be assessed on a separate day and remaining elements assessed today. Wind \<15 knots.
+- *Altitude*: E7/E10 stalls: *Straight and steady stalls: recovery complete by 2500 ft AGL. All other stalls (turning, slipping, climbing, descending, scenario, accelerated): recovery complete by 3000 ft AGL.*; E9 above 2000 ft AGL; all other elements above 1000 ft AGL
 - *Emergency Procedures*: EFATO brief completed; HASSELL before the high-risk manoeuvre sequence; forced landing area preselected
 - *TEM*:
   - Assessment flight — instructor must remain non-interventionist while safety-ready
+  - *No pro-spin inputs below Va — by student or instructor, not even to induce a wing drop.*
   - If student shows significant stress affecting safety, end assessment mode; return to coaching
   - Spiral dive: instructor brief on ground before flight; take control immediately if entry is uncontrolled
   - Monitor weather throughout; conditions must remain suitable for all planned exercises

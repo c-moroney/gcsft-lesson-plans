@@ -9,6 +9,7 @@ The lesson plans are very verbose (wordy). And they are done this way intentiona
 - Rework the briefings to align with the new syllabus
 
 ## Changes made
+- 26/11 - Stalling: 2500 ft AGL recovery altitude is for straight and steady stalls only; all other stalls recover by 3000 ft AGL; cloud less than SCT below 3500 ft for lessons with non-straight stalls. No pro-spin inputs below Va, by student or instructor, not even to induce a wing drop. Added GLOSSARY.md
 - 08/07 - Added cross country, passenger endorsement and trial flight lesson plans
 - 08/05 - Added Lesson 00, Flight Preparation and Ground Operations. Adjusted lesson 1, EOC
 - 08/05 - Add configuration stall to the basic stalling lesson.

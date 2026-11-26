@@ -3,7 +3,7 @@
   title: "Advanced Turning",
   unit: "Phase 1 — Lesson 7 | E9",
   author: "C.Moroney",
-  version: "v1.0.2",
+  version: "v1.0.3",
 )
 #let card = (
   aim: [Perform steep turns at 45° and 60° AoB. Identify and recover from a spiral dive. Demonstrate slipping turns and dutch roll reversals.],
@@ -28,7 +28,7 @@
     *Note:* Two-flight turning requirement (E6 + E9) now satisfied. Full C requires Phase 3.
   ],
   safety: [
-    Smooth air required · Ceiling *>2500 ft AGL* · Above 2000 ft AGL throughout · Recoveries above 1500 ft AGL · Spiral dive: instructor briefs recovery sequence before flight; take control immediately if uncontrolled · Skidding turn: instructor demo ONLY and not performed at less than VA.
+    Smooth air required · Ceiling *>2500 ft AGL* · Above 2000 ft AGL throughout · Recoveries above 1500 ft AGL · Spiral dive: instructor briefs recovery sequence before flight; take control immediately if uncontrolled · Skidding turn: instructor demo ONLY, above V#sub[A] only · *No pro-spin inputs below V#sub[A], not even to induce a wing drop*
   ],
 )
 #show: body => kneeboard(metadata, card, body)

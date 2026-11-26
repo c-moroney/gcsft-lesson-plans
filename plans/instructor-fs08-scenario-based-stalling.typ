@@ -4,7 +4,7 @@
   title: "Scenario Based Stalling — Instructional Walkthrough",
   unit: "Instructor Training | Syllabus Walkthrough 8 of 12 — maps to Ab Initio Phase 1, Lesson 8",
   author: "C.Moroney",
-  version: "v1.0.0",
+  version: "v1.0.1",
   plan_type: "Instructor Training",
 )
 
@@ -90,8 +90,8 @@ Equipment required: Aircraft model, whiteboard \
 ]
 
 ,safety:[
-- *Weather*: Lesson can go ahead if conditions are VMC. IT can simulate a clear horizon if required. (ceiling >3000 ft AGL, smooth air preferred, surface wind \<25 kt).
-- *Altitude*: Above 2500 ft AGL; all recoveries complete by 2500 ft AGL.
+- *Weather*: Lesson can go ahead if conditions are VMC. IT can simulate a clear horizon if required. (cloud less than SCT below 3500 ft; maintain VMC throughout (above 3000 ft: 1500 m horizontal, 1000 ft vertical from cloud), smooth air preferred, surface wind \<25 kt).
+- *Altitude*: *Straight and steady stalls: recovery complete by 2500 ft AGL. All other stalls (turning, slipping, climbing, descending, scenario, accelerated): recovery complete by 3000 ft AGL.* *No pro-spin inputs below Va — by student or instructor, not even to induce a wing drop.*
 - *Emergency Procedures*: Forced landing area pre-selected before HASSELL-equivalent clearance; IT retains PIC authority throughout, ready to intervene immediately if spin entry is imminent.
 - *TEM*: IT-as-student and IT-as-instructor distinction made clearly with "student/instructor taking over" and correct control handover.
 - *HF (4.1/4.4)*: IT confirms the IC managed session prep and time effectively (materials ready, brief timed, no last-minute scramble) and monitors both own and simulated-student fatigue/workload throughout, adjusting pace if either degrades.

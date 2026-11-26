@@ -4,7 +4,7 @@
   title: "RPC Flight Test",
   unit: "Group A (3-Axis) | Phase 5 — Lesson 3 | All Elements",
   author: "C.Moroney",
-  version: "v1.0.0",
+  version: "v1.0.1",
 )
 
 #let lesson = (
@@ -159,7 +159,8 @@ _In-flight assessment:_
 ]
 
 ,safety:[
-- *Weather*: All element-specific minima apply; examiner confirms conditions are suitable before the test proceeds; if conditions deteriorate during the test — examiner may terminate and reschedule
+- *Weather*: All element-specific minima apply (stalling: cloud less than SCT below 3500 ft; maintain VMC throughout (above 3000 ft: 1500 m horizontal, 1000 ft vertical from cloud)); examiner confirms conditions are suitable before the test proceeds; if conditions deteriorate during the test — examiner may terminate and reschedule
+- *Altitude*: *Straight and steady stalls: recovery complete by 2500 ft AGL. All other stalls (turning, slipping, climbing, descending, scenario, accelerated): recovery complete by 3000 ft AGL.* *No pro-spin inputs below Va — by student or instructor, not even to induce a wing drop.*
 - *Examiner authority*: The examiner has full authority to terminate the flight test at any time for safety reasons; a termination for safety does not automatically result in a fail — the examiner assesses whether the safety issue was caused by the candidate or by external factors
 - *TEM*:
   - Flight test anxiety is normal; the examiner should establish a calm, professional tone during the ground brief

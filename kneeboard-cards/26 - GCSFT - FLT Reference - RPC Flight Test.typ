@@ -4,7 +4,7 @@
   title: "RPC Flight Test",
   unit: "Phase 5 — Lesson 3 | All Elements",
   author: "C.Moroney",
-  version: "v1.0.0",
+  version: "v1.0.1",
 )
 
 #let card = (
@@ -60,7 +60,7 @@
   ],
 
   safety: [
-    All element-specific minima apply · Examiner confirms conditions suitable before proceeding · If conditions deteriorate during test — examiner may terminate and reschedule · Emergency simulations (EFATO, ABCDEF) briefed before flight; student confirms understanding before any simulation is initiated · Examiner has full authority to terminate at any time for safety reasons
+    All element-specific minima apply (stalling: cloud less than SCT below 3500 ft) · *Recover by 2500 ft AGL (straight & steady stalls only), all other stalls by 3000 ft AGL* · *No pro-spin inputs below V#sub[A], not even to induce a wing drop* · Examiner confirms conditions suitable before proceeding · If conditions deteriorate during test — examiner may terminate and reschedule · Emergency simulations (EFATO, ABCDEF) briefed before flight; student confirms understanding before any simulation is initiated · Examiner has full authority to terminate at any time for safety reasons
   ],
 )
 

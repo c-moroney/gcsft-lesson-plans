@@ -4,7 +4,7 @@
   title: "Biennial Flight Review (BFR)",
   unit: "Post-Certification Currency | Senior Instructor / CFI / PE Review",
   author: "C.Moroney",
-  version: "v1.2.0",
+  version: "v1.2.1",
 )
 
 #let lesson = (
@@ -91,7 +91,7 @@ Equipment required: Logbook, RAAus membership (Instructor Portal), POH, MR, ERSA
 - *No verbalised take-off safety brief*: Require one every take-off.
 - *Fuel estimate, not fuel log*: Insist on a fuel log.
 - *Landing-config stall recovery weak*: Least-practiced — revisit specifically.
-- *Turning stalls/unbalanced stalls weak*: Practice these recoveries specifically (no pro-spin inputs below Va).
+- *Turning stalls/unbalanced stalls weak*: Practice these recoveries specifically (*no pro-spin inputs below Va — by student or instructor, not even to induce a wing drop*).
 ]
 
 ,post_flight:[
@@ -139,8 +139,8 @@ Equipment required: Logbook, RAAus membership (Instructor Portal), POH, MR, ERSA
 
 ,safety:[
 - *GCSFT Aircraft Only*: Flights in aircraft not operated by GCSFT must be approved by the CFI.
-- *Weather*: VMC with margin for a below-currency candidate; wind within candidate's stated minimums + aircraft crosswind limit
-- *Altitude*: Recovery height check before stalls/steep turns; FLWOP go-around height briefed
+- *Weather*: VMC with margin for a below-currency candidate; wind within candidate's stated minimums + aircraft crosswind limit; for stalls other than straight and steady: cloud less than SCT below 3500 ft; maintain VMC throughout (above 3000 ft: 1500 m horizontal, 1000 ft vertical from cloud)
+- *Altitude*: Recovery height check before stalls/steep turns. *Straight and steady stalls: recovery complete by 2500 ft AGL. All other stalls (turning, slipping, climbing, descending, scenario, accelerated): recovery complete by 3000 ft AGL.* *No pro-spin inputs below Va — by student or instructor, not even to induce a wing drop.* FLWOP go-around height briefed
 - *Emergency*: PIC-in-emergency plan agreed pre-start; forced landing areas discussed for route
 - *TEM*: Expect rustiness — distinguish from genuine overload; brief simulations clearly so candidate doesn't unsafely operate real systems
 - *Aircraft Limits*: Operate within POH limits; no abrupt inputs

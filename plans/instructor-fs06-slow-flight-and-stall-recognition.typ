@@ -4,7 +4,7 @@
   title: "Slow Flight and Stall Recognition — Instructional Walkthrough",
   unit: "Instructor Training | Syllabus Walkthrough 6 of 12 — maps to Ab Initio Phase 1, Lesson 6",
   author: "C.Moroney",
-  version: "v1.0.0",
+  version: "v1.0.1",
   plan_type: "Instructor Training",
 )
 
@@ -92,7 +92,7 @@ Equipment required: Aircraft model, electronic briefing access, whiteboard \
 
 ,safety:[
 - *Weather*: Lesson can go ahead if conditions are VMC. IT can simulate a clear horizon if required. (ceiling >3000 ft AGL, smooth air, surface wind \<25 kt — postpone if turbulent).
-- *Altitude*: Above 2500 ft AGL; all recoveries complete by 2500 ft AGL minimum.
+- *Altitude*: All stalls in this walkthrough are straight and steady — recovery complete by 2500 ft AGL. *2500 ft applies to straight and steady stalls only; any other stall requires recovery complete by 3000 ft AGL.* *No pro-spin inputs below Va — by student or instructor, not even to induce a wing drop.*
 - *Emergency Procedures*: Forced landing area pre-selected before HASSELL; IT retains PIC authority throughout; given the risk profile, the IT should be ready to intervene noticeably earlier during the IC's recreation than in prior walkthrough lessons.
 - *TEM*: IT-as-student and IT-as-instructor distinction made clearly with "student/instructor taking over" and correct control handover.
 - *HF (4.1/4.4)*: IT confirms the IC managed session prep and time effectively (materials ready, brief timed, no last-minute scramble) and monitors both own and simulated-student fatigue/workload throughout, adjusting pace if either degrades.

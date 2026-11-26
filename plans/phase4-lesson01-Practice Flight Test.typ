@@ -4,7 +4,7 @@
   title: "Practice Flight Test",
   unit: "Group A (3-Axis) | Phase 5 — Lesson 1 | All Elements",
   author: "C.Moroney",
-  version: "v1.0.0",
+  version: "v1.0.1",
 )
 
 #let lesson = (
@@ -157,12 +157,13 @@ Student conducts a complete flight covering all 16 elements:
 ]
 
 ,safety:[
-- *Weather*: All element-specific minima apply: ceiling >3500 ft AGL for stalling, >2500 ft for training area elements, >1500 ft AGL for circuit elements; smooth air preferred; wind \<25 knots
-- *Altitude*: HASSELL minimum heights enforced; examiner monitors throughout
+- *Weather*: All element-specific minima apply: stalling: cloud less than SCT below 3500 ft (maintain VMC — above 3000 ft: 1500 m horizontal, 1000 ft vertical from cloud); >2500 ft for training area elements, >1500 ft AGL for circuit elements; smooth air preferred; wind \<25 knots
+- *Altitude*: HASSELL minimum heights enforced; *Straight and steady stalls: recovery complete by 2500 ft AGL. All other stalls (turning, slipping, climbing, descending, scenario, accelerated): recovery complete by 3000 ft AGL.*; examiner monitors throughout
 - *Emergency Procedures*: EFATO brief before departure; ABCDEF sequence for training area forced landing simulation briefed before flight
 - *TEM*:
   - Practice test environment can increase student stress — brief stress management before the flight
   - Examiner must maintain safety readiness throughout; non-interventionist but not passive
+  - *No pro-spin inputs below Va — by student or instructor, not even to induce a wing drop.*
   - If student becomes significantly stressed or unsafe — end the practice test; debrief professionally; do not proceed to the actual flight test until readiness is demonstrated
   - Ensure the practice test does not create time pressure that leads to rushed decisions or omitted checks
 ]

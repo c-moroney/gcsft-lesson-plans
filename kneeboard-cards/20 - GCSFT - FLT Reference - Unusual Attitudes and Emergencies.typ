@@ -3,14 +3,14 @@
   title: "Unusual Attitudes and Emergencies",
   unit: "Phase 3 — Lesson 4 | E16 + E10 check",
   author: "C.Moroney",
-  version: "v1.1.0",
+  version: "v1.1.1",
 )
 #let card = (
   aim: [Confirm E10 to S standard (student-led). Recover from unusual attitudes. Manage in-flight emergencies. Reinforce ADM (second exposure).],
   sequence: (
     (badge: "p",  content: [*Departure/transit*: Student as PIC throughout]),
     (badge: "dp",  content: [*ADM scenario*: jammed control column at Vy speed; establish control in slow flight with rudder for roll control; student and instructor work through ADM procedure with student in control; conduct controllability check]),
-    (badge: "p",  content: [*E10 CHECK — Student led, instructor silent observer*: HASSELL (>3000 ft ceiling required); turning stall; S&L stall and recovery; EFATO stall scenario; instructor records S or NC]),
+    (badge: "p",  content: [*E10 CHECK — Student led, instructor silent observer*: HASSELL (cloud less than SCT below 3500 ft required); turning stall; S&L stall and recovery; EFATO stall scenario; instructor records S or NC]),
     (badge: "dp", content: [*Nose-high UA*: Instructor creates attitude; demo recovery — push (reduce AoA), power, roll wings level; student practises from heads-down task]),
     (badge: "dp", content: [*Nose-low UA*: Instructor creates attitude; demo recovery — _throttle, wings level, ease back_; student practises]),
     (badge: "dp", content: [*Fire/smoke scenarios*: Instructor calls "engine fire" or "smoke in cockpit"; student executes from memory]),
@@ -27,7 +27,7 @@
     *E16 Solo (S):* Nose-high recovery correct; nose-low recovery ≤500 ft height loss; fire actions from memory without prompting; ADM applied to novel scenarios
   ],
   safety: [
-    Ceiling *>3000 ft AGL* (E10 requirement applies to whole lesson) · E10/E16 above 2500 ft AGL · Recoveries above 2000 ft AGL · *E10 check: instructor is observer but safety-ready; take control at first sign of incipient spin* · Nose-low: brief max airspeed before instructor intervenes
+    Cloud *\<SCT below 3500 ft* (VMC) (E10 requirement applies to whole lesson) · E10: *Recover by 2500 ft AGL (straight & steady stalls only), all other stalls by 3000 ft AGL* · *No pro-spin inputs below V#sub[A], not even to induce a wing drop* · E16 above 2500 ft AGL · Recoveries above 2000 ft AGL · *E10 check: instructor is observer but safety-ready; take control at first sign of incipient spin* · Nose-low: brief max airspeed before instructor intervenes
   ],
 )
 #show: body => kneeboard(metadata, card, body)

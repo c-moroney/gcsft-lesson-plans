@@ -3,7 +3,7 @@
   title: "Phase 1 Consolidation and Radio Essentials",
   unit: "Phase 1 — Lesson 9 | E1–E10, E13 assessed",
   author: "C.Moroney",
-  version: "v1.1.0",
+  version: "v1.1.1",
 )
 #let card = (
   aim: [Confirm all Phase 1 elements to solo standard in a connected flight. Formally assess E8. Introduce radio procedures for circuit operations.],
@@ -30,7 +30,7 @@
     *All at S before Phase 2:* E3 hdg ±5°, alt ±150 ft · E4 Vy +10/-0, · E6 bank ±5°, hdg ±150° · E7 HASSELL; recovery <=300 ft · E9 60° ±5° bank, ±150 ft; correct spiral recovery · E10 turning stall <=300 ft; go-around prevention; trim stall recovery · E8 brief before taxi; Vy maintained +10/-0 kt · E13 circuit calls; radio failure procedure known
   ],
   safety: [
-    Ceiling *>3000 ft* required to include E10 · HASSELL before high-risk sequence · Assessment mode — non-interventionist but safety-ready
+    Cloud *\<SCT below 3500 ft* (VMC) required to include E10 · *Recover by 2500 ft AGL (straight & steady stalls only), all other stalls by 3000 ft AGL* · *No pro-spin inputs below V#sub[A], not even to induce a wing drop* · HASSELL before high-risk sequence · Assessment mode — non-interventionist but safety-ready
   ],
 )
 #show: body => kneeboard(metadata, card, body)

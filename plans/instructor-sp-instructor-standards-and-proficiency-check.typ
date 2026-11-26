@@ -4,7 +4,7 @@
   title: "Instructor Standards & Proficiency (S&P) Check",
   unit: "Instructor Standards | CFI/DCFI Conducted — Instructor (90-day) / Senior Instructor (12-month)",
   author: "C.Moroney",
-  version: "v1.0.0",
+  version: "v1.0.1",
 )
 
 #let lesson = (
@@ -132,8 +132,8 @@ Equipment required: Logbook, RAAus membership (Instructor Portal), medical evide
 ]
 
 ,safety:[
-- *Weather*: Sufficient for full syllabus demonstration — stalls, steep turns, simulated forced landing; comparable to advanced-phase training minimums.
-- *Altitude*: Recovery height check before stalls/steep turns; FLWOP floor at 500 ft AGL.
+- *Weather*: Sufficient for full syllabus demonstration — stalls, steep turns, simulated forced landing; comparable to advanced-phase training minimums; stalling: cloud less than SCT below 3500 ft; maintain VMC throughout (above 3000 ft: 1500 m horizontal, 1000 ft vertical from cloud).
+- *Altitude*: Recovery height check before stalls/steep turns. *Straight and steady stalls: recovery complete by 2500 ft AGL. All other stalls (turning, slipping, climbing, descending, scenario, accelerated): recovery complete by 3000 ft AGL.* *No pro-spin inputs below Va — by student or instructor, not even to induce a wing drop.* FLWOP floor at 500 ft AGL.
 - *Emergency*: PIC-in-emergency nominated and briefed before start-up — two experienced pilots aboard is itself a specific risk RAAP 7 flags; don't skip this step.
 - *TEM*: Keep real PIC authority and the "Examiner as student" role-play clearly separated at all times via handover/takeover phraseology; simulated failures (partial power, systems) briefed clearly so no unsafe operation of real switches/throttle.
 - *Aircraft Limits*: Operate within POH limits; no abrupt inputs.
