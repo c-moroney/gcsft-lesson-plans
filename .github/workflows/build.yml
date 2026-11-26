@@ -38,6 +38,8 @@ jobs:
           wget -q https://github.com/google/fonts/raw/main/ofl/barlow/Barlow-Bold.ttf
           wget -q https://github.com/google/fonts/raw/main/ofl/barlow/Barlow-Medium.ttf
           wget -q https://github.com/google/fonts/raw/main/ofl/barlow/Barlow-SemiBold.ttf
+          wget -q https://github.com/google/fonts/raw/main/ofl/barlow/Barlow-Italic.ttf
+          wget -q https://github.com/google/fonts/raw/main/ofl/barlow/Barlow-BoldItalic.ttf
 
           # Charter alternative: download Charis SIL (similar serif)
           wget -q https://github.com/google/fonts/raw/main/ofl/charissil/CharisSIL-Regular.ttf -O Charter-Regular.ttf
